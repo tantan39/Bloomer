@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="SFUIDisplay-Regular.ttf">
+            <string>SFUIDisplay-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ChatSettingViewController">
+            <connections>
+                <outlet property="labelDescription" destination="Mj7-fc-rYl" id="yM8-1g-A1C"/>
+                <outlet property="numberFlower" destination="fmp-zE-L6U" id="7mC-It-8Cp"/>
+                <outlet property="sliderControl" destination="uUr-Hb-LBU" id="YXU-of-k1K"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon_chat_settings.png" translatesAutoresizingMaskIntoConstraints="NO" id="PT2-HK-gv1">
+                    <rect key="frame" x="128.5" y="28" width="117" height="96"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="96" id="Ao7-ec-zeE"/>
+                        <constraint firstAttribute="width" constant="117" id="Kxi-xj-9ah"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Edit the number of flowers required  for others to unlock your Chat" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uuj-wZ-ndC" userLabel="Edit the number of flowers required  for others to unlock your Chat">
+                    <rect key="frame" x="32" y="132" width="311" height="31.5"/>
+                    <fontDescription key="fontDescription" name="SFUIDisplay-Regular" family="SF UI Display" pointSize="13"/>
+                    <color key="textColor" red="0.67450980392156867" green="0.67450980392156867" blue="0.67450980392156867" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="When users give you the number of required flowers, they will be able to chat with you" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Mj7-fc-rYl">
+                    <rect key="frame" x="32" y="276" width="311" height="26.5"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                    <color key="textColor" red="0.67450980392156867" green="0.67450980392156867" blue="0.67450980392156867" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fmp-zE-L6U">
+                    <rect key="frame" x="187.5" y="176" width="0.0" height="0.0"/>
+                    <fontDescription key="fontDescription" name="SFUIDisplay-Regular" family="SF UI Display" pointSize="13"/>
+                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uUr-Hb-LBU" customClass="SEFilterControl">
+                    <rect key="frame" x="37.5" y="216" width="300" height="40"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="QP3-VA-OSa"/>
+                        <constraint firstAttribute="width" constant="300" id="Y4I-PT-Tmf"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="Mj7-fc-rYl" secondAttribute="trailing" constant="32" id="1wK-vq-qf0"/>
+                <constraint firstItem="Mj7-fc-rYl" firstAttribute="top" secondItem="uUr-Hb-LBU" secondAttribute="bottom" constant="20" id="2oo-x2-L0u"/>
+                <constraint firstItem="uuj-wZ-ndC" firstAttribute="top" secondItem="PT2-HK-gv1" secondAttribute="bottom" constant="8" id="5by-tf-8YQ"/>
+                <constraint firstAttribute="trailing" secondItem="uuj-wZ-ndC" secondAttribute="trailing" constant="32" id="6Zt-mp-453"/>
+                <constraint firstItem="fmp-zE-L6U" firstAttribute="centerX" secondItem="uuj-wZ-ndC" secondAttribute="centerX" id="8jd-21-DWr"/>
+                <constraint firstItem="fmp-zE-L6U" firstAttribute="top" secondItem="uuj-wZ-ndC" secondAttribute="bottom" constant="12.5" id="AzR-zQ-Eqd"/>
+                <constraint firstItem="PT2-HK-gv1" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="GHn-uO-fyD"/>
+                <constraint firstItem="PT2-HK-gv1" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="28" id="b9I-dH-kKL"/>
+                <constraint firstItem="uUr-Hb-LBU" firstAttribute="top" secondItem="fmp-zE-L6U" secondAttribute="bottom" constant="40" id="hx5-0E-Bdk"/>
+                <constraint firstItem="uuj-wZ-ndC" firstAttribute="centerX" secondItem="PT2-HK-gv1" secondAttribute="centerX" id="o2v-YP-QT8"/>
+                <constraint firstItem="uuj-wZ-ndC" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="32" id="o7f-3D-yzE"/>
+                <constraint firstItem="Mj7-fc-rYl" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="32" id="osd-Ar-WAp"/>
+                <constraint firstItem="uUr-Hb-LBU" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="vtZ-OG-Vj9"/>
+                <constraint firstItem="Mj7-fc-rYl" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="xca-KE-TdF"/>
+            </constraints>
+            <point key="canvasLocation" x="348" y="345"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="icon_chat_settings.png" width="116" height="95"/>
+    </resources>
+</document>

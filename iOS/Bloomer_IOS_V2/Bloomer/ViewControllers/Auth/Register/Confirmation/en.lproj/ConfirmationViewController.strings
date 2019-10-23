@@ -1,0 +1,19 @@
+
+/* Class = "UIButton"; normalTitle = "Resend "; ObjectID = "Dtj-b4-t7T"; */
+"Dtj-b4-t7T.normalTitle" = "Resend ";
+
+/* Class = "UIButton"; normalTitle = "Verify Now"; ObjectID = "ISK-Y8-o1K"; */
+"ISK-Y8-o1K.normalTitle" = "Next";
+
+/* Class = "UIButton"; normalTitle = "Back"; ObjectID = "QbE-kr-v7i"; */
+"QbE-kr-v7i.normalTitle" = "Back";
+
+/* Class = "UILabel"; text = "A verification code has been sent to"; ObjectID = "adx-3G-Xtj"; */
+"adx-3G-Xtj.text" = "A verification code has been sent to";
+
+/* Class = "UILabel"; text = "+84 934 258 963"; ObjectID = "kWe-Qa-dS4"; */
+"kWe-Qa-dS4.text" = "+84 934 258 963";
+"kQq-mS-R7U.normalTitle" = "Resend by SMS";
+"M3w-KX-5a4.normalTitle" = "Get audio code";
+"qXB-hH-8wg.text" = "Didn't received the code after 30 seconds?";
+"1AS-PY-h0T.text" = "Please enter the 4-digit code sent to your phone number";

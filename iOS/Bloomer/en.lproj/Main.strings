@@ -1,0 +1,21 @@
+
+/* Class = "IBUIViewController"; title = "Main"; ObjectID = "BYZ-38-t0r"; */
+"BYZ-38-t0r.title" = "Main";
+
+/* Class = "IBUILabel"; text = "Xinh"; ObjectID = "D8T-IY-T1p"; */
+"D8T-IY-T1p.text" = "Xinh";
+
+/* Class = "IBUIViewController"; title = "LoginView"; ObjectID = "LaG-rg-Glb"; */
+"LaG-rg-Glb.title" = "LoginView";
+
+/* Class = "IBUIButton"; normalTitle = "Login"; ObjectID = "Zyb-FF-fCm"; */
+"Zyb-FF-fCm.normalTitle" = "Login";
+
+/* Class = "IBUIButton"; normalTitle = "Sign Up"; ObjectID = "ejx-fi-rL6"; */
+"ejx-fi-rL6.normalTitle" = "Sign Up";
+
+/* Class = "IBUIViewController"; title = "SignUpView"; ObjectID = "knx-cr-QJa"; */
+"knx-cr-QJa.title" = "SignUpView";
+
+/* Class = "IBUILabel"; text = "Xinh"; ObjectID = "ndt-zS-yQN"; */
+"ndt-zS-yQN.text" = "Xinh";

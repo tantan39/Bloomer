@@ -1,0 +1,22 @@
+//
+//  Development.xcconfig
+//  Bloomer
+//
+//  Created by Tan Tan on 11/29/18.
+//  Copyright © 2018 Glassegg. All rights reserved.
+//
+
+// Configuration settings file format documentation can be found at:
+// https://help.apple.com/xcode/#/dev745c5c974
+
+rootURL = http:/$()/dev.apis.bloomerapp.vn:8181/bloomer_apis/
+
+rootWebURL = http:/$()/dev.apis.bloomerapp.vn/
+
+rootChatURL = http:/$()/dev.messages.bloomerapp.vn:8181/bloomer_chat/
+
+rootPhotoURL = http:/$()/dev.photos.bloomerapp.vn:8181/bloomer_photos/
+
+hostSocket = ws:/$()/dev.apis.bloomerapp.vn:8083/chat
+
+googleServiceFileName = GoogleService-Info_DEV

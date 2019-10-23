@@ -1,0 +1,37 @@
+
+/* Class = "UILabel"; text = "+84"; ObjectID = "9dl-Di-fQS"; */
+"9dl-Di-fQS.text" = "+84";
+
+/* Class = "UIButton"; normalTitle = "Privacy Policy"; ObjectID = "CQy-mR-S6I"; */
+"CQy-mR-S6I.normalTitle" = "Chính sách bảo mật";
+
+/* Class = "UIButton"; normalTitle = "<"; ObjectID = "Evj-mj-wXY"; */
+"Evj-mj-wXY.normalTitle" = "<";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "F76-aG-CuA"; */
+"F76-aG-CuA.normalTitle" = "Button";
+
+/* Class = "UILabel"; text = "and the"; ObjectID = "FkW-e9-8JC"; */
+"FkW-e9-8JC.text" = "và";
+
+/* Class = "UITextField"; placeholder = "Enter phone number"; ObjectID = "Vqg-u1-kch"; */
+"Vqg-u1-kch.placeholder" = "Nhập số điện thoại";
+
+/* Class = "UIButton"; normalTitle = "Terms of Service."; ObjectID = "aPc-Dk-rui"; */
+"aPc-Dk-rui.normalTitle" = "Điều khoản sử dụng.";
+
+/* Class = "UILabel"; text = "Enter your phone number to start using Bloomer"; ObjectID = "jJc-NF-Vea"; */
+"jJc-NF-Vea.text" = "Giới tính của bạn";
+
+"ZM8-DL-VvL.placeholder" = "Tên của bạn là";
+"Vqg-u1-kch.placeholder" = "Số điện thoại";
+"Hz2-6t-zhO.placeholder" = "Email";
+"KSu-8I-1Hd.placeholder" = "Mật khẩu";
+
+"nMk-HP-WMc.normalTitle" = "Hiện";
+
+/* Class = "UIButton"; normalTitle = "Next"; ObjectID = "wEL-ad-kvt"; */
+"wEL-ad-kvt.normalTitle" = "Tiếp tục";
+
+
+

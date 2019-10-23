@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="16A313a" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ContactListViewController">
+            <connections>
+                <outlet property="followersButton" destination="Z4A-kM-tbb" id="hXm-gI-iVz"/>
+                <outlet property="followingButton" destination="0G8-Y9-bM1" id="1wg-ZV-fPl"/>
+                <outlet property="mySegment" destination="MLx-Qk-Urf" id="oUj-0A-1lV"/>
+                <outlet property="searchDisplayController" destination="meL-es-F6z" id="GLr-ZP-64X"/>
+                <outlet property="tableView" destination="zQ6-yD-BRK" id="Yar-kQ-woc"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <segmentedControl hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" id="MLx-Qk-Urf">
+                    <frame key="frameInset" minX="8" minY="8" width="304" height="29"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <segments>
+                        <segment title="Followers" enabled="NO"/>
+                        <segment title="Following"/>
+                    </segments>
+                    <color key="tintColor" red="0.69803921570000005" green="0.1333333333" blue="0.1450980392" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <connections>
+                        <action selector="segment:" destination="-1" eventType="valueChanged" id="xht-R2-JKS"/>
+                    </connections>
+                </segmentedControl>
+                <button opaque="NO" contentMode="scaleToFill" selected="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" id="Z4A-kM-tbb">
+                    <frame key="frameInset" minX="8" minY="8" width="154" height="30"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <state key="normal" title="Givers" backgroundImage="bar_left.png">
+                        <color key="titleColor" red="0.69803921570000005" green="0.1333333333" blue="0.1450980392" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <state key="selected" backgroundImage="bar_active_left.png">
+                        <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="onSwitchAlbumsAndAchievements:" destination="-1" eventType="touchUpInside" id="4oj-9m-i7W"/>
+                    </connections>
+                </button>
+                <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" id="0G8-Y9-bM1">
+                    <frame key="frameInset" minX="160" minY="8" width="154" height="30"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <state key="normal" title="Receivers" backgroundImage="bar_right.png">
+                        <color key="titleColor" red="0.69803921570000005" green="0.1333333333" blue="0.1450980392" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <state key="selected" backgroundImage="bar_active_right.png">
+                        <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="onSwitchAlbumsAndAchievements:" destination="-1" eventType="touchUpInside" id="D5c-Lg-8pL"/>
+                    </connections>
+                </button>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="zQ6-yD-BRK">
+                    <frame key="frameInset" minY="44" width="320" height="460"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="bm3-Xm-LmE"/>
+                        <outlet property="delegate" destination="-1" id="6xe-g4-Tz5"/>
+                    </connections>
+                </tableView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <point key="canvasLocation" x="372" y="367"/>
+        </view>
+        <searchDisplayController id="meL-es-F6z">
+            <connections>
+                <outlet property="delegate" destination="-1" id="vQt-Yn-pZA"/>
+                <outlet property="searchContentsController" destination="-1" id="1Vf-jl-Gbl"/>
+                <outlet property="searchResultsDataSource" destination="-1" id="Di4-xN-QPN"/>
+                <outlet property="searchResultsDelegate" destination="-1" id="Q16-iW-i3O"/>
+            </connections>
+        </searchDisplayController>
+    </objects>
+    <resources>
+        <image name="bar_active_left.png" width="155" height="30"/>
+        <image name="bar_active_right.png" width="155" height="30"/>
+        <image name="bar_left.png" width="154" height="30"/>
+        <image name="bar_right.png" width="154" height="30"/>
+    </resources>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4_7.fullscreen"/>
+    </simulatedMetricsContainer>
+</document>

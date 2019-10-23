@@ -1,0 +1,9 @@
+
+/* Class = "UIButton"; normalTitle = "Follow"; ObjectID = "IfR-FD-Do9"; */
+"IfR-FD-Do9.normalTitle" = "Follow";
+
+/* Class = "UILabel"; text = "Given you 0 flowers"; ObjectID = "d1c-su-gfx"; */
+"d1c-su-gfx.text" = "Given you 0 flowers";
+
+/* Class = "UIButton"; normalTitle = "Unfollow"; ObjectID = "r4G-qs-SQ2"; */
+"r4G-qs-SQ2.normalTitle" = "Unfollow";

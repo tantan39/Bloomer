@@ -1,0 +1,15 @@
+
+/* Class = "UITextField"; placeholder = "Location"; ObjectID = "EQq-mn-7ej"; */
+"EQq-mn-7ej.placeholder" = "Bạn đến từ";
+
+/* Class = "UIButton"; normalTitle = "Complete"; ObjectID = "Jtp-cI-xr3"; */
+"Jtp-cI-xr3.normalTitle" = "Hoàn tất";
+
+/* Class = "UITextField"; placeholder = "Birthday"; ObjectID = "Spt-Qz-sB8"; */
+"Spt-Qz-sB8.placeholder" = "Sinh nhật của bạn";
+
+/* Class = "UILabel"; text = "Choose your avatar"; ObjectID = "ZVU-Dk-wGE"; */
+"ZVU-Dk-wGE.text" = "Cập nhật ảnh đại diện";
+
+/* Class = "UIButton"; normalTitle = "Skip"; ObjectID = "aHM-E1-WmF"; */
+"aHM-E1-WmF.normalTitle" = "Bỏ qua";

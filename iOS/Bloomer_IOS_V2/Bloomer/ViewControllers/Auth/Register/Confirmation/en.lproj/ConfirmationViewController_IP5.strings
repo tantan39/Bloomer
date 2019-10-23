@@ -1,0 +1,15 @@
+
+/* Class = "UIButton"; normalTitle = "Or make a free call"; ObjectID = "7pw-f7-BZ4"; */
+"7pw-f7-BZ4.normalTitle" = "Get audio code";
+
+/* Class = "UIButton"; normalTitle = "Resend by SMS"; ObjectID = "As4-Hf-Hrv"; */
+"As4-Hf-Hrv.normalTitle" = "Resend by SMS";
+
+/* Class = "UILabel"; text = "We just sent you verify code,\nenter 4 digit number to go"; ObjectID = "ajl-ye-pvj"; */
+"ajl-ye-pvj.text" = "Please enter the 4-digit code sent to your phone number";
+
+/* Class = "UIButton"; normalTitle = "Next"; ObjectID = "oFW-XG-Ipm"; */
+"oFW-XG-Ipm.normalTitle" = "Next";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "ugt-dC-pzV"; */
+"ugt-dC-pzV.text" = "Label";

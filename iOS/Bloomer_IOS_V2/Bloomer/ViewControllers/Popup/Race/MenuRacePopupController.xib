@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" colorMatched="YES">
+    <device id="retina4_0" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="SF-UI-Display-Regular.otf">
+            <string>SFUIDisplay-Regular</string>
+        </array>
+        <array key="SFUIDisplay-Semibold.ttf">
+            <string>SFUIDisplay-Semibold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MenuRacePopupController">
+            <connections>
+                <outlet property="CancelBut" destination="FuL-yQ-vxm" id="yKO-v0-x7z"/>
+                <outlet property="ChangeStateBut" destination="vnx-b2-yMf" id="0nQ-Eg-Bcm"/>
+                <outlet property="LastestPhotoBut" destination="5So-RF-3II" id="SzG-xc-qBG"/>
+                <outlet property="LeaderBoardToBottom" destination="3gj-53-ZPE" id="2xJ-du-aF7"/>
+                <outlet property="LeaderboardInfoBut" destination="V5y-QG-YV6" id="Ma3-XL-4Xl"/>
+                <outlet property="MyRankBut" destination="m7d-3r-fJ4" id="zLJ-SR-Hbk"/>
+                <outlet property="SearchBut" destination="WNO-BL-UBc" id="JJH-vR-f71"/>
+                <outlet property="SearchToBottomContraint" destination="wfF-Gp-goV" id="Hnn-uQ-Bbp"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5So-RF-3II" userLabel="LatestUploaded">
+                    <rect key="frame" x="33" y="269" width="254" height="40"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="5So-RF-3II" secondAttribute="height" multiplier="127:20" id="CRf-5Q-xm7"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="SFUIDisplay-Semibold" family="SF UI Display" pointSize="13"/>
+                    <state key="normal" title="See latest uploaded photos">
+                        <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                    <connections>
+                        <action selector="TouchLastesUpload:" destination="-1" eventType="touchUpInside" id="d2w-21-MP5"/>
+                    </connections>
+                </button>
+                <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="V5y-QG-YV6" userLabel="LeaderboardInfo">
+                    <rect key="frame" x="33" y="319" width="254" height="40"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <fontDescription key="fontDescription" name="SFUIDisplay-Semibold" family="SF UI Display" pointSize="13"/>
+                    <state key="normal" title="See leaderboard info">
+                        <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                    <connections>
+                        <action selector="TouchLeaderBoardInfo:" destination="-1" eventType="touchUpInside" id="DbC-zK-L7D"/>
+                    </connections>
+                </button>
+                <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="m7d-3r-fJ4" userLabel="ViewRank">
+                    <rect key="frame" x="33" y="360" width="254" height="40"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <fontDescription key="fontDescription" name="SFUIDisplay-Regular" family="SF UI Display" pointSize="13"/>
+                    <state key="normal" title="View my rank">
+                        <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                    <connections>
+                        <action selector="TouchViewRank:" destination="-1" eventType="touchUpInside" id="cDJ-hT-uv7"/>
+                    </connections>
+                </button>
+                <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vnx-b2-yMf" userLabel="ChangeCurrentState">
+                    <rect key="frame" x="33" y="451" width="254" height="40"/>
+                    <color key="backgroundColor" red="1" green="0.45030381940000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    <fontDescription key="fontDescription" name="SFUIDisplay-Semibold" family="SF UI Display" pointSize="13"/>
+                    <state key="normal" title="Change State">
+                        <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="TouchChangeState:" destination="-1" eventType="touchUpInside" id="lBr-m5-pcf"/>
+                    </connections>
+                </button>
+                <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FuL-yQ-vxm">
+                    <rect key="frame" x="33" y="501" width="254" height="40"/>
+                    <color key="backgroundColor" red="0.69803921570000005" green="0.1333333333" blue="0.1450980392" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <fontDescription key="fontDescription" name="SFUIDisplay-Semibold" family="SF UI Display" pointSize="13"/>
+                    <state key="normal" title="Cancel">
+                        <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="TouchCancel:" destination="-1" eventType="touchUpInside" id="CiN-OT-G97"/>
+                    </connections>
+                </button>
+                <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WNO-BL-UBc" userLabel="Search">
+                    <rect key="frame" x="33" y="401" width="254" height="40"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <fontDescription key="fontDescription" name="SFUIDisplay-Regular" family="SF UI Display" pointSize="13"/>
+                    <state key="normal" title="Search for the people">
+                        <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                    <connections>
+                        <action selector="TouchSearch:" destination="-1" eventType="touchUpInside" id="o7w-Ci-c8V"/>
+                    </connections>
+                </button>
+            </subviews>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="FuL-yQ-vxm" secondAttribute="bottom" constant="27" id="1Vh-gT-vqn"/>
+                <constraint firstItem="m7d-3r-fJ4" firstAttribute="top" secondItem="V5y-QG-YV6" secondAttribute="bottom" constant="1" id="3gj-53-ZPE"/>
+                <constraint firstItem="WNO-BL-UBc" firstAttribute="top" secondItem="m7d-3r-fJ4" secondAttribute="bottom" constant="1" id="5r7-3i-3lK"/>
+                <constraint firstItem="WNO-BL-UBc" firstAttribute="width" secondItem="5So-RF-3II" secondAttribute="width" id="7x2-Xe-3Z9"/>
+                <constraint firstItem="vnx-b2-yMf" firstAttribute="width" secondItem="5So-RF-3II" secondAttribute="width" id="CEs-sw-aAC"/>
+                <constraint firstItem="FuL-yQ-vxm" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="HB5-sU-Kko"/>
+                <constraint firstItem="FuL-yQ-vxm" firstAttribute="top" secondItem="vnx-b2-yMf" secondAttribute="bottom" constant="10" id="HSV-7d-hTC"/>
+                <constraint firstItem="FuL-yQ-vxm" firstAttribute="width" secondItem="5So-RF-3II" secondAttribute="width" id="HxL-Pp-XTi"/>
+                <constraint firstItem="vnx-b2-yMf" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="IzF-08-eNt"/>
+                <constraint firstAttribute="bottom" secondItem="FuL-yQ-vxm" secondAttribute="bottom" constant="27" id="Ncv-86-iKG"/>
+                <constraint firstItem="m7d-3r-fJ4" firstAttribute="width" secondItem="5So-RF-3II" secondAttribute="width" id="XPG-5i-YZu"/>
+                <constraint firstItem="m7d-3r-fJ4" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="XpR-42-Pzv"/>
+                <constraint firstItem="V5y-QG-YV6" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="ZJ6-aZ-OpD"/>
+                <constraint firstItem="WNO-BL-UBc" firstAttribute="height" secondItem="5So-RF-3II" secondAttribute="height" id="geb-Tf-lcE"/>
+                <constraint firstAttribute="trailing" secondItem="5So-RF-3II" secondAttribute="trailing" constant="33" id="gqY-Kn-Pga"/>
+                <constraint firstItem="m7d-3r-fJ4" firstAttribute="height" secondItem="5So-RF-3II" secondAttribute="height" id="ilj-wY-RBa"/>
+                <constraint firstItem="FuL-yQ-vxm" firstAttribute="height" secondItem="5So-RF-3II" secondAttribute="height" id="sli-aa-xWX"/>
+                <constraint firstItem="vnx-b2-yMf" firstAttribute="height" secondItem="5So-RF-3II" secondAttribute="height" id="tlx-Jb-Vbe"/>
+                <constraint firstItem="5So-RF-3II" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="uEl-gd-DkT"/>
+                <constraint firstItem="V5y-QG-YV6" firstAttribute="height" secondItem="5So-RF-3II" secondAttribute="height" id="uMY-Xj-D3U"/>
+                <constraint firstItem="V5y-QG-YV6" firstAttribute="width" secondItem="5So-RF-3II" secondAttribute="width" id="uqj-3w-O9z"/>
+                <constraint firstItem="V5y-QG-YV6" firstAttribute="top" secondItem="5So-RF-3II" secondAttribute="bottom" constant="10" id="w9i-0A-RE9"/>
+                <constraint firstItem="vnx-b2-yMf" firstAttribute="top" secondItem="WNO-BL-UBc" secondAttribute="bottom" constant="10" id="wfF-Gp-goV"/>
+                <constraint firstItem="WNO-BL-UBc" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="xc0-QJ-6EV"/>
+                <constraint firstItem="5So-RF-3II" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="33" id="xku-TV-5MX"/>
+            </constraints>
+            <point key="canvasLocation" x="72.5" y="59.5"/>
+        </view>
+    </objects>
+</document>

@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_0" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="SF-Pro-Text-Bold.otf">
+            <string>SFProText-Bold</string>
+        </array>
+        <array key="SF-Pro-Text-Regular.otf">
+            <string>SFProText-Regular</string>
+        </array>
+        <array key="SVN-Dumpling.otf">
+            <string>SVN-Dumpling</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ShareRewardView">
+            <connections>
+                <outlet property="MessageDisappearLabel" destination="IAg-mL-H7F" id="jgh-0F-6x4"/>
+                <outlet property="YouReceive" destination="yGY-0u-Q2K" id="Wy1-9I-DUC"/>
+                <outlet property="numFlower" destination="0GP-F2-7pb" id="Sfb-Dg-coM"/>
+                <outlet property="numFlowerLabel" destination="Ubg-W2-FYn" id="tQI-0o-wSQ"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aSH-yk-iMY" userLabel="MainView">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="image_bottom_reward_share" translatesAutoresizingMaskIntoConstraints="NO" id="Os4-rR-da9">
+                            <rect key="frame" x="0.0" y="451" width="320" height="117"/>
+                            <constraints>
+                                <constraint firstAttribute="width" secondItem="Os4-rR-da9" secondAttribute="height" multiplier="320:117" id="pgb-3I-jTu"/>
+                            </constraints>
+                        </imageView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="YOU RECEIVED" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yGY-0u-Q2K">
+                            <rect key="frame" x="84.5" y="40" width="151.5" height="24"/>
+                            <fontDescription key="fontDescription" name="SFProText-Bold" family="SF Pro Text" pointSize="20"/>
+                            <color key="textColor" red="0.91764705882352937" green="0.27450980392156865" blue="0.33725490196078434" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2000 FLOWERS" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ubg-W2-FYn">
+                            <rect key="frame" x="50" y="72" width="221" height="33.5"/>
+                            <fontDescription key="fontDescription" name="SFProText-Bold" family="SF Pro Text" pointSize="28"/>
+                            <color key="textColor" red="0.91764705879999997" green="0.27450980390000002" blue="0.33725490200000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Icon_reward_popup" translatesAutoresizingMaskIntoConstraints="NO" id="h6Z-UL-XHS">
+                            <rect key="frame" x="59" y="195.5" width="203" height="314"/>
+                            <constraints>
+                                <constraint firstAttribute="width" secondItem="h6Z-UL-XHS" secondAttribute="height" multiplier="203:314" id="ctX-t1-Y2j"/>
+                            </constraints>
+                        </imageView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="This message will disappear in 3s" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IAg-mL-H7F">
+                            <rect key="frame" x="65.5" y="539" width="189.5" height="14"/>
+                            <fontDescription key="fontDescription" name="SFProText-Regular" family="SF Pro Text" pointSize="12"/>
+                            <color key="textColor" red="0.6470588235294118" green="0.6470588235294118" blue="0.68627450980392157" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2000" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0GP-F2-7pb">
+                            <rect key="frame" x="101" y="306.5" width="118" height="66.5"/>
+                            <fontDescription key="fontDescription" name="SVN-Dumpling" family="SVN-Dumpling" pointSize="50"/>
+                            <color key="textColor" red="0.91764705882352937" green="0.27450980392156865" blue="0.33725490196078434" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" red="1" green="0.99215686274509807" blue="0.98039215686274506" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstItem="0GP-F2-7pb" firstAttribute="top" secondItem="h6Z-UL-XHS" secondAttribute="centerY" multiplier="0.87" id="7Q2-fN-wdu"/>
+                        <constraint firstItem="Os4-rR-da9" firstAttribute="leading" secondItem="aSH-yk-iMY" secondAttribute="leading" id="9rk-Ml-oiT"/>
+                        <constraint firstItem="h6Z-UL-XHS" firstAttribute="baseline" secondItem="Os4-rR-da9" secondAttribute="centerY" id="AOu-ke-L6Q"/>
+                        <constraint firstItem="Ubg-W2-FYn" firstAttribute="top" secondItem="yGY-0u-Q2K" secondAttribute="bottom" constant="8" id="Dul-gh-Z9U"/>
+                        <constraint firstItem="yGY-0u-Q2K" firstAttribute="top" secondItem="aSH-yk-iMY" secondAttribute="top" constant="40" id="JAd-NI-y0j"/>
+                        <constraint firstAttribute="trailing" secondItem="Os4-rR-da9" secondAttribute="trailing" id="Oe1-Xf-X4n"/>
+                        <constraint firstAttribute="bottom" secondItem="Os4-rR-da9" secondAttribute="bottom" id="aWt-6Z-nG2"/>
+                        <constraint firstItem="Ubg-W2-FYn" firstAttribute="centerX" secondItem="aSH-yk-iMY" secondAttribute="centerX" id="dyj-xv-pwP"/>
+                        <constraint firstAttribute="trailing" secondItem="h6Z-UL-XHS" secondAttribute="trailing" constant="58" id="ew0-qb-HoB"/>
+                        <constraint firstItem="IAg-mL-H7F" firstAttribute="centerX" secondItem="aSH-yk-iMY" secondAttribute="centerX" id="fIt-gH-6aS"/>
+                        <constraint firstItem="IAg-mL-H7F" firstAttribute="bottom" secondItem="Os4-rR-da9" secondAttribute="bottom" constant="-15" id="o8o-vo-h2n"/>
+                        <constraint firstItem="h6Z-UL-XHS" firstAttribute="centerX" secondItem="aSH-yk-iMY" secondAttribute="centerX" id="qSG-8I-kgy"/>
+                        <constraint firstItem="yGY-0u-Q2K" firstAttribute="centerX" secondItem="aSH-yk-iMY" secondAttribute="centerX" id="uDT-F8-x1N"/>
+                        <constraint firstItem="0GP-F2-7pb" firstAttribute="centerX" secondItem="aSH-yk-iMY" secondAttribute="centerX" id="vfq-IE-sXD"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="aSH-yk-iMY" secondAttribute="bottom" id="bw9-77-JDF"/>
+                <constraint firstAttribute="trailing" secondItem="aSH-yk-iMY" secondAttribute="trailing" id="odt-NB-PrK"/>
+                <constraint firstItem="aSH-yk-iMY" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="pRw-wn-TVj"/>
+                <constraint firstItem="aSH-yk-iMY" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="vwY-Ff-PEG"/>
+            </constraints>
+            <point key="canvasLocation" x="24" y="52"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="Icon_reward_popup" width="203" height="314"/>
+        <image name="image_bottom_reward_share" width="320" height="117"/>
+    </resources>
+</document>

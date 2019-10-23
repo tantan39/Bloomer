@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="SF-UI-Display-Regular.otf">
+            <string>SFUIDisplay-Regular</string>
+        </array>
+        <array key="SF-UI-Display-Semibold.otf">
+            <string>SFUIDisplay-Semibold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="AnonymousMyBloomerViewController">
+            <connections>
+                <outlet property="emptyView" destination="bn0-qF-mEv" id="bSu-tU-9Cg"/>
+                <outlet property="updatesTableView" destination="Lfe-lX-O1R" id="JWP-rR-36D"/>
+                <outlet property="view" destination="6dC-Vz-rjs" id="ple-eb-7iY"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="6dC-Vz-rjs">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="none" allowsSelection="NO" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Lfe-lX-O1R">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="gpl-Rz-2ch"/>
+                        <outlet property="delegate" destination="-1" id="gjQ-Nl-yrV"/>
+                    </connections>
+                </tableView>
+                <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bn0-qF-mEv" userLabel="Empty View">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Icon_My_Bloomer_Empty" translatesAutoresizingMaskIntoConstraints="NO" id="M6b-CO-8bS">
+                            <rect key="frame" x="160.5" y="248.5" width="55" height="55"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="55" id="2rQ-G1-pB3"/>
+                                <constraint firstAttribute="width" constant="55" id="KbQ-7r-dE5"/>
+                            </constraints>
+                        </imageView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Go and give flowers to someone" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DFi-IC-yzN" userLabel="Label Title">
+                            <rect key="frame" x="40" y="323.5" width="295" height="20"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="20" id="B0P-yp-CRI"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="SFUIDisplay-Semibold" family="SF UI Display" pointSize="16"/>
+                            <color key="textColor" red="0.74117647060000003" green="0.74117647060000003" blue="0.74117647060000003" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="in any contest you like to fill this with your bloomers!" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dI8-09-J1z" userLabel="Label Message">
+                            <rect key="frame" x="60" y="343.5" width="255" height="35"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="35" id="wDh-Dy-8Vb"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="SFUIDisplay-Regular" family="SF UI Display" pointSize="13"/>
+                            <color key="textColor" red="0.74117647060000003" green="0.74117647060000003" blue="0.74117647060000003" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" red="0.95294117649999999" green="0.95294117649999999" blue="0.95294117649999999" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstItem="DFi-IC-yzN" firstAttribute="top" secondItem="M6b-CO-8bS" secondAttribute="bottom" constant="20" id="0H3-tb-eZi"/>
+                        <constraint firstItem="M6b-CO-8bS" firstAttribute="centerX" secondItem="bn0-qF-mEv" secondAttribute="centerX" id="7qb-wt-rMO"/>
+                        <constraint firstAttribute="trailing" secondItem="dI8-09-J1z" secondAttribute="trailing" constant="60" id="94L-ZY-uWP"/>
+                        <constraint firstAttribute="trailing" secondItem="DFi-IC-yzN" secondAttribute="trailing" constant="40" id="biV-9W-z3Q"/>
+                        <constraint firstItem="DFi-IC-yzN" firstAttribute="leading" secondItem="bn0-qF-mEv" secondAttribute="leading" constant="40" id="dqB-vq-b2L"/>
+                        <constraint firstItem="dI8-09-J1z" firstAttribute="leading" secondItem="bn0-qF-mEv" secondAttribute="leading" constant="60" id="fhL-Md-F30"/>
+                        <constraint firstItem="DFi-IC-yzN" firstAttribute="centerY" secondItem="bn0-qF-mEv" secondAttribute="centerY" id="mVB-uj-pLR"/>
+                        <constraint firstItem="dI8-09-J1z" firstAttribute="top" secondItem="DFi-IC-yzN" secondAttribute="bottom" id="oun-JD-rf5"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <gestureRecognizers/>
+            <constraints>
+                <constraint firstItem="bn0-qF-mEv" firstAttribute="top" secondItem="6dC-Vz-rjs" secondAttribute="top" id="63K-Vs-Oob"/>
+                <constraint firstAttribute="trailing" secondItem="Lfe-lX-O1R" secondAttribute="trailing" id="TKF-NM-sgi"/>
+                <constraint firstAttribute="bottom" secondItem="Lfe-lX-O1R" secondAttribute="bottom" id="YFc-I6-9If"/>
+                <constraint firstItem="Lfe-lX-O1R" firstAttribute="top" secondItem="6dC-Vz-rjs" secondAttribute="top" id="bOG-Xo-vGH"/>
+                <constraint firstItem="Lfe-lX-O1R" firstAttribute="leading" secondItem="6dC-Vz-rjs" secondAttribute="leading" id="ieS-Ei-Pi2"/>
+                <constraint firstAttribute="bottom" secondItem="bn0-qF-mEv" secondAttribute="bottom" id="oeA-ba-F4P"/>
+                <constraint firstItem="bn0-qF-mEv" firstAttribute="leading" secondItem="6dC-Vz-rjs" secondAttribute="leading" id="pXh-h8-XGq"/>
+                <constraint firstAttribute="trailing" secondItem="bn0-qF-mEv" secondAttribute="trailing" id="ulY-Wn-uKe"/>
+            </constraints>
+            <point key="canvasLocation" x="277.5" y="249.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="Icon_My_Bloomer_Empty" width="55" height="55"/>
+    </resources>
+</document>

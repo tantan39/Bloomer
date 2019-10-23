@@ -1,0 +1,24 @@
+
+/* Class = "UILabel"; text = "Create Account"; ObjectID = "50Z-k4-jZc"; */
+"50Z-k4-jZc.text" = "Create Account";
+
+/* Class = "UIButton"; normalTitle = "Male"; ObjectID = "7dx-L7-5so"; */
+"7dx-L7-5so.normalTitle" = "Male";
+
+/* Class = "UITextField"; placeholder = "Enter Display Name"; ObjectID = "Gwz-Mm-eiD"; */
+"Gwz-Mm-eiD.placeholder" = "Enter Display Name";
+
+/* Class = "UIButton"; normalTitle = "next"; ObjectID = "I08-zp-cJW"; */
+"I08-zp-cJW.normalTitle" = "Next";
+
+/* Class = "UILabel"; text = "Label daskjdasjkd jasd jsalkdj lsak dlasjdk lasj kldasjd asld lasj dlkasj dklasj kldasj "; ObjectID = "YB3-Lh-JMd"; */
+"YB3-Lh-JMd.text" = "Label daskjdasjkd jasd jsalkdj lsak dlasjdk lasj kldasjd asld lasj dlkasj dklasj kldasj ";
+
+/* Class = "UILabel"; text = "DISPLAY NAME"; ObjectID = "ag2-Jb-ka8"; */
+"ag2-Jb-ka8.text" = "DISPLAY NAME";
+
+/* Class = "UIButton"; normalTitle = "Female"; ObjectID = "kqb-eT-87a"; */
+"kqb-eT-87a.normalTitle" = "Female";
+
+/* Class = "UILabel"; text = "GENDER"; ObjectID = "lxE-WL-5uo"; */
+"lxE-WL-5uo.text" = "GENDER";

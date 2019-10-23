@@ -1,0 +1,9 @@
+
+/* Class = "UILabel"; text = "You're almost there! Achieve at least 1 Bronze to join this leaderboard"; ObjectID = "5sw-Qf-elM"; */
+"5sw-Qf-elM.text" = "Cố lên nào! Hãy đạt ít nhất %@ để có thể tham gia cuộc thi này";
+
+/* Class = "UIButton"; normalTitle = "Later"; ObjectID = "Awq-yf-xLY"; */
+"Awq-yf-xLY.normalTitle" = "Để sau";
+
+/* Class = "UIButton"; normalTitle = "View more"; ObjectID = "aoc-5p-v9l"; */
+"aoc-5p-v9l.normalTitle" = "Xem thành tích";

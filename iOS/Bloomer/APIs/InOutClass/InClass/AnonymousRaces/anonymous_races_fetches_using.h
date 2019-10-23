@@ -1,0 +1,31 @@
+//
+//  anonymous_races_fetches_using.h
+//  Bloomer
+//
+//  Created by Nguyen Thanh  Tu on 5/3/17.
+//  Copyright © 2017 Glassegg. All rights reserved.
+//
+
+#import <Foundation/Foundation.h>
+#import "UsingAPIs.h"
+#import "out_races_fetches.h"
+
+@protocol anonymous_races_fetchesDelegate <NSObject>
+
+- (void)getDataRaces_fetches:(out_races_fetches *)data;
+- (void)Races_Fetches_RequestFailed:(ASIHTTPRequest *)request;
+
+@end
+
+
+@interface anonymous_races_fetches_using : UsingAPIs <connectToServer>
+
+@property (weak, nonatomic) id <anonymous_races_fetchesDelegate> myDelegate;
+
+- (id)initWithkey:(NSString *)key
+                     ckey:(NSString *)ckey
+                     rank:(NSInteger)rank
+                isRefresh:(BOOL)isRefresh
+                   gender:(NSInteger)gender;
+
+@end

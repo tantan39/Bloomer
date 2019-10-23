@@ -1,0 +1,21 @@
+
+/* Class = "UIButton"; normalTitle = "Hủy"; ObjectID = "0UF-we-T4O"; */
+"0UF-we-T4O.normalTitle" = "Hủy";
+
+/* Class = "UIButton"; normalTitle = "Tham gia Cuộc thi"; ObjectID = "Dih-3Y-cnP"; */
+"Dih-3Y-cnP.normalTitle" = "Tham gia Cuộc thi";
+
+/* Class = "UIButton"; normalTitle = "Tìm kiếm bạn bè"; ObjectID = "Jlu-9h-NML"; */
+"Jlu-9h-NML.normalTitle" = "Tìm kiếm bạn bè";
+
+/* Class = "UIButton"; normalTitle = "Xem ảnh vừa đăng"; ObjectID = "L4x-dM-v6y"; */
+"L4x-dM-v6y.normalTitle" = "Xem ảnh vừa đăng";
+
+/* Class = "UIButton"; normalTitle = "Tìm hiểu về Cuộc Thi"; ObjectID = "bus-bD-GZU"; */
+"bus-bD-GZU.normalTitle" = "Tìm hiểu về Cuộc Thi";
+
+/* Class = "UIButton"; normalTitle = "Xem thứ hạng"; ObjectID = "hul-VY-e1R"; */
+"hul-VY-e1R.normalTitle" = "Xem thứ hạng";
+
+/* Class = "UIButton"; normalTitle = "Rời Cuộc"; ObjectID = "ncf-YN-wJt"; */
+"ncf-YN-wJt.normalTitle" = "Rời Cuộc";

@@ -1,0 +1,12 @@
+
+/* Class = "UILabel"; text = "This exceeds the number of flowers you have!"; ObjectID = "HcO-D6-7wl"; */
+"HcO-D6-7wl.text" = "This exceeds the number of flowers you have!";
+
+/* Class = "UIButton"; normalTitle = "Send"; ObjectID = "MkZ-RD-hz6"; */
+"MkZ-RD-hz6.normalTitle" = "Send";
+
+/* Class = "UILabel"; text = "How many flowers would you like to give?"; ObjectID = "vBh-cY-7zU"; */
+"vBh-cY-7zU.text" = "How many flowers would you like to give?";
+
+/* Class = "UIButton"; normalTitle = "Cancel"; ObjectID = "wBU-RN-lIc"; */
+"wBU-RN-lIc.normalTitle" = "Cancel";

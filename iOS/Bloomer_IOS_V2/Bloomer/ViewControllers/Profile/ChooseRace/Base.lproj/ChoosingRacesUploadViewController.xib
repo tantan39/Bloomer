@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" colorMatched="YES">
+    <device id="retina5_5" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="SF-UI-Display-Regular.otf">
+            <string>SFUIDisplay-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ChoosingRacesUploadViewController">
+            <connections>
+                <outlet property="tableView" destination="7AA-ss-Fzp" id="eck-nC-Gpb"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Nf0-Ua-nAX" userLabel="CenterView">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="38"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Add available Contest to these pictures" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VtU-aD-dtM">
+                            <rect key="frame" x="20" y="10" width="374" height="17"/>
+                            <constraints>
+                                <constraint firstAttribute="width" relation="greaterThanOrEqual" id="sHw-OK-d4S"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="SFUIDisplay-Regular" family="SF UI Display" pointSize="14"/>
+                            <color key="textColor" red="0.24313725490196078" green="0.24313725490196078" blue="0.24313725490196078" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WIc-X4-cZm" userLabel="line">
+                            <rect key="frame" x="0.0" y="37" width="414" height="1"/>
+                            <color key="backgroundColor" red="0.86274509799999999" green="0.86274509799999999" blue="0.86274509799999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="1" id="rN9-xA-JeN"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="WIc-X4-cZm" secondAttribute="trailing" id="DP5-o4-x8w"/>
+                        <constraint firstAttribute="bottom" secondItem="WIc-X4-cZm" secondAttribute="bottom" id="Jfc-0L-ujw"/>
+                        <constraint firstAttribute="trailing" secondItem="VtU-aD-dtM" secondAttribute="trailing" constant="20" id="Ji5-FT-WTx"/>
+                        <constraint firstItem="VtU-aD-dtM" firstAttribute="leading" secondItem="Nf0-Ua-nAX" secondAttribute="leading" constant="20" id="NQG-dU-mSV"/>
+                        <constraint firstItem="WIc-X4-cZm" firstAttribute="top" secondItem="VtU-aD-dtM" secondAttribute="bottom" constant="10" id="TtC-cf-Hik"/>
+                        <constraint firstItem="WIc-X4-cZm" firstAttribute="leading" secondItem="Nf0-Ua-nAX" secondAttribute="leading" id="sVY-gl-IM9"/>
+                        <constraint firstItem="VtU-aD-dtM" firstAttribute="top" secondItem="Nf0-Ua-nAX" secondAttribute="top" constant="10" id="y0v-Mz-CJz"/>
+                    </constraints>
+                </view>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" style="plain" separatorStyle="none" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="7AA-ss-Fzp">
+                    <rect key="frame" x="0.0" y="38" width="414" height="698"/>
+                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="Omf-Jm-DGV"/>
+                        <outlet property="delegate" destination="-1" id="9uP-MX-XdX"/>
+                    </connections>
+                </tableView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="7AA-ss-Fzp" firstAttribute="top" secondItem="Nf0-Ua-nAX" secondAttribute="bottom" id="4Rs-8z-z1k"/>
+                <constraint firstItem="Nf0-Ua-nAX" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="A2o-We-JnI"/>
+                <constraint firstItem="Nf0-Ua-nAX" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="UOP-uf-Hlf"/>
+                <constraint firstItem="7AA-ss-Fzp" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="YzD-VZ-hV6"/>
+                <constraint firstAttribute="trailing" secondItem="7AA-ss-Fzp" secondAttribute="trailing" id="lJD-NP-W3H"/>
+                <constraint firstAttribute="bottom" secondItem="7AA-ss-Fzp" secondAttribute="bottom" id="rLu-gL-AA0"/>
+                <constraint firstAttribute="trailing" secondItem="Nf0-Ua-nAX" secondAttribute="trailing" id="zwR-wl-a3c"/>
+            </constraints>
+            <point key="canvasLocation" x="232" y="346"/>
+        </view>
+    </objects>
+</document>

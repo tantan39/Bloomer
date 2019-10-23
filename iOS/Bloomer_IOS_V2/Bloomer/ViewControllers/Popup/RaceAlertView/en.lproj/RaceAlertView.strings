@@ -1,0 +1,9 @@
+
+/* Class = "UILabel"; text = "You're almost there! Achieve at least 1 Bronze to join this contest"; ObjectID = "5sw-Qf-elM"; */
+"5sw-Qf-elM.text" = "You're almost there! Achieve at least %@ to join this contest";
+
+/* Class = "UIButton"; normalTitle = "Later"; ObjectID = "Awq-yf-xLY"; */
+"Awq-yf-xLY.normalTitle" = "Later";
+
+/* Class = "UIButton"; normalTitle = "View more"; ObjectID = "aoc-5p-v9l"; */
+"aoc-5p-v9l.normalTitle" = "View Achievement";

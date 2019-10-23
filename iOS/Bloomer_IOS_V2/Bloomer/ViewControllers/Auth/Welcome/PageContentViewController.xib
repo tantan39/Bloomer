@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="SF-Pro-Text-Semibold.otf">
+            <string>SFProText-Semibold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="PageContentViewController">
+            <connections>
+                <outlet property="ivScreenImage" destination="C9Y-Qd-c8R" id="XAQ-Z9-flF"/>
+                <outlet property="lblScreenLabel" destination="aNR-qO-sLe" id="8qi-Vo-t6b"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" tag="222" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="welcome2" translatesAutoresizingMaskIntoConstraints="NO" id="C9Y-Qd-c8R">
+                    <rect key="frame" x="43.5" y="59.5" width="288" height="607.5"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" tag="111" contentMode="left" horizontalHuggingPriority="270" verticalHuggingPriority="270" horizontalCompressionResistancePriority="800" verticalCompressionResistancePriority="800" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aNR-qO-sLe">
+                    <rect key="frame" x="30" y="24" width="315" height="19.5"/>
+                    <fontDescription key="fontDescription" name="SFProText-Semibold" family="SF Pro Text" pointSize="16"/>
+                    <color key="textColor" red="0.26666666666666666" green="0.26666666666666666" blue="0.26666666666666666" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="Q5M-cg-NOt" firstAttribute="bottom" secondItem="C9Y-Qd-c8R" secondAttribute="bottom" id="0mG-wD-td4"/>
+                <constraint firstItem="aNR-qO-sLe" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" constant="30" id="6kR-dm-5xE"/>
+                <constraint firstItem="C9Y-Qd-c8R" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="Q5M-cg-NOt" secondAttribute="leading" constant="36" id="FzR-9T-0Lf"/>
+                <constraint firstItem="C9Y-Qd-c8R" firstAttribute="top" secondItem="aNR-qO-sLe" secondAttribute="bottom" constant="16" id="IwT-Cg-WTN"/>
+                <constraint firstItem="Q5M-cg-NOt" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="C9Y-Qd-c8R" secondAttribute="trailing" constant="36" id="SZB-g2-VbF"/>
+                <constraint firstItem="C9Y-Qd-c8R" firstAttribute="centerX" secondItem="Q5M-cg-NOt" secondAttribute="centerX" id="YpI-Rd-Rtq"/>
+                <constraint firstItem="Q5M-cg-NOt" firstAttribute="trailing" secondItem="aNR-qO-sLe" secondAttribute="trailing" constant="30" id="emD-ab-ct5"/>
+                <constraint firstItem="aNR-qO-sLe" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="24" id="p9V-QO-Ldw"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="Q5M-cg-NOt"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="welcome2" width="288" height="321"/>
+    </resources>
+</document>

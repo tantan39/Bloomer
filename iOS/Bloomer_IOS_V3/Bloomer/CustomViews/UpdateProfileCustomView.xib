@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="SF-Pro-Text-Medium.otf">
+            <string>SFProText-Medium</string>
+        </array>
+        <array key="SF-Pro-Text-Regular.otf">
+            <string>SFProText-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="UpdateProfileCustomView">
+            <connections>
+                <outlet property="btnUpdate" destination="XHd-LJ-IxZ" id="eZO-Ye-QcG"/>
+                <outlet property="contentView" destination="iN0-l3-epB" id="YFr-j0-fgp"/>
+                <outlet property="lblTitle" destination="ThP-kD-1dg" id="Elm-un-zpS"/>
+                <outlet property="paddingBottomConstraint" destination="fyO-nb-tyQ" id="caP-vv-Z5y"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="297" height="120"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Upadate your phone number \n to complete your profile" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ThP-kD-1dg">
+                    <rect key="frame" x="35" y="14.5" width="227" height="33.5"/>
+                    <fontDescription key="fontDescription" name="SFProText-Regular" family="SF Pro Text" pointSize="14"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uCc-Q1-eAf">
+                    <rect key="frame" x="267" y="16" width="14" height="14"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="14" id="9gM-Lm-PVQ"/>
+                        <constraint firstAttribute="width" constant="14" id="od3-h9-Qor"/>
+                    </constraints>
+                    <state key="normal" image="icon_popup_close">
+                        <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                    <connections>
+                        <action selector="btnClose_Pressed:" destination="-1" eventType="touchUpInside" id="nJ6-42-kAL"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XHd-LJ-IxZ">
+                    <rect key="frame" x="39.5" y="62" width="218" height="40"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="218" id="gVF-wJ-XWf"/>
+                        <constraint firstAttribute="height" constant="40" id="tVT-RB-gM4"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="SFProText-Medium" family="SF Pro Text" pointSize="14"/>
+                    <state key="normal" title="Update">
+                        <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                    <connections>
+                        <action selector="btnUpdate_Pressed:" destination="-1" eventType="touchUpInside" id="RIT-yz-Rzm"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="0.70588235290000001" green="0.1215686275" blue="0.14117647059999999" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstItem="ThP-kD-1dg" firstAttribute="top" relation="lessThanOrEqual" secondItem="vUN-kp-3ea" secondAttribute="top" constant="18" id="3zH-gT-e3b"/>
+                <constraint firstItem="uCc-Q1-eAf" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" priority="900" constant="16" id="4dZ-6d-A1f"/>
+                <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="ThP-kD-1dg" secondAttribute="trailing" constant="20" id="CsN-wI-Sfn"/>
+                <constraint firstItem="ThP-kD-1dg" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="iN0-l3-epB" secondAttribute="leading" constant="20" id="JeU-bo-fpT"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="uCc-Q1-eAf" secondAttribute="trailing" constant="16" id="Lfu-is-1AY"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="XHd-LJ-IxZ" secondAttribute="bottom" constant="18" id="fyO-nb-tyQ"/>
+                <constraint firstItem="ThP-kD-1dg" firstAttribute="centerX" secondItem="vUN-kp-3ea" secondAttribute="centerX" id="hxQ-TU-LDc"/>
+                <constraint firstItem="XHd-LJ-IxZ" firstAttribute="centerX" secondItem="vUN-kp-3ea" secondAttribute="centerX" id="jje-5E-Juf"/>
+                <constraint firstItem="XHd-LJ-IxZ" firstAttribute="top" secondItem="ThP-kD-1dg" secondAttribute="bottom" constant="14" id="mTK-Qy-cSI"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="uCc-Q1-eAf" secondAttribute="bottom" constant="90" id="od4-CO-rAP"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <point key="canvasLocation" x="76" y="-89.955022488755631"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="icon_popup_close" width="16" height="16"/>
+    </resources>
+</document>

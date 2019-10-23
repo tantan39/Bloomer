@@ -1,0 +1,15 @@
+
+/* Class = "UILabel"; text = "Upload a photo to join the leaderboard."; ObjectID = "5wH-dt-i11"; */
+"5wH-dt-i11.text" = "Đăng ảnh để tham gia cuộc thi.";
+
+/* Class = "UIButton"; normalTitle = "Phone Gallery"; ObjectID = "KmA-pc-G1i"; */
+"KmA-pc-G1i.normalTitle" = "Chọn từ Thư viện";
+
+/* Class = "UIButton"; normalTitle = "Bloomer Album"; ObjectID = "Vdd-sD-qAk"; */
+"Vdd-sD-qAk.normalTitle" = "Bloomer Album";
+
+/* Class = "UIButton"; normalTitle = "Take Photo"; ObjectID = "hS0-Fl-m3i"; */
+"hS0-Fl-m3i.normalTitle" = "Chụp ảnh";
+
+/* Class = "UIButton"; normalTitle = "Cancel"; ObjectID = "wly-eJ-J42"; */
+"wly-eJ-J42.normalTitle" = "Đóng";

@@ -1,0 +1,18 @@
+
+/* Class = "UILabel"; text = "Not verified yet"; ObjectID = "7o7-y6-OnK"; */
+"7o7-y6-OnK.text" = "chưa được xác thực";
+
+/* Class = "UIButton"; normalTitle = "qwerty@gmail.com"; ObjectID = "DUZ-Wi-GFv"; */
+"DUZ-Wi-GFv.normalTitle" = "qwerty@gmail.com";
+
+/* Class = "UILabel"; text = "Gender"; ObjectID = "hRd-iW-6dS"; */
+"hRd-iW-6dS.text" = "Giới tính";
+
+/* Class = "UILabel"; text = "Email"; ObjectID = "mgg-Js-ie0"; */
+"mgg-Js-ie0.text" = "Email";
+
+/* Class = "UIButton"; normalTitle = "0987654321"; ObjectID = "pbV-cP-Zal"; */
+"pbV-cP-Zal.normalTitle" = "0987654321";
+
+/* Class = "UILabel"; text = "Phone Number"; ObjectID = "q1N-2T-Bz1"; */
+"q1N-2T-Bz1.text" = "Số điện thoại";

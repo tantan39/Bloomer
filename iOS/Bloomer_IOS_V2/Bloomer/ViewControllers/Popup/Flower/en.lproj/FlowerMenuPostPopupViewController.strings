@@ -1,0 +1,12 @@
+
+/* Class = "UIButton"; normalTitle = "Send"; ObjectID = "1qX-qd-uVb"; */
+"1qX-qd-uVb.normalTitle" = "OK";
+
+/* Class = "UILabel"; text = "Insert your customised flower"; ObjectID = "NhZ-gE-pbN"; */
+"NhZ-gE-pbN.text" = "Insert your customized flower(s)";
+
+/* Class = "UILabel"; text = "This exceeds the number of flowers you have!"; ObjectID = "d5H-tq-wqi"; */
+"d5H-tq-wqi.text" = "This exceeds the number of flowers you have!";
+
+/* Class = "UIButton"; normalTitle = "Cancel"; ObjectID = "zEu-e8-cy4"; */
+"zEu-e8-cy4.normalTitle" = "Cancel";

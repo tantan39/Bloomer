@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="SF-Pro-Text-Medium.otf">
+            <string>SFProText-Medium</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="ContestCollectionViewCell" id="gTV-IL-0wX" customClass="ContestCollectionViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="361" height="251"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="361" height="251"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Koi-7y-mPM">
+                        <rect key="frame" x="16" y="0.0" width="329" height="200"/>
+                        <color key="backgroundColor" red="0.2901960784" green="0.56470588239999997" blue="0.8862745098" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="200" id="v0s-BA-Vwu"/>
+                        </constraints>
+                    </imageView>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hSt-No-JfX">
+                        <rect key="frame" x="275" y="216" width="70" height="28"/>
+                        <color key="backgroundColor" red="0.2901960784" green="0.56470588239999997" blue="0.8862745098" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="28" id="PaQ-qT-VJL"/>
+                            <constraint firstAttribute="width" constant="70" id="fDe-Lx-iau"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="SFProText-Medium" family="SF Pro Text" pointSize="12"/>
+                        <state key="normal" title="MORE">
+                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </state>
+                    </button>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name of contest" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Awh-6R-m5z">
+                        <rect key="frame" x="16" y="216" width="127" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstItem="hSt-No-JfX" firstAttribute="trailing" secondItem="Koi-7y-mPM" secondAttribute="trailing" id="E5y-mX-9yu"/>
+                <constraint firstItem="Awh-6R-m5z" firstAttribute="leading" secondItem="Koi-7y-mPM" secondAttribute="leading" id="aFA-P8-fr3"/>
+                <constraint firstAttribute="trailing" secondItem="Koi-7y-mPM" secondAttribute="trailing" constant="16" id="dkM-P2-wqE"/>
+                <constraint firstItem="hSt-No-JfX" firstAttribute="top" secondItem="Koi-7y-mPM" secondAttribute="bottom" constant="16" id="m9M-Vr-2cI"/>
+                <constraint firstItem="Koi-7y-mPM" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="nfc-k5-iMi"/>
+                <constraint firstItem="Awh-6R-m5z" firstAttribute="top" secondItem="Koi-7y-mPM" secondAttribute="bottom" constant="16" id="rBz-D4-1CA"/>
+                <constraint firstItem="Koi-7y-mPM" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="16" id="usB-El-VrL"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="SEy-5g-ep8"/>
+            <size key="customSize" width="361" height="251"/>
+            <point key="canvasLocation" x="95.200000000000003" y="84.107946026986511"/>
+        </collectionViewCell>
+    </objects>
+</document>

@@ -1,0 +1,20 @@
+
+/* Class = "UITextField"; placeholder = "Your email (optional)"; ObjectID = "8nQ-xV-Opq"; */
+"Pgj-FM-F2l.placeholder" = "Birthday";
+
+/* Class = "UITextField"; placeholder = "What’s your name?"; ObjectID = "Dls-8E-bl9"; */
+"KvL-hJ-syj.placeholder" = "Location";
+
+/* Class = "UILabel"; text = "Finish with your information"; ObjectID = "c28-B1-RvF"; */
+"c28-B1-RvF.text" = "Choose your avatar";
+
+/* Class = "UIButton"; normalTitle = "Next"; ObjectID = "fvL-WG-v4d"; */
+"fvL-WG-v4d.normalTitle" = "Complete";
+
+"IKL-8b-LSM.normalTitle" = "Skip";
+
+/* Class = "UITextField"; placeholder = "Choose your region"; ObjectID = "w02-86-RSW"; */
+"w02-86-RSW.placeholder" = "Choose your region";
+
+/* Class = "UITextField"; placeholder = "You are …"; ObjectID = "xeM-qw-R8p"; */
+"xeM-qw-R8p.placeholder" = "You are …";

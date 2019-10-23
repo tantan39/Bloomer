@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_0" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="SF-UI-Display-Regular.otf">
+            <string>SFUIDisplay-Regular</string>
+        </array>
+        <array key="SF-UI-Display-Semibold.otf">
+            <string>SFUIDisplay-Semibold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="JoinRaceByTopicView">
+            <connections>
+                <outlet property="BottomImageRace" destination="OB5-20-nyp" id="6nd-an-nz6"/>
+                <outlet property="ContentWeb" destination="raa-CQ-8wL" id="p7H-ch-RY6"/>
+                <outlet property="DateEnd" destination="X8Q-YB-yhA" id="Wfc-le-O5X"/>
+                <outlet property="ImageRace" destination="sUk-BN-NPP" id="Dyx-Bd-fbe"/>
+                <outlet property="RaceName" destination="ASn-GO-LmY" id="mC6-dZ-GMa"/>
+                <outlet property="jointButton" destination="90b-es-UtC" id="thE-he-xwM"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QAr-nK-uzd">
+                    <rect key="frame" x="40" y="-3" width="240" height="1"/>
+                    <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="QAr-nK-uzd" secondAttribute="height" multiplier="240:1" id="207-HC-iw9"/>
+                        <constraint firstAttribute="height" constant="1" id="jDL-Zq-Svd"/>
+                    </constraints>
+                </view>
+                <imageView hidden="YES" autoresizesSubviews="NO" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="sUk-BN-NPP" userLabel="ImageBanner">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="194"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="194" id="mI4-AK-n8a"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Today's Outfit" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ASn-GO-LmY" userLabel="Name Race">
+                    <rect key="frame" x="40" y="197" width="240" height="21"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="21" id="fCu-De-XvP"/>
+                        <constraint firstAttribute="width" constant="240" id="l39-c7-gLz"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="SFUIDisplay-Semibold" family="SF UI Display" pointSize="18"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="END ON OCTOBER 2016" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="X8Q-YB-yhA" userLabel="Date end">
+                    <rect key="frame" x="40" y="218" width="240" height="13"/>
+                    <fontDescription key="fontDescription" name="SFUIDisplay-Regular" family="SF UI Display" pointSize="11"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="banner_bottomline.png" translatesAutoresizingMaskIntoConstraints="NO" id="OB5-20-nyp">
+                    <rect key="frame" x="0.0" y="174" width="320" height="20"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="OB5-20-nyp" secondAttribute="height" multiplier="16:1" id="z4X-7R-wUf"/>
+                    </constraints>
+                </imageView>
+                <webView contentMode="scaleToFill" keyboardDisplayRequiresUserAction="NO" translatesAutoresizingMaskIntoConstraints="NO" id="raa-CQ-8wL" userLabel="Content">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="513"/>
+                    <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                </webView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="90b-es-UtC" userLabel="JoinNow">
+                    <rect key="frame" x="0.0" y="516" width="320" height="52"/>
+                    <color key="backgroundColor" red="0.29019607843137252" green="0.5490196078431373" blue="0.88627450980392153" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <fontDescription key="fontDescription" name="SFUIDisplay-Regular" family="SF UI Display" pointSize="17"/>
+                    <state key="normal" title="Join Now">
+                        <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="TouchJoinNow:" destination="-1" eventType="touchUpInside" id="JKa-OT-ZSL"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="OB5-20-nyp" firstAttribute="bottom" secondItem="sUk-BN-NPP" secondAttribute="bottom" id="1kJ-rI-vRS"/>
+                <constraint firstItem="90b-es-UtC" firstAttribute="height" secondItem="i5M-Pr-FkT" secondAttribute="height" multiplier="156:1704" id="8ea-uV-pwc"/>
+                <constraint firstItem="sUk-BN-NPP" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="OAt-ch-3LU"/>
+                <constraint firstItem="raa-CQ-8wL" firstAttribute="top" secondItem="QAr-nK-uzd" secondAttribute="bottom" constant="2" id="SE5-1S-Zu1"/>
+                <constraint firstItem="raa-CQ-8wL" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="Spn-7i-iJh"/>
+                <constraint firstItem="raa-CQ-8wL" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="Tkw-0D-hAH"/>
+                <constraint firstAttribute="trailing" secondItem="90b-es-UtC" secondAttribute="trailing" id="Tqv-Ih-m6X"/>
+                <constraint firstItem="OB5-20-nyp" firstAttribute="trailing" secondItem="sUk-BN-NPP" secondAttribute="trailing" id="VLC-WJ-Wed"/>
+                <constraint firstItem="X8Q-YB-yhA" firstAttribute="width" secondItem="ASn-GO-LmY" secondAttribute="width" id="XCs-ca-7RH"/>
+                <constraint firstItem="90b-es-UtC" firstAttribute="top" secondItem="raa-CQ-8wL" secondAttribute="bottom" constant="3" id="XRb-b6-lrk"/>
+                <constraint firstItem="X8Q-YB-yhA" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="YaT-uv-Dbu"/>
+                <constraint firstItem="X8Q-YB-yhA" firstAttribute="top" secondItem="ASn-GO-LmY" secondAttribute="bottom" id="dou-Yr-GW1"/>
+                <constraint firstItem="raa-CQ-8wL" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="f98-yo-fZv"/>
+                <constraint firstAttribute="trailing" secondItem="sUk-BN-NPP" secondAttribute="trailing" id="fuu-ym-oqB"/>
+                <constraint firstItem="QAr-nK-uzd" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="fvQ-pN-q44"/>
+                <constraint firstItem="OB5-20-nyp" firstAttribute="leading" secondItem="sUk-BN-NPP" secondAttribute="leading" id="gHe-lR-EOv"/>
+                <constraint firstItem="ASn-GO-LmY" firstAttribute="top" secondItem="sUk-BN-NPP" secondAttribute="bottom" constant="3" id="lS9-eE-4Bk"/>
+                <constraint firstItem="egA-Ln-6x9" firstAttribute="bottom" secondItem="90b-es-UtC" secondAttribute="bottom" id="m06-gF-P3I"/>
+                <constraint firstItem="ASn-GO-LmY" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="mIZ-rv-d57"/>
+                <constraint firstItem="90b-es-UtC" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="qVY-6C-Fn2"/>
+                <constraint firstItem="X8Q-YB-yhA" firstAttribute="trailing" secondItem="ASn-GO-LmY" secondAttribute="trailing" id="saa-gl-XTa"/>
+                <constraint firstItem="sUk-BN-NPP" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="wsO-g9-0k3"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="egA-Ln-6x9"/>
+            <point key="canvasLocation" x="25" y="52"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="banner_bottomline.png" width="320" height="20"/>
+    </resources>
+</document>

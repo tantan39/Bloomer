@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="SF-UI-Display-Regular.otf">
+            <string>SFUIDisplay-Regular</string>
+        </array>
+        <array key="SFUIDisplay-Semibold.ttf">
+            <string>SFUIDisplay-Semibold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="InviteCodeViewController">
+            <connections>
+                <outlet property="buttonSendInviteCode" destination="UcJ-VU-Ds9" id="DIT-eR-BFq"/>
+                <outlet property="labelCode" destination="ctb-C8-vNu" id="zqc-iC-7oJ"/>
+                <outlet property="labelMessage" destination="yfV-mB-Fho" id="9UR-fy-drd"/>
+                <outlet property="labelTitle" destination="sie-zM-yAd" id="Uqq-g7-SCr"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yjV-u0-qMn" userLabel="Main View">
+                    <rect key="frame" x="20" y="170" width="335" height="327"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Icon_BloomerCode" translatesAutoresizingMaskIntoConstraints="NO" id="2DM-xg-E4G">
+                            <rect key="frame" x="121" y="0.0" width="94" height="94"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="94" id="UG1-dL-BvK"/>
+                                <constraint firstAttribute="width" constant="94" id="kMS-mo-hSZ"/>
+                            </constraints>
+                        </imageView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Send your invite code" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sie-zM-yAd" userLabel="Label Title">
+                            <rect key="frame" x="0.0" y="114" width="335" height="20"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="20" id="Frm-Sv-Uuu"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="SFUIDisplay-Semibold" family="SF UI Display" pointSize="18"/>
+                            <color key="textColor" red="0.12549019607843137" green="0.12549019607843137" blue="0.12941176470588234" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ctb-C8-vNu" userLabel="Label Code">
+                            <rect key="frame" x="0.0" y="154" width="335" height="22"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="22" id="qCx-nF-uSt"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="SFUIDisplay-Semibold" family="SF UI Display" pointSize="20"/>
+                            <color key="textColor" red="0.69803921568627447" green="0.13333333333333333" blue="0.14509803921568626" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="751" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yfV-mB-Fho" userLabel="Label Message">
+                            <rect key="frame" x="0.0" y="196" width="335" height="47"/>
+                            <string key="text">You and your friends will earn 0 flowers 
+when they apply your Invite Code! 
+Invite friends to join Bloomer today.</string>
+                            <fontDescription key="fontDescription" name="SFUIDisplay-Regular" family="SF UI Display" pointSize="13"/>
+                            <color key="textColor" red="0.12549019607843137" green="0.12549019607843137" blue="0.12941176470588234" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UcJ-VU-Ds9" userLabel="Button Send Invite Code">
+                            <rect key="frame" x="74" y="263" width="187" height="44"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="44" id="YhI-h0-yay"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="SFUIDisplay-Semibold" family="SF UI Display" pointSize="13"/>
+                            <state key="normal" title="Send Invite Code">
+                                <color key="titleColor" red="0.12549019610000001" green="0.12549019610000001" blue="0.12941176469999999" alpha="1" colorSpace="calibratedRGB"/>
+                            </state>
+                            <connections>
+                                <action selector="touchButtonSendInviteCode:" destination="-1" eventType="touchUpInside" id="8iK-aJ-0X2"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="sie-zM-yAd" firstAttribute="leading" secondItem="yjV-u0-qMn" secondAttribute="leading" id="08C-ns-KdY"/>
+                        <constraint firstItem="2DM-xg-E4G" firstAttribute="centerX" secondItem="yjV-u0-qMn" secondAttribute="centerX" id="AKg-u7-6Cg"/>
+                        <constraint firstAttribute="trailing" secondItem="sie-zM-yAd" secondAttribute="trailing" id="Cbl-B8-qdn"/>
+                        <constraint firstItem="yfV-mB-Fho" firstAttribute="top" secondItem="ctb-C8-vNu" secondAttribute="bottom" constant="20" id="EeW-hx-ylI"/>
+                        <constraint firstAttribute="height" relation="greaterThanOrEqual" id="Eel-mB-rOb"/>
+                        <constraint firstItem="2DM-xg-E4G" firstAttribute="top" secondItem="yjV-u0-qMn" secondAttribute="top" id="JMA-0U-wNO"/>
+                        <constraint firstAttribute="bottom" secondItem="UcJ-VU-Ds9" secondAttribute="bottom" constant="20" id="TrC-au-bTw"/>
+                        <constraint firstAttribute="trailing" secondItem="ctb-C8-vNu" secondAttribute="trailing" id="Yt4-tb-u0a"/>
+                        <constraint firstItem="sie-zM-yAd" firstAttribute="top" secondItem="2DM-xg-E4G" secondAttribute="bottom" constant="20" id="Yyw-cl-jHz"/>
+                        <constraint firstItem="ctb-C8-vNu" firstAttribute="leading" secondItem="yjV-u0-qMn" secondAttribute="leading" id="ga2-li-KOz"/>
+                        <constraint firstItem="ctb-C8-vNu" firstAttribute="top" secondItem="sie-zM-yAd" secondAttribute="bottom" constant="20" id="kNV-8T-AYZ"/>
+                        <constraint firstAttribute="trailing" secondItem="yfV-mB-Fho" secondAttribute="trailing" id="lDp-Z6-AZf"/>
+                        <constraint firstItem="UcJ-VU-Ds9" firstAttribute="top" secondItem="yfV-mB-Fho" secondAttribute="bottom" priority="999" constant="20" id="nOG-vU-Fog"/>
+                        <constraint firstItem="UcJ-VU-Ds9" firstAttribute="centerX" secondItem="yjV-u0-qMn" secondAttribute="centerX" id="nWS-gw-CYA"/>
+                        <constraint firstItem="yfV-mB-Fho" firstAttribute="leading" secondItem="yjV-u0-qMn" secondAttribute="leading" id="wSN-nX-0dU"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="yjV-u0-qMn" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="20" id="8X6-sy-Qvb"/>
+                <constraint firstAttribute="trailing" secondItem="yjV-u0-qMn" secondAttribute="trailing" constant="20" id="R1D-m1-4dd"/>
+                <constraint firstItem="UcJ-VU-Ds9" firstAttribute="width" secondItem="i5M-Pr-FkT" secondAttribute="width" multiplier="0.5" id="VlF-Cb-SPG"/>
+                <constraint firstItem="yjV-u0-qMn" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="wt7-tM-41a"/>
+            </constraints>
+            <point key="canvasLocation" x="26.5" y="51.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="Icon_BloomerCode" width="93" height="94"/>
+    </resources>
+</document>

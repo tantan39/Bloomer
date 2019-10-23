@@ -1,0 +1,12 @@
+
+/* Class = "UIButton"; normalTitle = "Sign In"; ObjectID = "7yN-hO-uJK"; */
+"7yN-hO-uJK.normalTitle" = "Đăng nhập";
+
+/* Class = "UIButton"; normalTitle = "Cancel"; ObjectID = "cEX-kD-XL1"; */
+"cEX-kD-XL1.normalTitle" = "Huỷ bỏ";
+
+/* Class = "UILabel"; text = "This email already exists"; ObjectID = "cnv-av-T4S"; */
+"cnv-av-T4S.text" = "Email này đã tồn tại";
+
+/* Class = "UILabel"; text = "This email already exists"; ObjectID = "fn1-ds-w2V"; */
+"fn1-ds-w2V.text" = "Email này đã tồn tại";

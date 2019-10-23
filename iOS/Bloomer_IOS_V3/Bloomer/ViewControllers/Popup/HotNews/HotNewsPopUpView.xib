@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="HotNewsPopUpView">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="swo-ok-Aun" userLabel="Main View">
+                    <rect key="frame" x="37.5" y="111" width="300" height="445"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dbP-KV-XYe" userLabel="Content View">
+                            <rect key="frame" x="0.5" y="0.0" width="300" height="397"/>
+                            <subviews>
+                                <webView contentMode="scaleToFill" scalesPageToFit="YES" translatesAutoresizingMaskIntoConstraints="NO" id="cBN-yH-qJW">
+                                    <rect key="frame" x="0.0" y="0.0" width="300" height="397"/>
+                                    <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </webView>
+                            </subviews>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <constraints>
+                                <constraint firstItem="cBN-yH-qJW" firstAttribute="leading" secondItem="dbP-KV-XYe" secondAttribute="leading" id="5Gk-7L-iTA"/>
+                                <constraint firstAttribute="trailing" secondItem="cBN-yH-qJW" secondAttribute="trailing" id="Srm-X0-w9b"/>
+                                <constraint firstItem="cBN-yH-qJW" firstAttribute="top" secondItem="dbP-KV-XYe" secondAttribute="top" id="TQK-iz-Swe"/>
+                                <constraint firstAttribute="bottom" secondItem="cBN-yH-qJW" secondAttribute="bottom" id="TUo-YW-9di"/>
+                            </constraints>
+                        </view>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9iV-41-krB" userLabel="Button Close">
+                            <rect key="frame" x="0.5" y="405" width="300" height="40"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="40" id="uP6-6e-zqI"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="14"/>
+                            <state key="normal" title="OK">
+                                <color key="titleColor" red="0.28627450980392155" green="0.56470588235294117" blue="0.88627450980392153" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </state>
+                            <connections>
+                                <action selector="touchCloseButton:" destination="iN0-l3-epB" eventType="touchUpInside" id="vyF-5b-sXW"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="dbP-KV-XYe" firstAttribute="leading" secondItem="swo-ok-Aun" secondAttribute="leading" id="7la-nv-dFf"/>
+                        <constraint firstAttribute="trailing" secondItem="9iV-41-krB" secondAttribute="trailing" id="7sc-c6-75P"/>
+                        <constraint firstItem="9iV-41-krB" firstAttribute="leading" secondItem="swo-ok-Aun" secondAttribute="leading" id="D8w-rF-ebD"/>
+                        <constraint firstAttribute="trailing" secondItem="dbP-KV-XYe" secondAttribute="trailing" id="DO7-Zi-ieJ"/>
+                        <constraint firstAttribute="bottom" secondItem="9iV-41-krB" secondAttribute="bottom" id="NPc-Oi-8bZ"/>
+                        <constraint firstItem="dbP-KV-XYe" firstAttribute="top" secondItem="swo-ok-Aun" secondAttribute="top" id="iZP-YS-MsR"/>
+                        <constraint firstItem="9iV-41-krB" firstAttribute="top" secondItem="dbP-KV-XYe" secondAttribute="bottom" constant="8" id="spp-MZ-Uh3"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="0.12549019607843137" green="0.12549019607843137" blue="0.12941176470588234" alpha="0.29999999999999999" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="swo-ok-Aun" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="cFT-ix-pYf"/>
+                <constraint firstItem="swo-ok-Aun" firstAttribute="width" secondItem="iN0-l3-epB" secondAttribute="width" multiplier="0.8" id="hyF-MD-Dlg"/>
+                <constraint firstItem="swo-ok-Aun" firstAttribute="height" secondItem="iN0-l3-epB" secondAttribute="height" multiplier="2/3" id="kbG-Sc-avv"/>
+                <constraint firstItem="swo-ok-Aun" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="roF-QL-XYP"/>
+            </constraints>
+            <connections>
+                <outlet property="buttonClose" destination="9iV-41-krB" id="n6A-Ir-9lP"/>
+                <outlet property="contentView" destination="dbP-KV-XYe" id="Wn7-fv-OU6"/>
+                <outlet property="mainViewEqualHeightConstraint" destination="kbG-Sc-avv" id="OgA-RH-2hM"/>
+                <outlet property="webView" destination="cBN-yH-qJW" id="R6C-Ct-gJg"/>
+            </connections>
+            <point key="canvasLocation" x="-56.5" y="-16.5"/>
+        </view>
+    </objects>
+</document>

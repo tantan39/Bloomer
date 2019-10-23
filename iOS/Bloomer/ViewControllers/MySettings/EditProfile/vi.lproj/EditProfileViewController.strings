@@ -1,0 +1,25 @@
+
+/* Class = "UIButton"; normalTitle = "Change Location"; ObjectID = "0QG-sT-E6x"; */
+"0QG-sT-E6x.normalTitle" = "Change Location";
+
+/* Class = "UILabel"; text = "Display name"; ObjectID = "63u-1f-X0U"; */
+"63u-1f-X0U.text" = "Tên hiển thị";
+
+/* Class = "UIButton"; normalTitle = "Tap to change Banners"; ObjectID = "73i-hS-9vs"; */
+"73i-hS-9vs.normalTitle" = "Thay đổi ảnh bìa";
+
+/* Class = "UILabel"; text = "Edit Status"; ObjectID = "BWl-9l-3JE"; */
+"BWl-9l-3JE.text" = "Thay đổi trạng thái";
+
+/* Class = "UILabel"; text = "Display name"; ObjectID = "GJ7-jR-Pcp"; */
+"GJ7-jR-Pcp.text" = "Tên hiển thị";
+
+/* Class = "UIButton"; normalTitle = "Update
+Profile Pictures"; ObjectID = "Q9U-wU-bAW"; */
+"Q9U-wU-bAW.normalTitle" = "Cập nhật\nẢnh đại diện";
+
+/* Class = "UILabel"; text = "username"; ObjectID = "iC4-Qy-zSJ"; */
+"iC4-Qy-zSJ.text" = "username";
+
+/* Class = "UILabel"; text = "ID Name"; ObjectID = "y7k-sR-bWt"; */
+"y7k-sR-bWt.text" = "Tên người dùng";

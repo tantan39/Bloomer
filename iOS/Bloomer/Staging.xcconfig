@@ -1,0 +1,22 @@
+//
+//  Staging.xcconfig
+//  Bloomer
+//
+//  Created by Tan Tan on 11/29/18.
+//  Copyright © 2018 Glassegg. All rights reserved.
+//
+
+// Configuration settings file format documentation can be found at:
+// https://help.apple.com/xcode/#/dev745c5c974
+
+rootURL = https:/$()/staging-apis.bloomerapp.com/bloomer_apis/
+
+rootWebURL = https:/$()/bloomerapp.com/
+
+rootChatURL = https:/$()/messages.bloomerapp.com/bloomer_chat/
+
+rootPhotoURL = https:/$()/staging-photos.bloomerapp.com/bloomer_photos/
+
+hostSocket = wss:/$()/staging-messages.bloomerapp.com/chat
+
+googleServiceFileName = GoogleService-Info_DEV

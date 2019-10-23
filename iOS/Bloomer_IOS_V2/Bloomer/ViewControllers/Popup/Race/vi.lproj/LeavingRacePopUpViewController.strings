@@ -1,0 +1,15 @@
+
+/* Class = "UIButton"; normalTitle = "Cancel"; ObjectID = "O4j-l0-0hU"; */
+"O4j-l0-0hU.normalTitle" = "Không";
+
+/* Class = "UILabel"; text = "Time"; ObjectID = "RUG-gd-fqG"; */
+"RUG-gd-fqG.text" = "Thời gian";
+
+/* Class = "UILabel"; text = "You are leaving"; ObjectID = "eO1-nW-O7a"; */
+"eO1-nW-O7a.text" = "Bạn đang rời khỏi";
+
+/* Class = "UIButton"; normalTitle = "Leave"; ObjectID = "eW4-6d-CBf"; */
+"eW4-6d-CBf.normalTitle" = "Có";
+
+/* Class = "UILabel"; text = "Contest Name"; ObjectID = "msL-YI-7XX"; */
+"msL-YI-7XX.text" = "Contest Name";

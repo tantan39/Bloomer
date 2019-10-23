@@ -1,0 +1,9 @@
+
+/* Class = "UIButton"; normalTitle = "Cancel"; ObjectID = "Sno-Y8-SrM"; */
+"Sno-Y8-SrM.normalTitle" = "Huỷ";
+
+/* Class = "UIButton"; normalTitle = "Report"; ObjectID = "hNC-re-7cj"; */
+"hNC-re-7cj.normalTitle" = "Báo Cáo";
+
+/* Class = "UILabel"; text = "Choose one reason to report"; ObjectID = "yZ7-s3-Vey"; */
+"yZ7-s3-Vey.text" = "Vì sao bạn muốn báo cáo?";

@@ -1,0 +1,33 @@
+
+/* Class = "UIButton"; normalTitle = "THÁNG"; ObjectID = "1s3-OT-cOt"; */
+"1s3-OT-cOt.normalTitle" = "MONTHLY";
+
+/* Class = "UIButton"; normalTitle = "TUẦN"; ObjectID = "BYv-BY-fWb"; */
+"BYv-BY-fWb.normalTitle" = "WEEKLY";
+
+/* Class = "UILabel"; text = "Không tìm thấy"; ObjectID = "JDI-Or-bik"; */
+"JDI-Or-bik.text" = "Not found";
+
+/* Class = "UIButton"; normalTitle = "Back To Top"; ObjectID = "PU0-2e-dFn"; */
+"PU0-2e-dFn.normalTitle" = "Back To Top";
+
+/* Class = "UIButton"; normalTitle = "Xem thêm cập nhật"; ObjectID = "THn-zK-ZkZ"; */
+"THn-zK-ZkZ.normalTitle" = "See more update";
+
+/* Class = "UILabel"; text = "Be the first person\nto join this leadeboard!"; ObjectID = "XW6-xs-XTm"; */
+"XW6-xs-XTm.text" = "Be the first person\nto join this leadeboard!";
+
+/* Class = "UIButton"; normalTitle = "HÔM NAY"; ObjectID = "ibP-ib-Ml7"; */
+"ibP-ib-Ml7.normalTitle" = "TODAY";
+
+/* Class = "UIButton"; normalTitle = "2019"; ObjectID = "sUF-Ys-ql0"; */
+"sUF-Ys-ql0.normalTitle" = "2019";
+
+/* Class = "UILabel"; text = "Kéo sang phải để xem thêm >>>"; ObjectID = "yO9-yL-lep"; */
+"yO9-yL-lep.text" = "Swipe right to see more >>>";
+
+/* Class = "UIButton"; normalTitle = " Surprise"; ObjectID = "zOW-VY-sgu"; */
+"zOW-VY-sgu.normalTitle" = " Surprise";
+
+/* Class = "UILabel"; text = "Load Previous"; ObjectID = "1W3-VT-09g"; */
+"1W3-VT-09g.text" = "Load Previous";

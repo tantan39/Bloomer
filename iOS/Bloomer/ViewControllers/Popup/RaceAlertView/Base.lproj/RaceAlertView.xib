@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_0" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="SF-UI-Display-Regular.otf">
+            <string>SFUIDisplay-Regular</string>
+        </array>
+        <array key="SF-UI-Text-Regular.otf">
+            <string>SFUIText-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="RaceAlertView">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cs8-XN-cMX">
+                    <rect key="frame" x="25" y="199" width="270" height="170"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" minimumFontSize="12" adjustsLetterSpacingToFitWidth="YES" translatesAutoresizingMaskIntoConstraints="NO" id="5sw-Qf-elM">
+                            <rect key="frame" x="15" y="20" width="240" height="32"/>
+                            <constraints>
+                                <constraint firstAttribute="width" secondItem="5sw-Qf-elM" secondAttribute="height" multiplier="15:2" id="aI1-rt-zOj"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="SFUIDisplay-Regular" family="SF UI Display" pointSize="16"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" translatesAutoresizingMaskIntoConstraints="NO" id="pfl-Op-Gvd">
+                            <rect key="frame" x="110" y="60" width="50" height="50"/>
+                            <constraints>
+                                <constraint firstAttribute="width" secondItem="pfl-Op-Gvd" secondAttribute="height" id="XDS-Di-xEh"/>
+                            </constraints>
+                        </imageView>
+                        <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" minimumFontSize="12" adjustsLetterSpacingToFitWidth="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Xyo-kP-v8L" userLabel="Full Message">
+                            <rect key="frame" x="15" y="20" width="240" height="90"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <fontDescription key="fontDescription" name="SFUIDisplay-Regular" family="SF UI Display" pointSize="16"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="E3U-6B-SRs" userLabel="Line">
+                            <rect key="frame" x="0.0" y="124" width="270" height="1"/>
+                            <color key="backgroundColor" red="0.74901960784313726" green="0.74901960784313726" blue="0.74901960784313726" alpha="1" colorSpace="calibratedRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="1" id="xmP-pL-Gb0"/>
+                            </constraints>
+                        </view>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aoc-5p-v9l">
+                            <rect key="frame" x="135" y="125" width="135" height="45"/>
+                            <fontDescription key="fontDescription" name="SFUIText-Regular" family="SF UI Text" pointSize="12"/>
+                            <state key="normal" title="View more"/>
+                            <connections>
+                                <action selector="touchViewMore:" destination="iN0-l3-epB" eventType="touchUpInside" id="RA9-eL-ADk"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Awq-yf-xLY">
+                            <rect key="frame" x="0.0" y="125" width="135" height="45"/>
+                            <fontDescription key="fontDescription" name="SFUIText-Regular" family="SF UI Text" pointSize="12"/>
+                            <state key="normal" title="Later"/>
+                            <connections>
+                                <action selector="touchLater:" destination="iN0-l3-epB" eventType="touchUpInside" id="d3v-la-xyj"/>
+                            </connections>
+                        </button>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Qw0-l3-eNT" userLabel="Line">
+                            <rect key="frame" x="135" y="124" width="1" height="46"/>
+                            <color key="backgroundColor" red="0.74901960779999999" green="0.74901960779999999" blue="0.74901960779999999" alpha="1" colorSpace="calibratedRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="1" id="z8J-sa-3Fn"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="pfl-Op-Gvd" firstAttribute="top" secondItem="5sw-Qf-elM" secondAttribute="bottom" constant="8" id="0Kz-6r-UzG"/>
+                        <constraint firstAttribute="bottom" secondItem="Qw0-l3-eNT" secondAttribute="bottom" id="1IF-3Z-cqm"/>
+                        <constraint firstItem="Qw0-l3-eNT" firstAttribute="top" secondItem="E3U-6B-SRs" secondAttribute="top" id="2jy-d1-hxu"/>
+                        <constraint firstItem="5sw-Qf-elM" firstAttribute="top" secondItem="cs8-XN-cMX" secondAttribute="top" constant="20" id="6Iv-Kf-QPM"/>
+                        <constraint firstItem="Awq-yf-xLY" firstAttribute="height" secondItem="cs8-XN-cMX" secondAttribute="height" multiplier="45:170" id="7BL-L5-aO1"/>
+                        <constraint firstAttribute="trailing" secondItem="Xyo-kP-v8L" secondAttribute="trailing" constant="15" id="Gzh-6g-s6s"/>
+                        <constraint firstItem="aoc-5p-v9l" firstAttribute="height" secondItem="cs8-XN-cMX" secondAttribute="height" multiplier="45:170" id="JDx-PM-OHG"/>
+                        <constraint firstItem="pfl-Op-Gvd" firstAttribute="centerX" secondItem="cs8-XN-cMX" secondAttribute="centerX" id="Lnl-gu-eY5"/>
+                        <constraint firstItem="5sw-Qf-elM" firstAttribute="centerX" secondItem="cs8-XN-cMX" secondAttribute="centerX" id="MNI-bz-8wp"/>
+                        <constraint firstItem="pfl-Op-Gvd" firstAttribute="centerY" secondItem="cs8-XN-cMX" secondAttribute="centerY" id="OZI-4M-gjr"/>
+                        <constraint firstItem="aoc-5p-v9l" firstAttribute="width" secondItem="cs8-XN-cMX" secondAttribute="width" multiplier="1:2" id="SyU-t9-63o"/>
+                        <constraint firstItem="Qw0-l3-eNT" firstAttribute="centerX" secondItem="cs8-XN-cMX" secondAttribute="centerX" id="TQE-AB-q5Z"/>
+                        <constraint firstItem="Awq-yf-xLY" firstAttribute="top" secondItem="E3U-6B-SRs" secondAttribute="bottom" id="VVa-7u-i3e"/>
+                        <constraint firstItem="Awq-yf-xLY" firstAttribute="width" secondItem="cs8-XN-cMX" secondAttribute="width" multiplier="1:2" id="Vg1-IS-xQq"/>
+                        <constraint firstItem="E3U-6B-SRs" firstAttribute="top" secondItem="Xyo-kP-v8L" secondAttribute="bottom" constant="14" id="Z77-vK-4ha"/>
+                        <constraint firstAttribute="width" secondItem="cs8-XN-cMX" secondAttribute="height" multiplier="27:17" id="ZdW-yJ-ylx"/>
+                        <constraint firstItem="E3U-6B-SRs" firstAttribute="leading" secondItem="cs8-XN-cMX" secondAttribute="leading" id="dPc-qu-9Ml"/>
+                        <constraint firstAttribute="bottom" secondItem="Awq-yf-xLY" secondAttribute="bottom" id="fGz-nB-OI4"/>
+                        <constraint firstAttribute="trailing" secondItem="E3U-6B-SRs" secondAttribute="trailing" id="fuF-7Z-Y5Q"/>
+                        <constraint firstItem="Xyo-kP-v8L" firstAttribute="leading" secondItem="cs8-XN-cMX" secondAttribute="leading" constant="15" id="jkP-iC-MN6"/>
+                        <constraint firstAttribute="bottom" secondItem="aoc-5p-v9l" secondAttribute="bottom" id="mjS-4k-6r4"/>
+                        <constraint firstItem="5sw-Qf-elM" firstAttribute="width" secondItem="cs8-XN-cMX" secondAttribute="width" multiplier="24:27" id="sem-e1-bMW"/>
+                        <constraint firstAttribute="trailing" secondItem="aoc-5p-v9l" secondAttribute="trailing" id="w8H-pD-8tK"/>
+                        <constraint firstItem="Xyo-kP-v8L" firstAttribute="top" secondItem="cs8-XN-cMX" secondAttribute="top" constant="20" id="wWC-gD-0HT"/>
+                        <constraint firstItem="Awq-yf-xLY" firstAttribute="leading" secondItem="cs8-XN-cMX" secondAttribute="leading" id="ySi-Ym-XmL"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.29990096830000001" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="cs8-XN-cMX" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="0tO-HF-sxe"/>
+                <constraint firstItem="cs8-XN-cMX" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="HxO-Hq-MuD"/>
+                <constraint firstItem="cs8-XN-cMX" firstAttribute="width" secondItem="iN0-l3-epB" secondAttribute="width" multiplier="27:32" id="evD-3g-Se7"/>
+            </constraints>
+            <connections>
+                <outlet property="dialogView" destination="cs8-XN-cMX" id="Svb-Sx-lX3"/>
+                <outlet property="fullMessage" destination="Xyo-kP-v8L" id="Xz3-XY-Ht9"/>
+                <outlet property="message" destination="5sw-Qf-elM" id="cVZ-0F-u4u"/>
+                <outlet property="trophyImage" destination="pfl-Op-Gvd" id="cJE-NC-zJz"/>
+            </connections>
+        </view>
+    </objects>
+</document>

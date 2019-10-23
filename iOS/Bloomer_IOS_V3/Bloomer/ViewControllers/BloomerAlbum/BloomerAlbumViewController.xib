@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12120" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="BloomerAlbumViewController">
+            <connections>
+                <outlet property="contentView" destination="qqY-ZJ-MJG" id="Tgi-Pj-uts"/>
+                <outlet property="contentViewWidth" destination="CsT-4t-pLA" id="PB8-WZ-4AP"/>
+                <outlet property="pageControlMainView" destination="1uf-jw-kK7" id="dda-nf-Aw2"/>
+                <outlet property="pageControlMainViewCenterX" destination="Ym0-if-LN6" id="4JM-aC-bjd"/>
+                <outlet property="pageControlMainViewWidth" destination="UKx-4y-xRI" id="DUG-1e-Lv2"/>
+                <outlet property="scrollView" destination="Ltc-7X-sjf" id="mFf-jy-Cro"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" pagingEnabled="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ltc-7X-sjf">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="627"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qqY-ZJ-MJG" userLabel="Content View">
+                            <rect key="frame" x="0.0" y="0.0" width="375" height="627"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="375" id="CsT-4t-pLA"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="qqY-ZJ-MJG" firstAttribute="leading" secondItem="Ltc-7X-sjf" secondAttribute="leading" id="CVo-qe-RhE"/>
+                        <constraint firstAttribute="trailing" secondItem="qqY-ZJ-MJG" secondAttribute="trailing" id="FuN-24-5lj"/>
+                        <constraint firstAttribute="bottom" secondItem="qqY-ZJ-MJG" secondAttribute="bottom" id="Ucs-ud-NAj"/>
+                        <constraint firstItem="qqY-ZJ-MJG" firstAttribute="height" secondItem="Ltc-7X-sjf" secondAttribute="height" id="c8a-mB-gsL"/>
+                        <constraint firstItem="qqY-ZJ-MJG" firstAttribute="top" secondItem="Ltc-7X-sjf" secondAttribute="top" id="w0K-OR-q6b"/>
+                    </constraints>
+                    <connections>
+                        <outlet property="delegate" destination="-1" id="SEI-1z-VqZ"/>
+                    </connections>
+                </scrollView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0G8-vB-pDg" userLabel="Page Control">
+                    <rect key="frame" x="0.0" y="627" width="375" height="40"/>
+                    <subviews>
+                        <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1uf-jw-kK7" userLabel="Main View">
+                            <rect key="frame" x="187" y="15" width="0.0" height="10"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="10" id="Rfd-SV-B07"/>
+                                <constraint firstAttribute="width" id="UKx-4y-xRI"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="TBo-T4-U3L"/>
+                        <constraint firstItem="1uf-jw-kK7" firstAttribute="centerX" secondItem="0G8-vB-pDg" secondAttribute="centerX" id="Ym0-if-LN6"/>
+                        <constraint firstItem="1uf-jw-kK7" firstAttribute="centerY" secondItem="0G8-vB-pDg" secondAttribute="centerY" id="hTl-w3-gbp"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="0G8-vB-pDg" firstAttribute="top" secondItem="Ltc-7X-sjf" secondAttribute="bottom" id="RB8-BF-Oup"/>
+                <constraint firstAttribute="trailing" secondItem="0G8-vB-pDg" secondAttribute="trailing" id="TNR-Ja-0QL"/>
+                <constraint firstAttribute="bottom" secondItem="0G8-vB-pDg" secondAttribute="bottom" id="caa-2C-Va9"/>
+                <constraint firstItem="Ltc-7X-sjf" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="lEh-m9-kMi"/>
+                <constraint firstAttribute="trailing" secondItem="Ltc-7X-sjf" secondAttribute="trailing" id="tfJ-8T-iFl"/>
+                <constraint firstItem="Ltc-7X-sjf" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="zen-Tb-0ST"/>
+                <constraint firstItem="0G8-vB-pDg" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="zxU-ZJ-VPt"/>
+            </constraints>
+            <point key="canvasLocation" x="44.5" y="59.5"/>
+        </view>
+    </objects>
+</document>

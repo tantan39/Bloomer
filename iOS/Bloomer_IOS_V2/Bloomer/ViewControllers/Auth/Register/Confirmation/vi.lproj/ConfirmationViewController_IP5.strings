@@ -1,0 +1,15 @@
+
+/* Class = "UIButton"; normalTitle = "Or make a free call"; ObjectID = "7pw-f7-BZ4"; */
+"7pw-f7-BZ4.normalTitle" = "Nghe mã xác nhận";
+
+/* Class = "UIButton"; normalTitle = "Resend by SMS"; ObjectID = "As4-Hf-Hrv"; */
+"As4-Hf-Hrv.normalTitle" = "Gửi lại qua tin nhắn";
+
+/* Class = "UILabel"; text = "We just sent you verify code,\nenter 4 digit number to go"; ObjectID = "ajl-ye-pvj"; */
+"ajl-ye-pvj.text" = "Nhập mã xác nhận được gửi đến điện thoại của bạn";
+
+/* Class = "UIButton"; normalTitle = "Next"; ObjectID = "oFW-XG-Ipm"; */
+"oFW-XG-Ipm.normalTitle" = "Tiếp tục";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "ugt-dC-pzV"; */
+"ugt-dC-pzV.text" = "Label";

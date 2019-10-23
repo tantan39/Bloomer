@@ -1,0 +1,9 @@
+
+/* Class = "UIButton"; normalTitle = "Send"; ObjectID = "SYt-wd-5Q2"; */
+"SYt-wd-5Q2.normalTitle" = "Gửi";
+
+/* Class = "UITextView"; text = "Say something..."; ObjectID = "ZFm-hc-D8S"; */
+"ZFm-hc-D8S.text" = "Nói gì đó...";
+
+/* Class = "UILabel"; text = "Load previous comment"; ObjectID = "nY0-ny-lC2"; */
+"nY0-ny-lC2.text" = "Xem các bình luận trước đó";

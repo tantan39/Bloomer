@@ -1,0 +1,12 @@
+
+/* Class = "UIButton"; normalTitle = "Next"; ObjectID = "Sgn-Q7-Qwt"; */
+"Sgn-Q7-Qwt.normalTitle" = "Tiếp";
+
+/* Class = "UILabel"; text = "Add available Leaderboard to these pictures"; ObjectID = "VtU-aD-dtM"; */
+"VtU-aD-dtM.text" = "Chọn Cuộc thi cho Hình";
+
+/* Class = "UILabel"; text = "Choose Leaderboard"; ObjectID = "d9G-xA-1Yd"; */
+"d9G-xA-1Yd.text" = "Chọn cuộc thi";
+
+/* Class = "UIButton"; normalTitle = "Back"; ObjectID = "mPT-Bx-28A"; */
+"mPT-Bx-28A.normalTitle" = "";

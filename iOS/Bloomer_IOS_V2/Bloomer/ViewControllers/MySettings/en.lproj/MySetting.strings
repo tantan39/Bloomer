@@ -1,0 +1,63 @@
+
+/* Class = "UITableViewSection"; headerTitle = "SECURITY & PRIVACY"; ObjectID = "2eP-BZ-K34"; */
+"2eP-BZ-K34.headerTitle" = "SECURITY & PRIVACY";
+
+/* Class = "UILabel"; text = "Terms of Service and Privacy Policy"; ObjectID = "2fv-Im-HJG"; */
+"2fv-Im-HJG.text" = "Terms of Service";
+
+/* Class = "UILabel"; text = "Privacy Settings"; ObjectID = "5Jh-ta-qjC"; */
+"5Jh-ta-qjC.text" = "Privacy Settings";
+"4d5-dv-mF3.text" = "Invite Friends";
+
+/* Class = "UIButton"; normalTitle = "Like us on Facebook"; ObjectID = "Bic-tG-Mvh"; */
+"Bic-tG-Mvh.normalTitle" = "Like us on Facebook";
+
+/* Class = "UITableViewSection"; headerTitle = "ABOUT"; ObjectID = "Fq0-ON-0za"; */
+"Fq0-ON-0za.headerTitle" = "ABOUT";
+
+/* Class = "UIButton"; normalTitle = "Log Out"; ObjectID = "GDW-Xa-VAy"; */
+"GDW-Xa-VAy.normalTitle" = "Log Out";
+
+/* Class = "UITableViewSection"; headerTitle = "SETTINGS"; ObjectID = "PDZ-PJ-hqT"; */
+"PDZ-PJ-hqT.headerTitle" = "SETTINGS";
+
+/* Class = "UILabel"; text = "Chat Settings"; ObjectID = "QsY-Ki-6Yq"; */
+"QsY-Ki-6Yq.text" = "Chat Settings";
+
+/* Class = "UIButton"; normalTitle = "Invite Friends"; ObjectID = "Qui-3g-Hch"; */
+"Qui-3g-Hch.normalTitle" = "Invite Friends";
+
+/* Class = "UILabel"; text = "App Settings"; ObjectID = "Quw-oo-pg5"; */
+"Quw-oo-pg5.text" = "App Settings";
+
+/* Class = "UILabel"; text = "Dev_v100b43"; ObjectID = "WOB-Yf-G81"; */
+"WOB-Yf-G81.text" = "Dev_v100b43";
+
+/* Class = "UITableViewSection"; headerTitle = "ACCOUNT"; ObjectID = "ZGS-rQ-tfP"; */
+"ZGS-rQ-tfP.headerTitle" = "ACCOUNT";
+
+/* Class = "UITableViewSection"; headerTitle = "CHAT SETTINGS"; ObjectID = "fOE-hi-5wT"; */
+"fOE-hi-5wT.headerTitle" = "CHAT SETTINGS";
+
+/* Class = "UILabel"; text = "FAQ"; ObjectID = "hQn-zn-583"; */
+"hQn-zn-583.text" = "FAQ";
+
+/* Class = "UIButton"; normalTitle = "Free Flowers!"; ObjectID = "nBa-Jt-pvH"; */
+"nBa-Jt-pvH.normalTitle" = "Redeem code";
+
+/* Class = "UILabel"; text = "Account Setting"; ObjectID = "q63-bX-UYd"; */
+"q63-bX-UYd.text" = "Account Settings";
+
+/* Class = "UIButton"; normalTitle = "Help & Feedback"; ObjectID = "s19-3R-sVh"; */
+"s19-3R-sVh.normalTitle" = "Help & Feedback";
+
+/* Class = "UILabel"; text = "Visit BloomerApp.com"; ObjectID = "w7u-mm-OCT"; */
+"w7u-mm-OCT.text" = "Visit BloomerApp.com";
+
+/* Class = "UILabel"; text = "Change Password"; ObjectID = "wdz-dj-9oe"; */
+"wdz-dj-9oe.text" = "Change Password";
+
+/* Class = "UILabel"; text = "Edit Profile"; ObjectID = "zOV-j4-WQz"; */
+"zOV-j4-WQz.text" = "Edit Profile";
+
+"I6Q-XI-ugM.headerTitle" = "SHARE";

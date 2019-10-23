@@ -1,0 +1,9 @@
+
+/* Class = "UILabel"; text = "Content"; ObjectID = "F30-xo-cpP"; */
+"F30-xo-cpP.text" = "Content";
+
+/* Class = "UIButton"; normalTitle = "Có"; ObjectID = "K31-ds-umA"; */
+"K31-ds-umA.normalTitle" = "Có";
+
+/* Class = "UIButton"; normalTitle = "Không"; ObjectID = "MAu-hG-zGW"; */
+"MAu-hG-zGW.normalTitle" = "Không";

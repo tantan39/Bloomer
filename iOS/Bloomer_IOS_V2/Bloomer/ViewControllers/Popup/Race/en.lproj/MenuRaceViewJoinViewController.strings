@@ -1,0 +1,21 @@
+
+/* Class = "UIButton"; normalTitle = "Cancel"; ObjectID = "0UF-we-T4O"; */
+"0UF-we-T4O.normalTitle" = "Cancel";
+
+/* Class = "UIButton"; normalTitle = "Join The Leaderboard"; ObjectID = "Dih-3Y-cnP"; */
+"Dih-3Y-cnP.normalTitle" = "Join The Contest";
+
+/* Class = "UIButton"; normalTitle = "Search for the people"; ObjectID = "Jlu-9h-NML"; */
+"Jlu-9h-NML.normalTitle" = "Search for the people";
+
+/* Class = "UIButton"; normalTitle = "See latest uploaded photos"; ObjectID = "L4x-dM-v6y"; */
+"L4x-dM-v6y.normalTitle" = "See latest uploaded photos";
+
+/* Class = "UIButton"; normalTitle = "See leaderboard info"; ObjectID = "bus-bD-GZU"; */
+"bus-bD-GZU.normalTitle" = "See contest info";
+
+/* Class = "UIButton"; normalTitle = "View my rank"; ObjectID = "hul-VY-e1R"; */
+"hul-VY-e1R.normalTitle" = "View my rank";
+
+/* Class = "UIButton"; normalTitle = "Leave Leaderboard"; ObjectID = "ncf-YN-wJt"; */
+"ncf-YN-wJt.normalTitle" = "Leave Contest";

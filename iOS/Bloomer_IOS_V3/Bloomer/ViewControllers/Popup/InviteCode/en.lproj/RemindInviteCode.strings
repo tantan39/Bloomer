@@ -1,0 +1,14 @@
+
+/* Class = "UILabel"; text = "Có phải bạn đến với Bloomer nhờ bạn bè của mình? "; ObjectID = "BTX-PQ-7E9"; */
+"BTX-PQ-7E9.text" = "WERE YOU INVITED BY SOMEONE?";
+
+/* Class = "UILabel"; text = "Hãy nhập mã của người mời bạn để nhận 4000 hoa cho mình và 4000 hoa cho người bạn đó!"; ObjectID = "IBx-zG-EoJ"; */
+"IBx-zG-EoJ.text" = "Don't forget to input the invite code to get 0 free flowers and the friend who invited you will get 0 flowers as well.";
+
+/* Class = "UIButton"; normalTitle = "Nhập mã ngay"; ObjectID = "awl-uh-KeV"; */
+"awl-uh-KeV.normalTitle" = "Input invite code";
+
+/* Class = "UIButton"; normalTitle = "Để sau"; ObjectID = "lxX-5E-dOe"; */
+"lxX-5E-dOe.normalTitle" = "No Invite Code";
+
+"DGP-X3-ke9.text" = "This is a one time pop-up";

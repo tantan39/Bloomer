@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="SFUIDisplay-Regular.ttf">
+            <string>SFUIDisplay-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="TabBarView">
+            <connections>
+                <outlet property="flowerButton" destination="lpT-V7-F0H" id="8Nz-Tm-ONe"/>
+                <outlet property="flowerView" destination="HvA-2b-BGz" id="YMz-xz-eiu"/>
+                <outlet property="imgvFlower" destination="hNh-IF-dC1" id="5Jf-eb-5dT"/>
+                <outlet property="stayFlowerValue" destination="bjk-pC-695" id="0K6-S4-Elu"/>
+                <outlet property="uploadPhotoView" destination="kOn-B4-nPT" id="bJj-Ps-Tyz"/>
+                <outlet property="view" destination="iN0-l3-epB" id="IjJ-Pq-6xE"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view opaque="NO" tag="1" contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="55" height="67"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HvA-2b-BGz" userLabel="FlowerView">
+                    <rect key="frame" x="0.0" y="0.0" width="55" height="55"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="55" id="UOV-l0-PrK"/>
+                    </constraints>
+                </view>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Icon_Giving_Flowers" translatesAutoresizingMaskIntoConstraints="NO" id="hNh-IF-dC1" userLabel="FlowerOriginal">
+                    <rect key="frame" x="0.0" y="0.0" width="55" height="55"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="55" id="MzG-vj-ooV"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="bjk-pC-695" userLabel="Flower Value Stay">
+                    <rect key="frame" x="27.5" y="55" width="0.0" height="0.0"/>
+                    <fontDescription key="fontDescription" name="SFUIDisplay-Regular" family="SF UI Display" pointSize="10"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1234" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="MXL-3C-8eG" userLabel="Flower Value Moving">
+                    <rect key="frame" x="16.5" y="55" width="22.5" height="12"/>
+                    <fontDescription key="fontDescription" name="SFUIDisplay-Regular" family="SF UI Display" pointSize="10"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Icon_Flower_TabBar" translatesAutoresizingMaskIntoConstraints="NO" id="lpT-V7-F0H" userLabel="FlowerButton">
+                    <rect key="frame" x="0.0" y="0.0" width="55" height="55"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <gestureRecognizers/>
+                </imageView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kOn-B4-nPT" customClass="TabBarCameraCustomView">
+                    <rect key="frame" x="0.0" y="0.0" width="55" height="55"/>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="kOn-B4-nPT" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="3XI-a7-Blp"/>
+                <constraint firstAttribute="trailing" secondItem="kOn-B4-nPT" secondAttribute="trailing" id="9NV-no-tJb"/>
+                <constraint firstItem="kOn-B4-nPT" firstAttribute="height" secondItem="HvA-2b-BGz" secondAttribute="height" id="CUI-qZ-M1A"/>
+                <constraint firstItem="hNh-IF-dC1" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="L5b-zg-qGx"/>
+                <constraint firstItem="kOn-B4-nPT" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="Lax-Ax-ahb"/>
+                <constraint firstItem="MXL-3C-8eG" firstAttribute="top" secondItem="HvA-2b-BGz" secondAttribute="bottom" id="MQi-7u-3FH"/>
+                <constraint firstItem="bjk-pC-695" firstAttribute="centerX" secondItem="HvA-2b-BGz" secondAttribute="centerX" id="MyZ-C1-myI"/>
+                <constraint firstItem="bjk-pC-695" firstAttribute="top" secondItem="HvA-2b-BGz" secondAttribute="bottom" id="RUp-nS-Hi7"/>
+                <constraint firstAttribute="trailing" secondItem="HvA-2b-BGz" secondAttribute="trailing" id="SvO-0r-wT1"/>
+                <constraint firstItem="HvA-2b-BGz" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="TJS-YG-71L"/>
+                <constraint firstItem="MXL-3C-8eG" firstAttribute="centerX" secondItem="HvA-2b-BGz" secondAttribute="centerX" id="Toa-em-yEi"/>
+                <constraint firstItem="HvA-2b-BGz" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="YC6-B3-2t5"/>
+                <constraint firstItem="hNh-IF-dC1" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="iOo-qk-1AO"/>
+                <constraint firstAttribute="trailing" secondItem="hNh-IF-dC1" secondAttribute="trailing" id="ixs-IJ-khQ"/>
+                <constraint firstItem="bjk-pC-695" firstAttribute="top" secondItem="hNh-IF-dC1" secondAttribute="bottom" id="x2F-8b-jCd"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="1860.8" y="697.15142428785612"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="Icon_Flower_TabBar" width="35" height="35"/>
+        <image name="Icon_Giving_Flowers" width="35" height="35"/>
+    </resources>
+</document>

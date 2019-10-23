@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="PopupForGSB">
+            <connections>
+                <outlet property="myWebView" destination="5Bv-7r-yTq" id="k5r-Wh-8fl"/>
+                <outlet property="popupContentView" destination="oFQ-Kk-MGK" id="9z0-Th-W1E"/>
+                <outlet property="popupContentViewBottomSpace" destination="hrs-Fa-R8R" id="yNg-0Y-ZU6"/>
+                <outlet property="popupContentViewTopSpace" destination="0er-QT-T3j" id="oMM-aq-EyG"/>
+                <outlet property="separateOKButton" destination="DZF-r2-t99" id="ZdS-r4-HYe"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" alpha="0.40000000000000002" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="oFQ-Kk-MGK">
+                    <rect key="frame" x="25" y="40" width="325" height="547"/>
+                    <subviews>
+                        <webView contentMode="scaleAspectFit" scalesPageToFit="YES" translatesAutoresizingMaskIntoConstraints="NO" id="5Bv-7r-yTq">
+                            <rect key="frame" x="0.0" y="0.0" width="325" height="547"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        </webView>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="bottom" secondItem="5Bv-7r-yTq" secondAttribute="bottom" id="2IQ-3Z-nJv"/>
+                        <constraint firstItem="5Bv-7r-yTq" firstAttribute="leading" secondItem="oFQ-Kk-MGK" secondAttribute="leading" id="5if-dQ-KS7"/>
+                        <constraint firstItem="5Bv-7r-yTq" firstAttribute="top" secondItem="oFQ-Kk-MGK" secondAttribute="top" id="SfC-Vn-TIQ"/>
+                        <constraint firstAttribute="trailing" secondItem="5Bv-7r-yTq" secondAttribute="trailing" id="gsG-CJ-HQT"/>
+                    </constraints>
+                </view>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DZF-r2-t99" userLabel="Got Ya! Button" customClass="BlueRoundButton">
+                    <rect key="frame" x="25" y="597" width="325" height="35"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="35" id="VjU-pw-mkZ"/>
+                    </constraints>
+                    <state key="normal" title="Button"/>
+                    <connections>
+                        <action selector="touchSeparateOKButton:" destination="-1" eventType="touchUpInside" id="HcL-RV-uqi"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="oFQ-Kk-MGK" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="40" id="0er-QT-T3j"/>
+                <constraint firstItem="oFQ-Kk-MGK" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="25" id="Eef-fo-qmw"/>
+                <constraint firstItem="oFQ-Kk-MGK" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="PKH-IW-esq"/>
+                <constraint firstItem="DZF-r2-t99" firstAttribute="width" secondItem="oFQ-Kk-MGK" secondAttribute="width" id="cYq-rT-4nt"/>
+                <constraint firstItem="DZF-r2-t99" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="dYH-y8-oBF"/>
+                <constraint firstAttribute="bottom" secondItem="oFQ-Kk-MGK" secondAttribute="bottom" constant="80" id="hrs-Fa-R8R"/>
+                <constraint firstAttribute="trailing" secondItem="oFQ-Kk-MGK" secondAttribute="trailing" constant="25" id="iR4-v4-jpe"/>
+                <constraint firstItem="DZF-r2-t99" firstAttribute="top" secondItem="oFQ-Kk-MGK" secondAttribute="bottom" constant="10" id="j1G-fx-rXJ"/>
+            </constraints>
+            <point key="canvasLocation" x="10" y="64"/>
+        </view>
+    </objects>
+</document>

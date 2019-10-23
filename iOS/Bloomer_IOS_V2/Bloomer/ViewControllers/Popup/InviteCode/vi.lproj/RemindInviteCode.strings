@@ -1,0 +1,14 @@
+
+/* Class = "UILabel"; text = "Có phải bạn đến với Bloomer nhờ bạn bè của mình? "; ObjectID = "BTX-PQ-7E9"; */
+"BTX-PQ-7E9.text" = "CÓ PHẢI BẠN ĐẾN VỚI BLOOMER NHỜ BẠN BÈ CỦA MÌNH?";
+
+/* Class = "UILabel"; text = "Hãy nhập mã của người mời bạn để nhận 4000 hoa cho mình và 4000 hoa cho người bạn đó!"; ObjectID = "IBx-zG-EoJ"; */
+"IBx-zG-EoJ.text" = "Hãy nhập mã của người mời bạn để nhận 0 hoa cho mình và 0 hoa cho người bạn đó!";
+
+/* Class = "UIButton"; normalTitle = "Nhập mã ngay"; ObjectID = "awl-uh-KeV"; */
+"awl-uh-KeV.normalTitle" = "Nhập mã";
+
+/* Class = "UIButton"; normalTitle = "Để sau"; ObjectID = "lxX-5E-dOe"; */
+"lxX-5E-dOe.normalTitle" = "Không ai mời";
+
+"DGP-X3-ke9.text" = "Bạn chỉ nhập được mã bạn bè một lần duy nhất.";

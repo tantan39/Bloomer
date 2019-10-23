@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="SourceSansPro-Light.ttf">
+            <string>SourceSansPro-Light</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="ChatRight" rowHeight="122" id="KGk-i7-Jjw" customClass="ChatTableViewCellRight">
+            <rect key="frame" x="0.0" y="0.0" width="371" height="122"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="371" height="121.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="24:24" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xan-Jg-sQc" userLabel="Time">
+                        <rect key="frame" x="158" y="52" width="30" height="18"/>
+                        <fontDescription key="fontDescription" name="SourceSansPro-Light" family="Source Sans Pro" pointSize="14"/>
+                        <color key="textColor" red="0.73793900012969971" green="0.76929104328155518" blue="0.79264461994171143" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bubble_user_chat_arrow.png" translatesAutoresizingMaskIntoConstraints="NO" id="tDa-kF-xgn">
+                        <rect key="frame" x="347" y="12" width="12" height="17"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="17" id="DOQ-KI-hed"/>
+                            <constraint firstAttribute="width" constant="12" id="hsV-9D-Po4"/>
+                        </constraints>
+                    </imageView>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jaj-b3-WBu" userLabel="bubbleView">
+                        <rect key="frame" x="333" y="4" width="16" height="113.5"/>
+                        <color key="backgroundColor" red="0.90196078431372551" green="0.95294117647058818" blue="0.98431372549019602" alpha="1" colorSpace="calibratedRGB"/>
+                    </view>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tut-Po-Siw">
+                        <rect key="frame" x="341" y="12" width="0.0" height="97.5"/>
+                        <fontDescription key="fontDescription" name="SourceSansPro-Light" family="Source Sans Pro" pointSize="14"/>
+                        <color key="textColor" red="0.062745098039215685" green="0.074509803921568626" blue="0.10196078431372549" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="N8K-hv-bCD">
+                        <rect key="frame" x="267" y="21" width="80" height="80"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="80" id="LJw-4u-0mW"/>
+                            <constraint firstAttribute="width" constant="80" id="P4B-LE-FFn"/>
+                        </constraints>
+                    </imageView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="jaj-b3-WBu" firstAttribute="top" secondItem="tut-Po-Siw" secondAttribute="top" constant="-8" id="0O7-2i-QhW"/>
+                    <constraint firstItem="jaj-b3-WBu" firstAttribute="leading" secondItem="tut-Po-Siw" secondAttribute="leading" constant="-8" id="0Ot-56-YPl"/>
+                    <constraint firstItem="tDa-kF-xgn" firstAttribute="top" secondItem="tut-Po-Siw" secondAttribute="top" id="36r-W9-GgF"/>
+                    <constraint firstItem="tut-Po-Siw" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="12" id="5Ph-8J-hKa"/>
+                    <constraint firstItem="N8K-hv-bCD" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="5bH-6N-iGx"/>
+                    <constraint firstAttribute="trailing" secondItem="jaj-b3-WBu" secondAttribute="trailing" constant="22" id="5we-aM-EFd"/>
+                    <constraint firstAttribute="trailing" secondItem="Xan-Jg-sQc" secondAttribute="trailing" constant="183" id="8ji-Ut-fML"/>
+                    <constraint firstItem="Xan-Jg-sQc" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="DgP-7t-Tjz"/>
+                    <constraint firstItem="tut-Po-Siw" firstAttribute="width" relation="lessThanOrEqual" secondItem="H2p-sc-9uM" secondAttribute="width" multiplier="1:2" id="ELL-GO-SP4"/>
+                    <constraint firstItem="jaj-b3-WBu" firstAttribute="trailing" secondItem="tut-Po-Siw" secondAttribute="trailing" constant="8" id="HdB-db-FfZ"/>
+                    <constraint firstItem="tDa-kF-xgn" firstAttribute="leading" secondItem="N8K-hv-bCD" secondAttribute="trailing" id="Ufg-zB-It5"/>
+                    <constraint firstAttribute="bottom" secondItem="tut-Po-Siw" secondAttribute="bottom" constant="12" id="bJQ-F3-qGD"/>
+                    <constraint firstItem="jaj-b3-WBu" firstAttribute="bottom" secondItem="tut-Po-Siw" secondAttribute="bottom" constant="8" id="gmL-5o-Xqj"/>
+                    <constraint firstItem="tDa-kF-xgn" firstAttribute="leading" secondItem="jaj-b3-WBu" secondAttribute="trailing" constant="-2" id="ymx-sL-fxR"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="arrowImageView" destination="tDa-kF-xgn" id="pxB-ux-NHo"/>
+                <outlet property="bubbleView" destination="jaj-b3-WBu" id="Add-qc-iBw"/>
+                <outlet property="imgvEmoji" destination="N8K-hv-bCD" id="pPj-0B-JvO"/>
+                <outlet property="labelTimePaddingConstraint" destination="8ji-Ut-fML" id="5nv-LJ-rBF"/>
+                <outlet property="lblMessage" destination="tut-Po-Siw" id="qfd-um-JCq"/>
+                <outlet property="time" destination="Xan-Jg-sQc" id="KUu-zt-egn"/>
+            </connections>
+            <point key="canvasLocation" x="354.5" y="367"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="bubble_user_chat_arrow.png" width="10" height="9"/>
+    </resources>
+</document>

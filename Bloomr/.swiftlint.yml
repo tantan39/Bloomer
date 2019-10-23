@@ -1,0 +1,78 @@
+disabled_rules: # rule identifiers to exclude from running
+  - control_statement
+  - trailing_whitespace
+  - implicit_getter
+  - identifier_name
+  - empty_count
+  - switch_case_alignment
+  - force_cast
+  - multiple_closures_with_trailing_closure
+  - empty_enum_arguments
+  - function_parameter_count
+  - syntactic_sugar
+  - cyclomatic_complexity
+  - legacy_constructor
+  - force_try
+  - large_tuple
+  - valid_ibinspectable
+  - discouraged_direct_init
+  
+opt_in_rules: # some rules are only opt-in
+  - #empty_count
+
+  # Find all the available rules by running:
+  # swiftlint rules
+included: # paths to include during linting. `--path` is ignored if present.
+  - Bloomr
+
+excluded: # paths to ignore during linting. Takes precedence over `included`.
+  - Pods
+
+analyzer_rules: # Rules run by `swiftlint analyze` (experimental)
+  - explicit_self
+
+# Every force_cast or force_try will be warned
+force_cast: warning # implicitly
+force_try:
+  severity: warning # explicitly
+
+# Max length for a line should be 300
+line_length: 300
+
+# Rules for function length
+function_body_length:
+    warning: 100
+    error: 150
+
+# Rules for function body length
+# It should not over than 300 LOC
+type_body_length:
+  - 300 # warning
+  - 400 # error
+
+# Rules for function body length
+# It should not over than 1000 LOC
+file_length:
+  warning: 800
+  error: 1200
+
+# Rules when naming veribales
+variable_name_min_length:
+  - 2 # warning
+  - 1 # error
+
+# Rules for type name
+type_name:
+  min_length: 4 # only warning
+  max_length: # warning and error
+    warning: 40
+    error: 50
+  excluded: iPhone # excluded via string
+identifier_name:
+  min_length: # only min_length
+    error: 3 # only error
+  excluded: # excluded via string array
+    - id
+    - URL
+    - GlobalAPIKey
+reporter: "xcode" # reporter type (xcode, json, csv, checkstyle, junit, html, emoji, sonarqube)

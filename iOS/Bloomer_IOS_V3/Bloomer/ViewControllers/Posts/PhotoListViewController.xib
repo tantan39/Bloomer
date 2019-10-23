@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="SFUIDisplay-Regular.ttf">
+            <string>SFUIDisplay-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="PhotoListViewController">
+            <connections>
+                <outlet property="tableView" destination="Rqt-ZF-qyX" id="jMN-Le-88s"/>
+                <outlet property="titleForCloseLeaderboard" destination="cWP-BU-xiJ" id="fhx-Su-3uu"/>
+                <outlet property="topInfoCloseView" destination="obj-oa-WI1" id="JPG-S2-tMI"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="none" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Rqt-ZF-qyX">
+                    <rect key="frame" x="0.0" y="28" width="375" height="639"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="ed9-zy-YXi"/>
+                        <outlet property="delegate" destination="-1" id="J8r-7A-oKu"/>
+                    </connections>
+                </tableView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="obj-oa-WI1" userLabel="TopInfoCloseView">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="28"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Contest has end" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cWP-BU-xiJ">
+                            <rect key="frame" x="8" y="8" width="359" height="12"/>
+                            <fontDescription key="fontDescription" name="SFUIDisplay-Regular" family="SF UI Display" pointSize="10"/>
+                            <color key="textColor" red="0.74117647060000003" green="0.74117647060000003" blue="0.74117647060000003" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="bottom" secondItem="cWP-BU-xiJ" secondAttribute="bottom" constant="8" id="4fi-zR-bjW"/>
+                        <constraint firstItem="cWP-BU-xiJ" firstAttribute="leading" secondItem="obj-oa-WI1" secondAttribute="leading" constant="8" id="EzU-W5-mop"/>
+                        <constraint firstAttribute="height" relation="greaterThanOrEqual" id="dUX-T0-F80"/>
+                        <constraint firstItem="cWP-BU-xiJ" firstAttribute="top" secondItem="obj-oa-WI1" secondAttribute="top" constant="8" id="tVQ-Mp-rAq"/>
+                        <constraint firstAttribute="trailing" secondItem="cWP-BU-xiJ" secondAttribute="trailing" constant="8" id="xco-uX-lDn"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <gestureRecognizers/>
+            <constraints>
+                <constraint firstItem="obj-oa-WI1" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="8I3-XQ-ei8"/>
+                <constraint firstAttribute="trailing" secondItem="obj-oa-WI1" secondAttribute="trailing" id="Qn0-3b-NVr"/>
+                <constraint firstAttribute="trailing" secondItem="Rqt-ZF-qyX" secondAttribute="trailing" id="TUD-tS-FNA"/>
+                <constraint firstAttribute="bottom" secondItem="Rqt-ZF-qyX" secondAttribute="bottom" id="qF9-TY-BP7"/>
+                <constraint firstItem="obj-oa-WI1" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="tw4-py-zaj"/>
+                <constraint firstItem="Rqt-ZF-qyX" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="txA-tv-mRw"/>
+                <constraint firstItem="Rqt-ZF-qyX" firstAttribute="top" secondItem="obj-oa-WI1" secondAttribute="bottom" id="w0s-6l-PD3"/>
+            </constraints>
+            <connections>
+                <outletCollection property="gestureRecognizers" destination="Z6a-LM-aHm" appends="YES" id="84o-8h-Y2Z"/>
+            </connections>
+        </view>
+        <tapGestureRecognizer cancelsTouchesInView="NO" id="Z6a-LM-aHm">
+            <connections>
+                <outlet property="delegate" destination="-1" id="DjT-Ho-W86"/>
+            </connections>
+        </tapGestureRecognizer>
+    </objects>
+</document>

@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="SF-Pro-Text-Bold.otf">
+            <string>SFProText-Bold</string>
+        </array>
+        <array key="SF-Pro-Text-Heavy.otf">
+            <string>SFProText-Heavy</string>
+        </array>
+        <array key="SF-UI-Display-Medium.otf">
+            <string>SFUIDisplay-Medium</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="P4A-gT-aky" customClass="TopWinnerView">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QbB-FO-n3k" userLabel="Top View">
+                    <rect key="frame" x="-351.5" y="-744.5" width="1078" height="1078"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="xaG-Is-hrx" userLabel="Avatar">
+                            <rect key="frame" x="351.5" y="744.5" width="375" height="333.5"/>
+                        </imageView>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="1078" id="VzL-SG-QQ0"/>
+                        <constraint firstAttribute="bottom" secondItem="xaG-Is-hrx" secondAttribute="bottom" id="mr6-NL-U7S"/>
+                        <constraint firstAttribute="height" constant="1078" id="yc2-bm-hLh"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                            <integer key="value" value="539"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WAI-Uu-8Ip" userLabel="Central Line">
+                    <rect key="frame" x="0.0" y="333.5" width="375" height="0.0"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" id="MFW-6O-Go7"/>
+                    </constraints>
+                </view>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="CONGRATULATION" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KcS-EB-IGn" userLabel="Label Congratulation">
+                    <rect key="frame" x="32" y="368.5" width="311" height="19"/>
+                    <fontDescription key="fontDescription" name="SFProText-Bold" family="SF Pro Text" pointSize="16"/>
+                    <color key="textColor" red="0.27450980390000002" green="0.2784313725" blue="0.3294117647" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hlp-S7-O7J" userLabel="Label Content">
+                    <rect key="frame" x="32" y="396.5" width="311" height="114.5"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SHARE TO GET" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ePI-1Y-Ozl" userLabel="Label Share To Get">
+                    <rect key="frame" x="32" y="543" width="311" height="19"/>
+                    <fontDescription key="fontDescription" name="SFProText-Bold" family="SF Pro Text" pointSize="16"/>
+                    <color key="textColor" red="0.91764705879999997" green="0.27450980390000002" blue="0.33725490200000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2000 FLOWERS" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cNq-AG-sjL" userLabel="Label Share Flower">
+                    <rect key="frame" x="32" y="564" width="311" height="29"/>
+                    <fontDescription key="fontDescription" name="SFProText-Heavy" family="SF Pro Text" pointSize="24"/>
+                    <color key="textColor" red="0.91764705879999997" green="0.27450980390000002" blue="0.33725490200000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wKC-Nl-aGS" userLabel="Button Share">
+                    <rect key="frame" x="102" y="617" width="170" height="40"/>
+                    <color key="backgroundColor" red="0.27450980390000002" green="0.63137254899999995" blue="0.97647058819999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="Ksu-nV-7ko"/>
+                        <constraint firstAttribute="width" constant="170" id="eKI-1p-XpS"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="SFUIDisplay-Medium" family="SF UI Display" pointSize="16"/>
+                    <state key="normal" title="SHARE">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                    <connections>
+                        <action selector="TouchShare:" destination="P4A-gT-aky" eventType="touchUpInside" id="RI0-Mv-PCs"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="KcS-EB-IGn" firstAttribute="top" secondItem="QbB-FO-n3k" secondAttribute="bottom" constant="35" id="8Bc-Fe-xOE"/>
+                <constraint firstItem="wKC-Nl-aGS" firstAttribute="centerX" secondItem="P4A-gT-aky" secondAttribute="centerX" id="AO1-P8-rLZ"/>
+                <constraint firstItem="hlp-S7-O7J" firstAttribute="top" secondItem="KcS-EB-IGn" secondAttribute="bottom" constant="9" id="JZG-mf-uVV"/>
+                <constraint firstItem="xaG-Is-hrx" firstAttribute="leading" secondItem="P4A-gT-aky" secondAttribute="leading" id="JfS-RF-0Zl"/>
+                <constraint firstItem="cNq-AG-sjL" firstAttribute="leading" secondItem="P4A-gT-aky" secondAttribute="leading" constant="32" id="M4f-jb-wlk"/>
+                <constraint firstItem="hlp-S7-O7J" firstAttribute="leading" secondItem="P4A-gT-aky" secondAttribute="leading" constant="32" id="MmB-jH-t6N"/>
+                <constraint firstAttribute="trailing" secondItem="cNq-AG-sjL" secondAttribute="trailing" constant="32" id="PNq-tl-H2M"/>
+                <constraint firstItem="QbB-FO-n3k" firstAttribute="centerX" secondItem="P4A-gT-aky" secondAttribute="centerX" id="RKZ-Mr-115"/>
+                <constraint firstAttribute="trailing" secondItem="KcS-EB-IGn" secondAttribute="trailing" constant="32" id="ROX-TY-vyE"/>
+                <constraint firstItem="KcS-EB-IGn" firstAttribute="leading" secondItem="P4A-gT-aky" secondAttribute="leading" constant="32" id="Tyl-uY-HKe"/>
+                <constraint firstItem="ePI-1Y-Ozl" firstAttribute="leading" secondItem="P4A-gT-aky" secondAttribute="leading" constant="32" id="Ukg-O1-mAA"/>
+                <constraint firstAttribute="trailing" secondItem="ePI-1Y-Ozl" secondAttribute="trailing" constant="32" id="WfG-HC-06V"/>
+                <constraint firstItem="WAI-Uu-8Ip" firstAttribute="leading" secondItem="P4A-gT-aky" secondAttribute="leading" id="XKl-is-Ote"/>
+                <constraint firstItem="WAI-Uu-8Ip" firstAttribute="top" secondItem="QbB-FO-n3k" secondAttribute="bottom" id="YNK-AN-Kdg"/>
+                <constraint firstItem="ePI-1Y-Ozl" firstAttribute="top" secondItem="hlp-S7-O7J" secondAttribute="bottom" constant="32" id="Yhc-B2-RG7"/>
+                <constraint firstItem="xaG-Is-hrx" firstAttribute="top" secondItem="P4A-gT-aky" secondAttribute="top" id="bDB-qh-A1q"/>
+                <constraint firstAttribute="trailing" secondItem="xaG-Is-hrx" secondAttribute="trailing" id="bwq-6V-byY"/>
+                <constraint firstItem="cNq-AG-sjL" firstAttribute="top" secondItem="ePI-1Y-Ozl" secondAttribute="bottom" constant="2" id="crg-KS-CbF"/>
+                <constraint firstItem="wKC-Nl-aGS" firstAttribute="top" secondItem="cNq-AG-sjL" secondAttribute="bottom" constant="24" id="dwc-Hh-eZe"/>
+                <constraint firstItem="fap-y2-fBa" firstAttribute="bottom" secondItem="wKC-Nl-aGS" secondAttribute="bottom" constant="10" id="e1N-GT-8xD"/>
+                <constraint firstAttribute="trailing" secondItem="hlp-S7-O7J" secondAttribute="trailing" constant="32" id="pa4-FT-9m7"/>
+                <constraint firstItem="WAI-Uu-8Ip" firstAttribute="centerY" secondItem="P4A-gT-aky" secondAttribute="centerY" id="t5x-kq-FHd"/>
+                <constraint firstAttribute="trailing" secondItem="WAI-Uu-8Ip" secondAttribute="trailing" id="xFt-Jv-QK6"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="fap-y2-fBa"/>
+            <connections>
+                <outlet property="avatar" destination="xaG-Is-hrx" id="Emb-E3-xXN"/>
+                <outlet property="contentLabel" destination="hlp-S7-O7J" id="QgI-eZ-nbe"/>
+                <outlet property="shareButton" destination="wKC-Nl-aGS" id="R5Y-80-Usq"/>
+                <outlet property="shareFlowerLabel" destination="cNq-AG-sjL" id="NZ1-iW-PEr"/>
+            </connections>
+        </view>
+    </objects>
+</document>

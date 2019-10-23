@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina3_5" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="SF-Pro-Text-Regular.otf">
+            <string>SFProText-Regular</string>
+        </array>
+        <array key="SF-Pro-Text-Semibold.otf">
+            <string>SFProText-Semibold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="UpdateInfoViewController">
+            <connections>
+                <outlet property="btnGallery" destination="vzF-kY-G2H" id="QVq-UY-st9"/>
+                <outlet property="btnNext" destination="Jtp-cI-xr3" id="ob4-jS-4IQ"/>
+                <outlet property="btnSkip" destination="aHM-E1-WmF" id="HBT-jD-LHr"/>
+                <outlet property="imgvAvatar" destination="sUf-bt-nVL" id="79X-t5-aNN"/>
+                <outlet property="tfBirthDay" destination="Spt-Qz-sB8" id="6uw-qW-tsV"/>
+                <outlet property="tfLocation" destination="EQq-mn-7ej" id="PaO-sO-MQe"/>
+                <outlet property="view" destination="QhL-ku-f12" id="sSu-Q6-YAQ"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="QhL-ku-f12" customClass="UIControl">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Jtp-cI-xr3">
+                    <rect key="frame" x="60" y="345" width="200" height="44"/>
+                    <color key="backgroundColor" red="0.69019607839999997" green="0.1450980392" blue="0.1647058824" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="200" id="gLY-ZH-vVd"/>
+                        <constraint firstAttribute="height" constant="44" id="qwO-6T-3ri"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="SFProText-Regular" family="SF Pro Text" pointSize="14"/>
+                    <state key="normal" title="Complete">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="btnNext_Pressed:" destination="-1" eventType="touchUpInside" id="z5e-93-xOi"/>
+                    </connections>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Choose your avatar" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZVU-Dk-wGE">
+                    <rect key="frame" x="105.5" y="144" width="110" height="14"/>
+                    <fontDescription key="fontDescription" name="SFProText-Regular" family="SF Pro Text" pointSize="12"/>
+                    <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="sUf-bt-nVL">
+                    <rect key="frame" x="110" y="28" width="100" height="100"/>
+                    <color key="backgroundColor" red="0.82745098039999998" green="0.82745098039999998" blue="0.82745098039999998" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="100" id="4Uc-Qu-l0o"/>
+                        <constraint firstAttribute="width" constant="100" id="VOA-hg-mNl"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                            <integer key="value" value="50"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="clipsToBounds" value="YES"/>
+                    </userDefinedRuntimeAttributes>
+                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vzF-kY-G2H">
+                    <rect key="frame" x="110" y="28" width="100" height="100"/>
+                    <state key="normal" image="icoCamera"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                            <integer key="value" value="50"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="clipsToBounds" value="YES"/>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="btnSelectAvatar_Pressed:" destination="-1" eventType="touchUpInside" id="4BC-Gt-4x3"/>
+                    </connections>
+                </button>
+                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Birthday" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Spt-Qz-sB8" customClass="MFTextField">
+                    <rect key="frame" x="24" y="206" width="272" height="30"/>
+                    <color key="textColor" red="0.2666666667" green="0.2666666667" blue="0.2666666667" alpha="1" colorSpace="calibratedRGB"/>
+                    <fontDescription key="fontDescription" name="SFProText-Regular" family="SF Pro Text" pointSize="12"/>
+                    <textInputTraits key="textInputTraits"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="color" keyPath="placeholderColor">
+                            <color key="value" red="0.2666666667" green="0.2666666667" blue="0.2666666667" alpha="1" colorSpace="calibratedRGB"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </textField>
+                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Location" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="EQq-mn-7ej" customClass="MFTextField">
+                    <rect key="frame" x="24" y="268" width="272" height="30"/>
+                    <color key="textColor" red="0.2666666667" green="0.2666666667" blue="0.2666666667" alpha="1" colorSpace="calibratedRGB"/>
+                    <fontDescription key="fontDescription" name="SFProText-Regular" family="SF Pro Text" pointSize="12"/>
+                    <textInputTraits key="textInputTraits"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="color" keyPath="placeholderColor">
+                            <color key="value" red="0.2666666667" green="0.2666666667" blue="0.2666666667" alpha="1" colorSpace="calibratedRGB"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <outlet property="delegate" destination="-1" id="Pbu-Kk-1IN"/>
+                    </connections>
+                </textField>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ud8-L7-1XV">
+                    <rect key="frame" x="256" y="272" width="30" height="22"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="30" id="Mba-jJ-f9N"/>
+                    </constraints>
+                    <state key="normal" image="Icon_Arrow_Down"/>
+                    <connections>
+                        <action selector="btnShowLocation_Pressed:" destination="-1" eventType="touchUpInside" id="CyS-1a-PmZ"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aHM-E1-WmF">
+                    <rect key="frame" x="144.5" y="409" width="31" height="44"/>
+                    <fontDescription key="fontDescription" name="SFProText-Semibold" family="SF Pro Text" pointSize="14"/>
+                    <state key="normal" title="Skip">
+                        <color key="titleColor" red="0.2666666667" green="0.2666666667" blue="0.2666666667" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="btnSkip_Pressed:" destination="-1" eventType="touchUpInside" id="Dy5-fS-al1"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fNF-Vg-NfB">
+                    <rect key="frame" x="256" y="212" width="30" height="22"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="30" id="NBB-nu-Dbi"/>
+                    </constraints>
+                    <state key="normal" image="Icon_Arrow_Down"/>
+                    <connections>
+                        <action selector="btnShowBirthday_Pressed:" destination="-1" eventType="touchUpInside" id="zau-r4-Kkl"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="ZVU-Dk-wGE" firstAttribute="top" secondItem="sUf-bt-nVL" secondAttribute="bottom" constant="16" id="2jx-JM-OyB"/>
+                <constraint firstItem="fNF-Vg-NfB" firstAttribute="trailing" secondItem="Spt-Qz-sB8" secondAttribute="trailing" constant="-10" id="4WW-tl-idW"/>
+                <constraint firstItem="Jtp-cI-xr3" firstAttribute="top" secondItem="EQq-mn-7ej" secondAttribute="bottom" constant="47" id="76m-0t-lYy"/>
+                <constraint firstItem="aHM-E1-WmF" firstAttribute="height" secondItem="Jtp-cI-xr3" secondAttribute="height" id="Dxg-qN-F7B"/>
+                <constraint firstItem="aHM-E1-WmF" firstAttribute="centerX" secondItem="Jtp-cI-xr3" secondAttribute="centerX" id="H9x-P8-hip"/>
+                <constraint firstItem="vzF-kY-G2H" firstAttribute="bottom" secondItem="sUf-bt-nVL" secondAttribute="bottom" id="IeX-iU-ulD"/>
+                <constraint firstItem="Spt-Qz-sB8" firstAttribute="leading" secondItem="Xr7-on-Zfz" secondAttribute="leading" constant="24" id="J4k-rd-dCG"/>
+                <constraint firstItem="EQq-mn-7ej" firstAttribute="centerX" secondItem="Spt-Qz-sB8" secondAttribute="centerX" id="JBk-mN-PuL"/>
+                <constraint firstItem="sUf-bt-nVL" firstAttribute="centerX" secondItem="Xr7-on-Zfz" secondAttribute="centerX" id="Jua-3I-P1Z"/>
+                <constraint firstItem="EQq-mn-7ej" firstAttribute="top" secondItem="Spt-Qz-sB8" secondAttribute="bottom" constant="32" id="PD9-1F-Rkd"/>
+                <constraint firstItem="fNF-Vg-NfB" firstAttribute="top" secondItem="Spt-Qz-sB8" secondAttribute="top" constant="6" id="PzE-bJ-jT4"/>
+                <constraint firstItem="vzF-kY-G2H" firstAttribute="top" secondItem="Xr7-on-Zfz" secondAttribute="top" constant="8" id="TXX-Fs-ZzA"/>
+                <constraint firstItem="ZVU-Dk-wGE" firstAttribute="centerX" secondItem="sUf-bt-nVL" secondAttribute="centerX" id="VtB-BU-d4g"/>
+                <constraint firstItem="vzF-kY-G2H" firstAttribute="top" secondItem="sUf-bt-nVL" secondAttribute="top" id="W2f-xV-7r8"/>
+                <constraint firstItem="aHM-E1-WmF" firstAttribute="top" secondItem="Jtp-cI-xr3" secondAttribute="bottom" constant="20" id="amu-DO-Z5X"/>
+                <constraint firstItem="Jtp-cI-xr3" firstAttribute="centerX" secondItem="QhL-ku-f12" secondAttribute="centerX" id="dgi-Tg-p8r"/>
+                <constraint firstItem="vzF-kY-G2H" firstAttribute="leading" secondItem="sUf-bt-nVL" secondAttribute="leading" id="f4H-vj-nY0"/>
+                <constraint firstItem="Xr7-on-Zfz" firstAttribute="trailing" secondItem="Spt-Qz-sB8" secondAttribute="trailing" constant="24" id="feN-na-NYA"/>
+                <constraint firstItem="EQq-mn-7ej" firstAttribute="width" secondItem="Spt-Qz-sB8" secondAttribute="width" id="kIg-h5-fJ5"/>
+                <constraint firstItem="ud8-L7-1XV" firstAttribute="centerY" secondItem="EQq-mn-7ej" secondAttribute="centerY" id="mCo-NG-Oiu"/>
+                <constraint firstItem="Spt-Qz-sB8" firstAttribute="top" secondItem="ZVU-Dk-wGE" secondAttribute="bottom" constant="48" id="pfs-xZ-SCA"/>
+                <constraint firstItem="ud8-L7-1XV" firstAttribute="trailing" secondItem="EQq-mn-7ej" secondAttribute="trailing" constant="-10" id="tVV-tD-FWR"/>
+                <constraint firstItem="vzF-kY-G2H" firstAttribute="trailing" secondItem="sUf-bt-nVL" secondAttribute="trailing" id="zJ7-Hm-kGA"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="Xr7-on-Zfz"/>
+            <connections>
+                <action selector="touchBackground:" destination="-1" eventType="touchDown" id="Xcc-iL-nbk"/>
+            </connections>
+            <point key="canvasLocation" x="161" y="-190"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="Icon_Arrow_Down" width="11" height="7"/>
+        <image name="icoCamera" width="37" height="34"/>
+    </resources>
+</document>

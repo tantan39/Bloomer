@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="SF-Pro-Text-Bold.otf">
+            <string>SFProText-Bold</string>
+        </array>
+        <array key="SF-Pro-Text-Regular.otf">
+            <string>SFProText-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="UpdatePhoneNumberViewController">
+            <connections>
+                <outlet property="countryCodeLabel" destination="d28-8h-tpq" id="q6M-jG-Ej5"/>
+                <outlet property="iconFlag" destination="6xY-o3-JWs" id="G8K-WO-Bc7"/>
+                <outlet property="phoneNumberTextField" destination="MiW-Ko-apG" id="4uP-uW-nAi"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aov-Rc-iIg" userLabel="Main View">
+                    <rect key="frame" x="0.0" y="44" width="375" height="30"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="E5W-f2-6P9" userLabel="Country Flag View">
+                            <rect key="frame" x="16" y="6" width="44" height="18"/>
+                            <subviews>
+                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Icon_Flag_vn" translatesAutoresizingMaskIntoConstraints="NO" id="6xY-o3-JWs">
+                                    <rect key="frame" x="0.0" y="0.0" width="30" height="18"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" constant="30" id="48H-Vl-uV6"/>
+                                        <constraint firstAttribute="height" constant="18" id="w7H-CO-ptp"/>
+                                    </constraints>
+                                </imageView>
+                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Icon_Arrow_Down" translatesAutoresizingMaskIntoConstraints="NO" id="Yrl-0k-YSP">
+                                    <rect key="frame" x="36" y="6" width="8" height="6"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="6" id="Bam-Vh-tXr"/>
+                                        <constraint firstAttribute="width" constant="8" id="RkL-tL-oec"/>
+                                    </constraints>
+                                </imageView>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2S6-4j-3FT" userLabel="Country Flag Button">
+                                    <rect key="frame" x="0.0" y="0.0" width="44" height="18"/>
+                                    <connections>
+                                        <action selector="touchCountryFlagButton:" destination="-1" eventType="touchUpInside" id="ogV-cF-1L9"/>
+                                    </connections>
+                                </button>
+                            </subviews>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstItem="Yrl-0k-YSP" firstAttribute="leading" secondItem="6xY-o3-JWs" secondAttribute="trailing" constant="6" id="09S-94-Ql5"/>
+                                <constraint firstAttribute="trailing" secondItem="2S6-4j-3FT" secondAttribute="trailing" id="0c3-a6-kYT"/>
+                                <constraint firstAttribute="trailing" secondItem="Yrl-0k-YSP" secondAttribute="trailing" id="244-Id-drV"/>
+                                <constraint firstAttribute="bottom" secondItem="6xY-o3-JWs" secondAttribute="bottom" id="EKA-CM-skh"/>
+                                <constraint firstItem="Yrl-0k-YSP" firstAttribute="centerY" secondItem="E5W-f2-6P9" secondAttribute="centerY" id="VBE-1d-gop"/>
+                                <constraint firstItem="2S6-4j-3FT" firstAttribute="leading" secondItem="E5W-f2-6P9" secondAttribute="leading" id="VfF-ro-uyx"/>
+                                <constraint firstItem="2S6-4j-3FT" firstAttribute="top" secondItem="E5W-f2-6P9" secondAttribute="top" id="a1D-BX-k0C"/>
+                                <constraint firstItem="6xY-o3-JWs" firstAttribute="leading" secondItem="E5W-f2-6P9" secondAttribute="leading" id="hvG-2W-yyC"/>
+                                <constraint firstAttribute="bottom" secondItem="2S6-4j-3FT" secondAttribute="bottom" id="iKu-Bv-waB"/>
+                                <constraint firstItem="6xY-o3-JWs" firstAttribute="top" secondItem="E5W-f2-6P9" secondAttribute="top" id="wc8-Rk-mOP"/>
+                            </constraints>
+                        </view>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="+84" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="d28-8h-tpq" userLabel="Country Code Label">
+                            <rect key="frame" x="70" y="4" width="37.5" height="21"/>
+                            <fontDescription key="fontDescription" name="SFProText-Bold" family="SF Pro Text" pointSize="18"/>
+                            <color key="textColor" red="0.29019607843137252" green="0.29019607843137252" blue="0.29019607843137252" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Enter your phone number" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="MiW-Ko-apG" userLabel="Phone Number Text Field">
+                            <rect key="frame" x="112.5" y="3" width="246.5" height="22"/>
+                            <color key="textColor" red="0.2901960784" green="0.2901960784" blue="0.2901960784" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <fontDescription key="fontDescription" name="SFProText-Regular" family="SF Pro Text" pointSize="18"/>
+                            <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                            <connections>
+                                <action selector="phoneNumberTextFieldEditingChanged:" destination="-1" eventType="editingChanged" id="JBf-W7-LKs"/>
+                            </connections>
+                        </textField>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Pzv-Cp-w5N" userLabel="Line">
+                            <rect key="frame" x="16" y="27" width="343" height="1"/>
+                            <color key="backgroundColor" red="0.32941176470588235" green="0.32941176470588235" blue="0.32941176470588235" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="1" id="uuM-lX-Ei6"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="E5W-f2-6P9" firstAttribute="leading" secondItem="Pzv-Cp-w5N" secondAttribute="leading" id="4wq-PQ-hZG"/>
+                        <constraint firstItem="MiW-Ko-apG" firstAttribute="leading" secondItem="d28-8h-tpq" secondAttribute="trailing" constant="5" id="9LG-UD-vUu"/>
+                        <constraint firstItem="MiW-Ko-apG" firstAttribute="trailing" secondItem="Pzv-Cp-w5N" secondAttribute="trailing" id="JAc-bo-lIu"/>
+                        <constraint firstItem="Pzv-Cp-w5N" firstAttribute="top" secondItem="d28-8h-tpq" secondAttribute="bottom" constant="2" id="O8h-Da-OtE"/>
+                        <constraint firstItem="Pzv-Cp-w5N" firstAttribute="top" secondItem="E5W-f2-6P9" secondAttribute="bottom" constant="3" id="Wf0-s1-TjB"/>
+                        <constraint firstAttribute="trailing" secondItem="Pzv-Cp-w5N" secondAttribute="trailing" constant="16" id="hEx-rA-XV3"/>
+                        <constraint firstAttribute="height" constant="30" id="htw-4c-8Q0"/>
+                        <constraint firstAttribute="bottom" secondItem="Pzv-Cp-w5N" secondAttribute="bottom" constant="2" id="j5p-Cc-s4U"/>
+                        <constraint firstItem="d28-8h-tpq" firstAttribute="leading" secondItem="E5W-f2-6P9" secondAttribute="trailing" constant="10" id="mqG-Za-fyh"/>
+                        <constraint firstItem="Pzv-Cp-w5N" firstAttribute="top" secondItem="MiW-Ko-apG" secondAttribute="bottom" constant="2" id="vSX-AS-3fD"/>
+                        <constraint firstItem="Pzv-Cp-w5N" firstAttribute="leading" secondItem="aov-Rc-iIg" secondAttribute="leading" constant="16" id="yiF-xw-tH8"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="aov-Rc-iIg" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="44" id="5fb-aX-nWw"/>
+                <constraint firstItem="aov-Rc-iIg" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="XpC-it-BS5"/>
+                <constraint firstAttribute="trailing" secondItem="aov-Rc-iIg" secondAttribute="trailing" id="fLy-1a-0aR"/>
+            </constraints>
+            <point key="canvasLocation" x="25.5" y="51.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="Icon_Arrow_Down" width="11" height="7"/>
+        <image name="Icon_Flag_vn" width="30" height="18"/>
+    </resources>
+</document>

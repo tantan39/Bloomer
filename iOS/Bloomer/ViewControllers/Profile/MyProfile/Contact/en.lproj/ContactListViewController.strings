@@ -1,0 +1,12 @@
+
+/* Class = "UIButton"; normalTitle = "Receivers"; ObjectID = "0G8-Y9-bM1"; */
+"0G8-Y9-bM1.normalTitle" = "Receivers";
+
+/* Class = "UISegmentedControl"; MLx-Qk-Urf.segmentTitles[0] = "Followers"; ObjectID = "MLx-Qk-Urf"; */
+"MLx-Qk-Urf.segmentTitles[0]" = "Followers";
+
+/* Class = "UISegmentedControl"; MLx-Qk-Urf.segmentTitles[1] = "Following"; ObjectID = "MLx-Qk-Urf"; */
+"MLx-Qk-Urf.segmentTitles[1]" = "Following";
+
+/* Class = "UIButton"; normalTitle = "Givers"; ObjectID = "Z4A-kM-tbb"; */
+"Z4A-kM-tbb.normalTitle" = "Givers";

@@ -1,0 +1,15 @@
+
+/* Class = "UILabel"; text = "CONGRATULATION"; ObjectID = "KcS-EB-IGn"; */
+"KcS-EB-IGn.text" = "CONGRATULATION";
+
+/* Class = "UILabel"; text = "2000 FLOWERS"; ObjectID = "cNq-AG-sjL"; */
+"cNq-AG-sjL.text" = "2000 FLOWERS";
+
+/* Class = "UILabel"; text = "SHARE TO GET"; ObjectID = "ePI-1Y-Ozl"; */
+"ePI-1Y-Ozl.text" = "SHARE TO GET";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "hlp-S7-O7J"; */
+"hlp-S7-O7J.text" = "Label";
+
+/* Class = "UIButton"; normalTitle = "SHARE"; ObjectID = "wKC-Nl-aGS"; */
+"wKC-Nl-aGS.normalTitle" = "SHARE";

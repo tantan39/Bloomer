@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" colorMatched="YES">
+    <device id="retina4_0" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="LeavingRacePopUpViewController">
+            <connections>
+                <outlet property="btnCancel" destination="O4j-l0-0hU" id="6lg-Os-9Vw"/>
+                <outlet property="btnLeave" destination="eW4-6d-CBf" id="AWz-Jd-A9N"/>
+                <outlet property="leavingContentWebView" destination="D0l-Pn-YH0" id="0hQ-ap-nUx"/>
+                <outlet property="mainView" destination="f8S-Pi-yI4" id="p86-Ga-hin"/>
+                <outlet property="popupView" destination="kgw-eS-5NA" id="ZQK-jp-k3f"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="f8S-Pi-yI4" userLabel="Main View">
+                    <rect key="frame" x="32" y="57" width="256" height="454"/>
+                    <subviews>
+                        <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kgw-eS-5NA" userLabel="PopupView">
+                            <rect key="frame" x="0.0" y="0.0" width="256" height="406"/>
+                            <subviews>
+                                <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="D0l-Pn-YH0">
+                                    <rect key="frame" x="0.0" y="0.0" width="256" height="406"/>
+                                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </webView>
+                            </subviews>
+                            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <constraints>
+                                <constraint firstItem="D0l-Pn-YH0" firstAttribute="top" secondItem="kgw-eS-5NA" secondAttribute="top" id="1zk-Rv-tiB"/>
+                                <constraint firstAttribute="trailing" secondItem="D0l-Pn-YH0" secondAttribute="trailing" id="MFt-KI-zWF"/>
+                                <constraint firstItem="D0l-Pn-YH0" firstAttribute="leading" secondItem="kgw-eS-5NA" secondAttribute="leading" id="Qps-2e-0fr"/>
+                                <constraint firstAttribute="bottom" secondItem="D0l-Pn-YH0" secondAttribute="bottom" id="Wy5-02-gUl"/>
+                            </constraints>
+                        </view>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eW4-6d-CBf">
+                            <rect key="frame" x="132" y="414" width="124" height="40"/>
+                            <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="40" id="38F-e7-Sgz"/>
+                            </constraints>
+                            <state key="normal" title="Leave">
+                                <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </state>
+                            <connections>
+                                <action selector="touchLeaveButton:" destination="-1" eventType="touchUpInside" id="kuP-Qm-FLr"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="O4j-l0-0hU">
+                            <rect key="frame" x="0.0" y="414" width="124" height="40"/>
+                            <color key="backgroundColor" red="0.33333333333333331" green="0.33333333333333331" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="40" id="ogT-MT-dTH"/>
+                            </constraints>
+                            <state key="normal" title="Cancel">
+                                <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </state>
+                            <connections>
+                                <action selector="touchCancelButton:" destination="-1" eventType="touchUpInside" id="rAt-fZ-hXP"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="eW4-6d-CBf" firstAttribute="leading" secondItem="O4j-l0-0hU" secondAttribute="trailing" constant="8" id="Gc8-JX-DM9"/>
+                        <constraint firstItem="kgw-eS-5NA" firstAttribute="top" secondItem="f8S-Pi-yI4" secondAttribute="top" id="J3S-Y9-0DY"/>
+                        <constraint firstAttribute="bottom" secondItem="O4j-l0-0hU" secondAttribute="bottom" id="KYW-XN-AXc"/>
+                        <constraint firstItem="kgw-eS-5NA" firstAttribute="leading" secondItem="f8S-Pi-yI4" secondAttribute="leading" id="LMa-3U-Ou3"/>
+                        <constraint firstItem="O4j-l0-0hU" firstAttribute="width" secondItem="eW4-6d-CBf" secondAttribute="width" id="LhY-4G-xFy"/>
+                        <constraint firstAttribute="trailing" secondItem="kgw-eS-5NA" secondAttribute="trailing" id="QOE-HQ-CwD"/>
+                        <constraint firstAttribute="trailing" secondItem="eW4-6d-CBf" secondAttribute="trailing" id="Yh2-Nb-o7e"/>
+                        <constraint firstAttribute="bottom" secondItem="eW4-6d-CBf" secondAttribute="bottom" id="lN0-2B-KEM"/>
+                        <constraint firstItem="O4j-l0-0hU" firstAttribute="leading" secondItem="f8S-Pi-yI4" secondAttribute="leading" id="qbc-Ed-AaI"/>
+                        <constraint firstItem="eW4-6d-CBf" firstAttribute="top" secondItem="kgw-eS-5NA" secondAttribute="bottom" constant="8" id="uJP-kl-iLU"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="f8S-Pi-yI4" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="fu9-uy-B4i"/>
+                <constraint firstItem="f8S-Pi-yI4" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="lfE-LE-OGK"/>
+                <constraint firstItem="f8S-Pi-yI4" firstAttribute="width" secondItem="i5M-Pr-FkT" secondAttribute="width" multiplier="0.8" id="wGK-ZS-rmB"/>
+                <constraint firstItem="f8S-Pi-yI4" firstAttribute="height" secondItem="i5M-Pr-FkT" secondAttribute="height" multiplier="0.8" id="y3v-Ka-L23"/>
+            </constraints>
+            <point key="canvasLocation" x="17" y="25"/>
+        </view>
+    </objects>
+</document>

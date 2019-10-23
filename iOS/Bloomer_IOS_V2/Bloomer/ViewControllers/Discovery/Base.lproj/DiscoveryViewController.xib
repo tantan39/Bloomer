@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="DiscoveryViewController">
+            <connections>
+                <outlet property="notFoundView" destination="3qd-Zi-GPH" id="PaA-Mv-onL"/>
+                <outlet property="searchBar" destination="eFa-PD-ScJ" id="kIf-Yi-Ems"/>
+                <outlet property="searchResultTableView" destination="0TX-yk-gwo" id="vCM-aO-lSE"/>
+                <outlet property="searchResultTableViewBottomMargin" destination="Mel-tW-aNW" id="cfS-3y-oHN"/>
+                <outlet property="tableView" destination="KpP-lY-80k" id="0bF-4N-0d3"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <searchBar contentMode="redraw" placeholder="Search" translatesAutoresizingMaskIntoConstraints="NO" id="eFa-PD-ScJ">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="44" id="hHt-No-SSu"/>
+                    </constraints>
+                    <textInputTraits key="textInputTraits"/>
+                    <connections>
+                        <outlet property="delegate" destination="-1" id="bd6-0l-AIg"/>
+                    </connections>
+                </searchBar>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" canCancelContentTouches="NO" style="plain" separatorStyle="none" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="KpP-lY-80k">
+                    <rect key="frame" x="0.0" y="44" width="375" height="623"/>
+                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="a1D-jL-gsv"/>
+                        <outlet property="delegate" destination="-1" id="a3i-az-Ml2"/>
+                    </connections>
+                </tableView>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="none" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="0TX-yk-gwo" userLabel="SearchView">
+                    <rect key="frame" x="0.0" y="44" width="375" height="623"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="Fep-0B-0Hh"/>
+                        <outlet property="delegate" destination="-1" id="ZvC-Cm-jXy"/>
+                    </connections>
+                </tableView>
+                <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3qd-Zi-GPH" userLabel="Not Found View">
+                    <rect key="frame" x="0.0" y="44" width="375" height="43"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Không tìm thấy" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WUZ-mk-aHg">
+                            <rect key="frame" x="0.0" y="0.0" width="375" height="43"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <color key="textColor" red="0.69803921570000005" green="0.1333333333" blue="0.1450980392" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="bottom" secondItem="WUZ-mk-aHg" secondAttribute="bottom" id="5Vr-wY-pFz"/>
+                        <constraint firstItem="WUZ-mk-aHg" firstAttribute="top" secondItem="3qd-Zi-GPH" secondAttribute="top" id="ZhX-Ut-h5g"/>
+                        <constraint firstAttribute="height" constant="43" id="bZ2-S9-TNb"/>
+                        <constraint firstItem="WUZ-mk-aHg" firstAttribute="leading" secondItem="3qd-Zi-GPH" secondAttribute="leading" id="e50-hn-2zZ"/>
+                        <constraint firstAttribute="trailing" secondItem="WUZ-mk-aHg" secondAttribute="trailing" id="yP8-C6-MgE"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <gestureRecognizers/>
+            <constraints>
+                <constraint firstItem="0TX-yk-gwo" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="5sf-Wm-PaD"/>
+                <constraint firstAttribute="trailing" secondItem="0TX-yk-gwo" secondAttribute="trailing" id="EYS-V5-jUf"/>
+                <constraint firstAttribute="bottom" secondItem="0TX-yk-gwo" secondAttribute="bottom" id="Mel-tW-aNW"/>
+                <constraint firstItem="eFa-PD-ScJ" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="NMW-pk-E9t"/>
+                <constraint firstAttribute="trailing" secondItem="KpP-lY-80k" secondAttribute="trailing" id="QIP-8I-2Fm"/>
+                <constraint firstAttribute="trailing" secondItem="eFa-PD-ScJ" secondAttribute="trailing" id="c4d-6Z-KSa"/>
+                <constraint firstItem="3qd-Zi-GPH" firstAttribute="width" secondItem="i5M-Pr-FkT" secondAttribute="width" id="cGv-p7-8fy"/>
+                <constraint firstItem="KpP-lY-80k" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="cVA-YG-ehb"/>
+                <constraint firstAttribute="bottom" secondItem="KpP-lY-80k" secondAttribute="bottom" id="crR-my-MnK"/>
+                <constraint firstItem="eFa-PD-ScJ" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="dYP-WY-GE6"/>
+                <constraint firstItem="0TX-yk-gwo" firstAttribute="top" secondItem="eFa-PD-ScJ" secondAttribute="bottom" id="hch-hy-8Ec"/>
+                <constraint firstItem="3qd-Zi-GPH" firstAttribute="top" secondItem="eFa-PD-ScJ" secondAttribute="bottom" id="kgF-gL-PVZ"/>
+                <constraint firstItem="3qd-Zi-GPH" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="q3Q-Zg-xXQ"/>
+                <constraint firstItem="KpP-lY-80k" firstAttribute="top" secondItem="eFa-PD-ScJ" secondAttribute="bottom" id="zQI-78-h4X"/>
+            </constraints>
+            <connections>
+                <outletCollection property="gestureRecognizers" destination="Ehf-6q-2XD" appends="YES" id="V6Z-nq-1Nl"/>
+            </connections>
+            <point key="canvasLocation" x="72" y="97"/>
+        </view>
+        <tapGestureRecognizer cancelsTouchesInView="NO" id="Ehf-6q-2XD">
+            <connections>
+                <outlet property="delegate" destination="-1" id="LDa-4f-lU6"/>
+            </connections>
+        </tapGestureRecognizer>
+    </objects>
+</document>

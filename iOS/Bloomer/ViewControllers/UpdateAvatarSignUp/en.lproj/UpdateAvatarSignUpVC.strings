@@ -1,0 +1,15 @@
+
+/* Class = "UIButton"; normalTitle = "Complete"; ObjectID = "024-KI-R9d"; */
+"024-KI-R9d.normalTitle" = "Complete";
+
+/* Class = "UIButton"; normalTitle = "Change Profile Picture"; ObjectID = "5m0-Fq-8Kw"; */
+"5m0-Fq-8Kw.normalTitle" = "Change Profile Picture";
+
+/* Class = "UILabel"; text = "Are you sure your profile photo shows your face?"; ObjectID = "A0D-MD-ubS"; */
+"A0D-MD-ubS.text" = "Are you sure your profile photos shows your face?";
+
+/* Class = "UIButton"; normalTitle = "Skip this step"; ObjectID = "Y3t-Ew-U0y"; */
+"Y3t-Ew-U0y.normalTitle" = "Skip this step";
+
+/* Class = "UILabel"; text = "Set Profile Picture"; ObjectID = "cs9-Du-hjH"; */
+"cs9-Du-hjH.text" = "Set Profile Picture";

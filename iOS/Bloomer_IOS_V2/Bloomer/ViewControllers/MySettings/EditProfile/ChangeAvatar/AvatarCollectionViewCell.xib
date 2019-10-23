@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="SF-UI-Text-Regular.otf">
+            <string>SFUIText-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="AvatarCollectionCell" id="bp0-Es-tH3" customClass="AvatarCollectionViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="90" height="90"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="90" height="90"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" tag="2" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="gDg-0z-kID">
+                        <rect key="frame" x="16" y="3" width="57" height="57"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="57" id="7jo-eT-fXP"/>
+                            <constraint firstAttribute="width" constant="57" id="mEi-ZD-Se5"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" tag="8" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="W7Z-wH-wQd">
+                        <rect key="frame" x="0.0" y="60" width="90" height="30"/>
+                        <fontDescription key="fontDescription" name="SFUIText-Regular" family="SF UI Text" pointSize="11"/>
+                        <color key="textColor" red="0.12549019610000001" green="0.12549019610000001" blue="0.12941176469999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstItem="W7Z-wH-wQd" firstAttribute="leading" secondItem="bp0-Es-tH3" secondAttribute="leading" id="7eB-Qj-0ai"/>
+                <constraint firstItem="gDg-0z-kID" firstAttribute="top" secondItem="bp0-Es-tH3" secondAttribute="top" constant="3" id="AdH-AO-H8L"/>
+                <constraint firstItem="gDg-0z-kID" firstAttribute="centerX" secondItem="bp0-Es-tH3" secondAttribute="centerX" id="MW3-0P-7hM"/>
+                <constraint firstAttribute="bottom" secondItem="W7Z-wH-wQd" secondAttribute="bottom" id="ZL0-38-ASd"/>
+                <constraint firstItem="W7Z-wH-wQd" firstAttribute="top" secondItem="gDg-0z-kID" secondAttribute="bottom" id="gXL-Dl-6zD"/>
+                <constraint firstAttribute="trailing" secondItem="W7Z-wH-wQd" secondAttribute="trailing" id="q9V-yw-KF9"/>
+            </constraints>
+            <size key="customSize" width="85" height="85"/>
+            <connections>
+                <outlet property="avatarImg" destination="gDg-0z-kID" id="U3Y-9J-N1X"/>
+                <outlet property="lblraceName" destination="W7Z-wH-wQd" id="Jll-UN-b1j"/>
+            </connections>
+            <point key="canvasLocation" x="296" y="277"/>
+        </collectionViewCell>
+    </objects>
+</document>

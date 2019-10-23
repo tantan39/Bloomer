@@ -1,0 +1,15 @@
+
+/* Class = "UILabel"; text = "Upload a photo to join the leaderboard."; ObjectID = "5wH-dt-i11"; */
+"5wH-dt-i11.text" = "Upload a photo to join the contest.";
+
+/* Class = "UIButton"; normalTitle = "Phone Gallery"; ObjectID = "KmA-pc-G1i"; */
+"KmA-pc-G1i.normalTitle" = "Choose from Photos";
+
+/* Class = "UIButton"; normalTitle = "Bloomer Album"; ObjectID = "Vdd-sD-qAk"; */
+"Vdd-sD-qAk.normalTitle" = "Bloomer Album";
+
+/* Class = "UIButton"; normalTitle = "Take Photo"; ObjectID = "hS0-Fl-m3i"; */
+"hS0-Fl-m3i.normalTitle" = "Take Photo";
+
+/* Class = "UIButton"; normalTitle = "Cancel"; ObjectID = "wly-eJ-J42"; */
+"wly-eJ-J42.normalTitle" = "Cancel";

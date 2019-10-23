@@ -1,0 +1,12 @@
+
+/* Class = "UIButton"; normalTitle = "Next"; ObjectID = "Sgn-Q7-Qwt"; */
+"Sgn-Q7-Qwt.normalTitle" = "Next";
+
+/* Class = "UILabel"; text = "Add available Leaderboard to these pictures"; ObjectID = "VtU-aD-dtM"; */
+"VtU-aD-dtM.text" = "Add available Contest to these pictures";
+
+/* Class = "UILabel"; text = "Choose Leaderboard"; ObjectID = "d9G-xA-1Yd"; */
+"d9G-xA-1Yd.text" = "Choose Contest";
+
+/* Class = "UIButton"; normalTitle = "Back"; ObjectID = "mPT-Bx-28A"; */
+"mPT-Bx-28A.normalTitle" = "";

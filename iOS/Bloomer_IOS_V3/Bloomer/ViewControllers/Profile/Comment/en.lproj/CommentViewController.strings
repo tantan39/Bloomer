@@ -1,0 +1,9 @@
+
+/* Class = "UIButton"; normalTitle = "Send"; ObjectID = "SYt-wd-5Q2"; */
+"SYt-wd-5Q2.normalTitle" = "Send";
+
+/* Class = "UITextView"; text = "Say something..."; ObjectID = "ZFm-hc-D8S"; */
+"ZFm-hc-D8S.text" = "Say something...";
+
+/* Class = "UILabel"; text = "Load previous comment"; ObjectID = "nY0-ny-lC2"; */
+"nY0-ny-lC2.text" = "Load previous comments";

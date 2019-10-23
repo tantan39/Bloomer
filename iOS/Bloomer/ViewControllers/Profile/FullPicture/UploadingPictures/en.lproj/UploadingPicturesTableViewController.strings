@@ -1,0 +1,12 @@
+
+/* Class = "UIButton"; normalTitle = "Next"; ObjectID = "9AW-t7-v9E"; */
+"9AW-t7-v9E.normalTitle" = "Done";
+
+/* Class = "UILabel"; text = "This photo will be added to leaderboard"; ObjectID = "Gyg-8H-rD7"; */
+"Gyg-8H-rD7.text" = "This photo will be added to contest";
+
+/* Class = "UILabel"; text = "Uploading"; ObjectID = "ftg-PF-Ym2"; */
+"ftg-PF-Ym2.text" = "Uploading";
+
+/* Class = "UIButton"; normalTitle = "Back"; ObjectID = "xh7-6a-rJr"; */
+"xh7-6a-rJr.normalTitle" = "";

@@ -1,0 +1,36 @@
+
+/* Class = "UILabel"; text = "+84"; ObjectID = "9dl-Di-fQS"; */
+"9dl-Di-fQS.text" = "+84";
+
+/* Class = "UIButton"; normalTitle = "Privacy Policy"; ObjectID = "CQy-mR-S6I"; */
+"CQy-mR-S6I.normalTitle" = "Privacy Policy";
+
+/* Class = "UIButton"; normalTitle = "<"; ObjectID = "Evj-mj-wXY"; */
+"Evj-mj-wXY.normalTitle" = "<";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "F76-aG-CuA"; */
+"F76-aG-CuA.normalTitle" = "Button";
+
+/* Class = "UILabel"; text = "and the"; ObjectID = "FkW-e9-8JC"; */
+"FkW-e9-8JC.text" = "and the";
+
+
+/* Class = "UIButton"; normalTitle = "Terms of Service."; ObjectID = "aPc-Dk-rui"; */
+"aPc-Dk-rui.normalTitle" = "Terms of Service.";
+
+"jJc-NF-Vea.text" = "Select your gender";
+
+"ZM8-DL-VvL.placeholder" = "Your name";
+"Vqg-u1-kch.placeholder" = "Phone number";
+"Hz2-6t-zhO.placeholder" = "Email";
+"KSu-8I-1Hd.placeholder" = "Password";
+
+"nMk-HP-WMc.normalTitle" = "Show";
+
+/* Class = "UIButton"; normalTitle = "Next"; ObjectID = "wEL-ad-kvt"; */
+"wEL-ad-kvt.normalTitle" = "Continue";
+
+
+/* Class = "UILabel"; text = "By tapping to next, you agree the"; ObjectID = "o2r-NE-RKc"; */
+"o2r-NE-RKc.text" = "By tapping next, you agree with the";
+

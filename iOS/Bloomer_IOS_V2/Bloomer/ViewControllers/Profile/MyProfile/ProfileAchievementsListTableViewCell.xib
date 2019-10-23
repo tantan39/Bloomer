@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="SF-UI-Display-Bold.otf">
+            <string>SFUIDisplay-Bold</string>
+        </array>
+        <array key="SFUIDisplay-Semibold.ttf">
+            <string>SFUIDisplay-Semibold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="ProfileAchievementList" rowHeight="40" id="KGk-i7-Jjw" customClass="ProfileAchievementsListTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="40"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="39.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="8aa-4Y-LGE" userLabel="Dot">
+                        <rect key="frame" x="26" y="15" width="8" height="8"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="8" id="XgK-Yn-HPc"/>
+                            <constraint firstAttribute="width" constant="8" id="bLK-X2-GHw"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Yesterday" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9Jg-FG-SCk">
+                        <rect key="frame" x="43" y="11" width="63.5" height="17"/>
+                        <fontDescription key="fontDescription" name="SFUIDisplay-Semibold" family="SF UI Display" pointSize="14"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1st" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JP3-aI-1eF">
+                        <rect key="frame" x="275.5" y="11" width="18.5" height="17"/>
+                        <fontDescription key="fontDescription" name="SFUIDisplay-Semibold" family="SF UI Display" pointSize="14"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="HoChiMinh" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ckU-d0-Pv5" userLabel="Big Name">
+                        <rect key="frame" x="26" y="10.5" width="73" height="17"/>
+                        <fontDescription key="fontDescription" name="SFUIDisplay-Bold" family="SF UI Display" pointSize="14"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="KkJ-ge-o6K" userLabel="Link">
+                        <rect key="frame" x="295" y="11" width="10" height="16"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    </imageView>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="JZp-Za-EEx" userLabel="Lock">
+                        <rect key="frame" x="26" y="13" width="9" height="12"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    </imageView>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="xpA-wa-WGh" userLabel="flowers">
+                        <rect key="frame" x="284" y="15" width="10" height="10"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="10" id="GkB-g4-5kf"/>
+                            <constraint firstAttribute="width" constant="10" id="hsN-3n-Ojs"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1000" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oXl-Nr-sl0" userLabel="1000">
+                        <rect key="frame" x="245.5" y="11" width="33.5" height="17"/>
+                        <fontDescription key="fontDescription" name="SFUIDisplay-Semibold" family="SF UI Display" pointSize="14"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="oXl-Nr-sl0" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="1hu-8N-J60"/>
+                    <constraint firstItem="8aa-4Y-LGE" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="26" id="1i4-rt-qus"/>
+                    <constraint firstItem="JP3-aI-1eF" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="A8H-gl-TGq"/>
+                    <constraint firstItem="xpA-wa-WGh" firstAttribute="leading" secondItem="oXl-Nr-sl0" secondAttribute="trailing" constant="5" id="FwC-Uv-A2U"/>
+                    <constraint firstItem="9Jg-FG-SCk" firstAttribute="leading" secondItem="8aa-4Y-LGE" secondAttribute="trailing" constant="9" id="KIm-75-HFm"/>
+                    <constraint firstAttribute="trailing" secondItem="JP3-aI-1eF" secondAttribute="trailing" constant="26" id="NkL-sF-Hj9"/>
+                    <constraint firstItem="xpA-wa-WGh" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="OLx-uh-6ID"/>
+                    <constraint firstItem="ckU-d0-Pv5" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="26" id="Opr-Dd-nxr"/>
+                    <constraint firstItem="8aa-4Y-LGE" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="QcV-Ge-Dri"/>
+                    <constraint firstAttribute="trailing" secondItem="xpA-wa-WGh" secondAttribute="trailing" constant="26" id="bxp-4z-6lZ"/>
+                    <constraint firstItem="ckU-d0-Pv5" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="gdS-kO-fx7"/>
+                    <constraint firstItem="9Jg-FG-SCk" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="wT5-EM-HGS"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="BigTitle" destination="ckU-d0-Pv5" id="X7s-2u-Ysq"/>
+                <outlet property="Dot" destination="8aa-4Y-LGE" id="1m8-5Y-drN"/>
+                <outlet property="FlowerQuantity" destination="oXl-Nr-sl0" id="eRL-Ti-ikd"/>
+                <outlet property="Flowers" destination="xpA-wa-WGh" id="ALQ-On-LRd"/>
+                <outlet property="LinkWeb" destination="KkJ-ge-o6K" id="FgJ-Tn-871"/>
+                <outlet property="Lock" destination="JZp-Za-EEx" id="OSa-uZ-HQA"/>
+                <outlet property="NameRank" destination="9Jg-FG-SCk" id="72f-uR-dnj"/>
+                <outlet property="Rank" destination="JP3-aI-1eF" id="hNY-l4-mue"/>
+                <outlet property="viewMain" destination="H2p-sc-9uM" id="uCd-62-YIu"/>
+            </connections>
+            <point key="canvasLocation" x="-18" y="169"/>
+        </tableViewCell>
+    </objects>
+</document>

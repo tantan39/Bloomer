@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="SF-UI-Display-Regular.otf">
+            <string>SFUIDisplay-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="PicturesRaceViewController">
+            <connections>
+                <outlet property="CollectionViewTopContraint" destination="7I5-Y3-tpG" id="miE-Yi-Bro"/>
+                <outlet property="collectionView" destination="Wbn-ri-JWM" id="saB-YG-fyq"/>
+                <outlet property="titleForCloseLeaderBoard" destination="BFE-wI-kYg" id="dQv-wh-1iP"/>
+                <outlet property="topInfoCloseView" destination="TIT-F3-u0g" id="Ryb-zG-q00"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <collectionView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="Wbn-ri-JWM">
+                    <rect key="frame" x="0.0" y="28" width="375" height="639"/>
+                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="1" minimumInteritemSpacing="1" id="Pbe-99-818">
+                        <size key="itemSize" width="50" height="50"/>
+                        <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                        <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                        <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    </collectionViewFlowLayout>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="zBt-zN-nph"/>
+                        <outlet property="delegate" destination="-1" id="dAV-Wp-9wq"/>
+                    </connections>
+                </collectionView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TIT-F3-u0g" userLabel="TopInfoCloseView">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="28"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Contest has end" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BFE-wI-kYg">
+                            <rect key="frame" x="8" y="8" width="359" height="12"/>
+                            <fontDescription key="fontDescription" name="SFUIDisplay-Regular" family="SF UI Display" pointSize="10"/>
+                            <color key="textColor" red="0.74117647058823533" green="0.74117647058823533" blue="0.74117647058823533" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="bottom" secondItem="BFE-wI-kYg" secondAttribute="bottom" constant="8" id="Uwv-dd-c19"/>
+                        <constraint firstAttribute="height" relation="greaterThanOrEqual" id="dSc-dI-HZ8"/>
+                        <constraint firstItem="BFE-wI-kYg" firstAttribute="top" secondItem="TIT-F3-u0g" secondAttribute="top" constant="8" id="or1-dP-aJr"/>
+                        <constraint firstAttribute="trailing" secondItem="BFE-wI-kYg" secondAttribute="trailing" constant="8" id="tCv-dz-OFT"/>
+                        <constraint firstItem="BFE-wI-kYg" firstAttribute="leading" secondItem="TIT-F3-u0g" secondAttribute="leading" constant="8" id="tw9-SI-Rle"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="Wbn-ri-JWM" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="5eJ-Kt-tat"/>
+                <constraint firstItem="Wbn-ri-JWM" firstAttribute="top" secondItem="TIT-F3-u0g" secondAttribute="bottom" id="7I5-Y3-tpG"/>
+                <constraint firstAttribute="trailing" secondItem="TIT-F3-u0g" secondAttribute="trailing" id="gyi-oO-bCE"/>
+                <constraint firstAttribute="trailing" secondItem="Wbn-ri-JWM" secondAttribute="trailing" id="hc1-0S-Rnh"/>
+                <constraint firstItem="TIT-F3-u0g" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="jMH-vL-a46"/>
+                <constraint firstItem="TIT-F3-u0g" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="r1M-d1-Zd9"/>
+                <constraint firstAttribute="bottom" secondItem="Wbn-ri-JWM" secondAttribute="bottom" id="vjr-aj-TGB"/>
+            </constraints>
+            <connections>
+                <outletCollection property="gestureRecognizers" destination="EW6-52-etN" appends="YES" id="v2F-un-gra"/>
+            </connections>
+            <point key="canvasLocation" x="291.5" y="240.5"/>
+        </view>
+        <tapGestureRecognizer numberOfTouchesRequired="0" id="EW6-52-etN" userLabel="View Tap Gesture Recognizer">
+            <connections>
+                <outlet property="delegate" destination="-1" id="T6W-zV-xiV"/>
+            </connections>
+        </tapGestureRecognizer>
+    </objects>
+</document>

@@ -1,0 +1,21 @@
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "27X-eW-Laa"; */
+"27X-eW-Laa.text" = "Label";
+
+/* Class = "UIButton"; normalTitle = "Yes, I want change my gender"; ObjectID = "2ei-QM-Kah"; */
+"2ei-QM-Kah.normalTitle" = "Tôi đồng ý!";
+
+/* Class = "UILabel"; text = "By continuing you agree to our"; ObjectID = "85n-EY-xsW"; */
+"85n-EY-xsW.text" = "Để tiếp tục bạn đã đồng ý với";
+
+/* Class = "UIButton"; normalTitle = "Privacy Policy"; ObjectID = "GPD-fd-hSg"; */
+"GPD-fd-hSg.normalTitle" = "Chính Sách Bảo Mật";
+
+/* Class = "UILabel"; text = "and"; ObjectID = "aeV-vj-vUH"; */
+"aeV-vj-vUH.text" = "và";
+
+/* Class = "UILabel"; text = "Changing your gender will reset your received flowers."; ObjectID = "hh3-sy-tDK"; */
+"hh3-sy-tDK.text" = "Việc thay đổi giới tính sẽ tính lại từ đầu số hoa bạn đã nhận và tất cả các thành tích của bạn";
+
+/* Class = "UIButton"; normalTitle = "Terms of Service"; ObjectID = "i8c-IO-G4q"; */
+"i8c-IO-G4q.normalTitle" = "Điều Khoản Sử Dụng";

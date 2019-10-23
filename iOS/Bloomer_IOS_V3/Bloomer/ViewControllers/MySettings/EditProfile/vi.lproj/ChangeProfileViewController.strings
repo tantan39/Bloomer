@@ -1,0 +1,24 @@
+
+/* Class = "UILabel"; text = "Display Name"; ObjectID = "JLn-Ms-96w"; */
+"JLn-Ms-96w.text" = "Tên hiển thị";
+
+/* Class = "UILabel"; text = "About me"; ObjectID = "JRa-bC-fOA"; */
+"JRa-bC-fOA.text" = "Giới thiệu";
+
+/* Class = "UILabel"; text = "1 time change"; ObjectID = "YIC-Q2-QEr"; */
+"YIC-Q2-QEr.text" = "Chỉ được đổi một lần";
+
+/* Class = "UILabel"; text = "User Name"; ObjectID = "ZbP-9D-jNQ"; */
+"ZbP-9D-jNQ.text" = "Tên người dùng";
+
+/* Class = "UITextField"; placeholder = "pôppopopop"; ObjectID = "gMF-ve-6W0"; */
+"gMF-ve-6W0.placeholder" = "";
+
+/* Class = "UILabel"; text = "20/20"; ObjectID = "gkZ-Am-gCR"; */
+"gkZ-Am-gCR.text" = "20/20";
+
+/* Class = "UITextField"; placeholder = "kjdshfkdsjhfds"; ObjectID = "ten-6G-gxj"; */
+"ten-6G-gxj.placeholder" = "";
+
+/* Class = "UILabel"; text = "0/120"; ObjectID = "z2B-pv-Ftz"; */
+"z2B-pv-Ftz.text" = "0/120";

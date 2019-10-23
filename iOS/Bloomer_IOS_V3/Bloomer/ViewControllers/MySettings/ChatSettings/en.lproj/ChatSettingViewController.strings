@@ -1,0 +1,9 @@
+
+/* Class = "UILabel"; text = "By setting the chatting limit , you are letting others initiate the conversation with you "; ObjectID = "Mj7-fc-rYl"; */
+//"Mj7-fc-rYl.text" = "When users give you the number of required flowers,\nthey will be able to chat with you";
+
+/* Class = "UILabel"; text = "Your current chat limit is:"; ObjectID = "q17-c3-oh5"; */
+//"q17-c3-oh5.text" = "Your current chat limit is:";
+
+/* Class = "UILabel"; text = "Edit your chatting limit threshold"; ObjectID = "uuj-wZ-ndC"; */
+"uuj-wZ-ndC.text" = "Edit the number of flowers required\nfor others to unlock your Chat";

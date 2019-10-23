@@ -1,0 +1,15 @@
+
+/* Class = "UIButton"; normalTitle = "Cancel"; ObjectID = "O4j-l0-0hU"; */
+"O4j-l0-0hU.normalTitle" = "No";
+
+/* Class = "UILabel"; text = "Time"; ObjectID = "RUG-gd-fqG"; */
+"RUG-gd-fqG.text" = "Time";
+
+/* Class = "UILabel"; text = "You are leaving"; ObjectID = "eO1-nW-O7a"; */
+"eO1-nW-O7a.text" = "You are leaving";
+
+/* Class = "UIButton"; normalTitle = "Leave"; ObjectID = "eW4-6d-CBf"; */
+"eW4-6d-CBf.normalTitle" = "Yes";
+
+/* Class = "UILabel"; text = "Leaderboard Name"; ObjectID = "msL-YI-7XX"; */
+"msL-YI-7XX.text" = "Contest Name";

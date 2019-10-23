@@ -1,0 +1,56 @@
+
+/* Class = "UIButton"; normalTitle = "Chọn địa điểm"; ObjectID = "1MD-vO-IbY"; */
+"1MD-vO-IbY.normalTitle" = "Chọn địa điểm ";
+
+/* Class = "UILabel"; text = "Thêm ảnh"; ObjectID = "1al-WG-nIe"; */
+"1al-WG-nIe.text" = "Thêm ảnh";
+
+/* Class = "UILabel"; text = "Thiết lập trang cá nhân"; ObjectID = "50Z-k4-jZc"; */
+"50Z-k4-jZc.text" = "Tạo Tài Khoản";
+
+/* Class = "UILabel"; text = "Không hiển thị tuổi trong ứng dụng"; ObjectID = "5X9-rd-LTx"; */
+"5X9-rd-LTx.text" = "Không hiển thị tuổi trong ứng dụng";
+
+/* Class = "UILabel"; text = "Địa điểm"; ObjectID = "6Wd-QW-PnT"; */
+"6Wd-QW-PnT.text" = "Địa điểm";
+
+/* Class = "UILabel"; text = "Giới tính"; ObjectID = "9uo-fg-1mw"; */
+//"9uo-fg-1mw.text" = "GIỚI TÍNH";
+"lxE-WL-5uo.text" = "GIỚI TÍNH";
+
+/* Class = "UITextField"; placeholder = "Nhập tên hiển thị của bạn"; ObjectID = "Gwz-Mm-eiD"; */
+"Gwz-Mm-eiD.placeholder" = "Nhập tên hiển thị";
+
+/* Class = "UIButton"; normalTitle = "Hoàn tất"; ObjectID = "I08-zp-cJW"; */
+"I08-zp-cJW.normalTitle" = "Tiếp tục";
+
+/* Class = "UILabel"; text = "Ngày sinh"; ObjectID = "N0C-t3-cOE"; */
+"N0C-t3-cOE.text" = "Ngày sinh";
+
+
+/* Class = "UITextField"; placeholder = "Your email"; ObjectID = "Sgu-7i-WwA"; */
+"Sgu-7i-WwA.placeholder" = "Your email";
+
+/* Class = "UILabel"; text = "Nữ"; ObjectID = "UQY-3A-fo3"; */
+"kqb-eT-87a.normalTitle" = "Nữ";
+
+/* Class = "UILabel"; text = "Tên hiển thị"; ObjectID = "ag2-Jb-ka8"; */
+"ag2-Jb-ka8.text" = "TÊN HIỂN THỊ";
+
+/* Class = "UILabel"; text = "(optional)"; ObjectID = "kJw-cz-CXH"; */
+"kJw-cz-CXH.text" = "(optional)";
+
+/* Class = "UIButton"; normalTitle = "Vd:28 tháng 1 1996"; ObjectID = "pyh-gl-yjH"; */
+"pyh-gl-yjH.normalTitle" = "Vd:28 tháng 1 1996";
+
+/* Class = "UILabel"; text = "TUỲ CHỈNH ẢNH"; ObjectID = "ssU-uW-Pt3"; */
+"ssU-uW-Pt3.text" = "TUỲ CHỈNH ẢNH";
+
+/* Class = "UILabel"; text = "Nam"; ObjectID = "tTo-w3-3al"; */
+"7dx-L7-5so.normalTitle" = "Nam";
+
+/* Class = "UILabel"; text = "Upload Avatar"; ObjectID = "xa5-oy-MyQ"; */
+"xa5-oy-MyQ.text" = "Upload Avatar";
+
+/* Class = "UIButton"; normalTitle = "Quay lại"; ObjectID = "zVI-Zh-r7V"; */
+"zVI-Zh-r7V.normalTitle" = "Quay lại";

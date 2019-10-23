@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" colorMatched="YES">
+    <device id="retina4_0" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="SF-Pro-Text-Regular.otf">
+            <string>SFProText-Regular</string>
+        </array>
+        <array key="SF-UI-Display-Medium.otf">
+            <string>SFUIDisplay-Medium</string>
+        </array>
+        <array key="SFUIDisplay-Semibold.ttf">
+            <string>SFUIDisplay-Semibold</string>
+        </array>
+        <array key="SFUIText-Regular.ttf">
+            <string>SFUIText-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ChooseLocationViewController">
+            <connections>
+                <outlet property="btnNext" destination="6Dr-fF-ORt" id="97b-ho-8LZ"/>
+                <outlet property="heightNavigationView" destination="7DH-tA-yJO" id="HxJ-II-IhJ"/>
+                <outlet property="tfRegion" destination="per-oX-aJX" id="n7p-7R-sHm"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tz1-S3-HHx">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="50"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KhA-wE-GOF" userLabel="Back Button">
+                            <rect key="frame" x="16" y="37" width="9" height="17"/>
+                            <fontDescription key="fontDescription" name="SFUIText-Regular" family="SF UI Text" pointSize="14"/>
+                            <state key="normal" image="Icon_Back_Black">
+                                <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </state>
+                            <connections>
+                                <action selector="touchBack:" destination="-1" eventType="touchUpInside" id="HPW-PM-iqb"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="KhA-wE-GOF" firstAttribute="top" secondItem="tz1-S3-HHx" secondAttribute="top" constant="37" id="73t-dS-Moe"/>
+                        <constraint firstAttribute="height" constant="50" id="7DH-tA-yJO"/>
+                        <constraint firstItem="KhA-wE-GOF" firstAttribute="leading" secondItem="tz1-S3-HHx" secondAttribute="leading" constant="16" id="dWR-Z3-HgS"/>
+                    </constraints>
+                </view>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QUZ-oh-4fk">
+                    <rect key="frame" x="16" y="66" width="288" height="79"/>
+                    <string key="text">Almost done!
+Choose your region would you like to join</string>
+                    <fontDescription key="fontDescription" name="SFUIDisplay-Medium" family="SF UI Display" pointSize="22"/>
+                    <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6Dr-fF-ORt" userLabel="Button Complete">
+                    <rect key="frame" x="60" y="296" width="200" height="45"/>
+                    <color key="backgroundColor" red="0.69019607839999997" green="0.1450980392" blue="0.1647058824" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="45" id="Gaw-nS-9q7"/>
+                        <constraint firstAttribute="width" constant="200" id="NYc-eB-viH"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="SFUIDisplay-Semibold" family="SF UI Display" pointSize="14"/>
+                    <state key="normal" title="Next">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="btnNext_Pressed:" destination="-1" eventType="touchUpInside" id="JOy-Ne-Ipu"/>
+                    </connections>
+                </button>
+                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Choose your region" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="per-oX-aJX" customClass="TTTextField">
+                    <rect key="frame" x="16" y="173" width="288" height="25"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="25" id="4vm-Nk-f2u"/>
+                    </constraints>
+                    <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                    <fontDescription key="fontDescription" name="SFProText-Regular" family="SF Pro Text" pointSize="18"/>
+                    <textInputTraits key="textInputTraits"/>
+                    <connections>
+                        <outlet property="delegate" destination="-1" id="heg-RX-C9W"/>
+                    </connections>
+                </textField>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Icon_Arrow_Down" translatesAutoresizingMaskIntoConstraints="NO" id="NSU-7i-DO3">
+                    <rect key="frame" x="293" y="182" width="11" height="7"/>
+                </imageView>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="tz1-S3-HHx" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="1ln-gq-fMB"/>
+                <constraint firstItem="NSU-7i-DO3" firstAttribute="centerY" secondItem="per-oX-aJX" secondAttribute="centerY" id="4sX-K8-R7p"/>
+                <constraint firstItem="tz1-S3-HHx" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="H0w-3U-KGo"/>
+                <constraint firstItem="QUZ-oh-4fk" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="16" id="LFt-So-fTF"/>
+                <constraint firstAttribute="trailing" secondItem="QUZ-oh-4fk" secondAttribute="trailing" constant="16" id="Rth-jL-dDa"/>
+                <constraint firstItem="6Dr-fF-ORt" firstAttribute="top" secondItem="per-oX-aJX" secondAttribute="bottom" constant="98" id="ZZT-gc-eAv"/>
+                <constraint firstItem="per-oX-aJX" firstAttribute="top" secondItem="QUZ-oh-4fk" secondAttribute="bottom" constant="28" id="aKb-Zo-pKt"/>
+                <constraint firstItem="per-oX-aJX" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="16" id="eLf-01-gvZ"/>
+                <constraint firstItem="QUZ-oh-4fk" firstAttribute="top" secondItem="tz1-S3-HHx" secondAttribute="bottom" constant="16" id="jOs-SH-b59"/>
+                <constraint firstItem="NSU-7i-DO3" firstAttribute="trailing" secondItem="per-oX-aJX" secondAttribute="trailing" id="m3n-ZK-N6h"/>
+                <constraint firstAttribute="trailing" secondItem="tz1-S3-HHx" secondAttribute="trailing" id="uKC-0x-PX9"/>
+                <constraint firstAttribute="trailing" secondItem="per-oX-aJX" secondAttribute="trailing" constant="16" id="xEP-mQ-wyY"/>
+                <constraint firstItem="6Dr-fF-ORt" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="yWY-3S-KUv"/>
+            </constraints>
+            <point key="canvasLocation" x="264" y="105"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="Icon_Arrow_Down" width="11" height="7"/>
+        <image name="Icon_Back_Black" width="9" height="15"/>
+    </resources>
+</document>

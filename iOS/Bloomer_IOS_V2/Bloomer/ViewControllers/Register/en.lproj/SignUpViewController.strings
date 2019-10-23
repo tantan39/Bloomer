@@ -1,0 +1,37 @@
+
+/* Class = "UILabel"; text = " Woman"; ObjectID = "1Os-TO-vYc"; */
+"1Os-TO-vYc.text" = " Woman";
+
+/* Class = "UILabel"; text = "PASSWORD"; ObjectID = "4wJ-o2-u9c"; */
+"4wJ-o2-u9c.text" = "PASSWORD";
+
+/* Class = "UILabel"; text = "GENDER"; ObjectID = "8M2-c2-Zky"; */
+"8M2-c2-Zky.text" = "GENDER";
+
+/* Class = "UITextField"; placeholder = "Insert password (More than 6 characters)"; ObjectID = "CS6-pe-XZC"; */
+"CS6-pe-XZC.placeholder" = "Insert password (6-20 characters)";
+
+/* Class = "UITextField"; placeholder = "Enter phone number"; ObjectID = "Vaz-S5-qec"; */
+"Vaz-S5-qec.placeholder" = "Enter phone number";
+
+/* Class = "UILabel"; text = "ENTER YOUR PHONE NUMBER"; ObjectID = "ZRY-7f-vzb"; */
+"ZRY-7f-vzb.text" = "YOUR PHONE NUMBER";
+
+/* Class = "UIButton"; normalTitle = "     VN (+84)"; ObjectID = "aX2-YY-a8R"; */
+"aX2-YY-a8R.normalTitle" = "     VN (+84)";
+
+/* Class = "UILabel"; text = " Man"; ObjectID = "aae-vv-tGG"; */
+"aae-vv-tGG.text" = " Man";
+
+/* Class = "UIButton"; normalTitle = "Back"; ObjectID = "cxc-Jp-ftY"; */
+"cxc-Jp-ftY.normalTitle" = "Back";
+
+/* Class = "UIButton"; normalTitle = "Sign In"; ObjectID = "swk-g5-fTh"; */
+"swk-g5-fTh.normalTitle" = "Sign in";
+
+/* Class = "UIButton"; normalTitle = "Join Now"; ObjectID = "zsF-HY-t5o"; */
+"zsF-HY-t5o.normalTitle" = "Join Now";
+
+"fwg-lv-DEb.text" = "Invitation code";
+"SRq-jw-fI4.normalTitle" = "Terms of Use";
+"iIq-vc-oss.normalTitle" = "Privacy Policy";

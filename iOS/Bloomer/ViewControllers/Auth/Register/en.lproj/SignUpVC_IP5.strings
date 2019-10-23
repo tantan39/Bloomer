@@ -1,0 +1,30 @@
+
+/* Class = "UITextView"; text = "Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda."; ObjectID = "9ao-G1-11h"; */
+"9ao-G1-11h.text" = "Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.";
+
+/* Class = "UIButton"; normalTitle = "Continue"; ObjectID = "DbE-YP-BgD"; */
+"DbE-YP-BgD.normalTitle" = "Continue";
+
+/* Class = "UIButton"; normalTitle = "Show"; ObjectID = "KH0-NF-GL8"; */
+"KH0-NF-GL8.normalTitle" = "Show";
+
+/* Class = "UILabel"; text = "Select your gender"; ObjectID = "OtY-xn-tAA"; */
+"OtY-xn-tAA.text" = "Select your gender";
+
+/* Class = "UITextField"; placeholder = "Password"; ObjectID = "PXh-QS-S4g"; */
+"PXh-QS-S4g.placeholder" = "Password";
+
+/* Class = "UITextField"; placeholder = "Your name"; ObjectID = "R59-EA-WAv"; */
+"R59-EA-WAv.placeholder" = "Your name";
+
+/* Class = "UITextField"; placeholder = "Email"; ObjectID = "TuY-vh-8kt"; */
+"TuY-vh-8kt.placeholder" = "Email";
+
+/* Class = "UILabel"; text = "+84"; ObjectID = "eqT-Fs-kEe"; */
+"eqT-Fs-kEe.text" = "+84";
+
+/* Class = "UITextField"; placeholder = "Enter phone number"; ObjectID = "gDI-jr-zQx"; */
+"gDI-jr-zQx.placeholder" = "Enter phone number";
+
+/* Class = "UILabel"; text = "By tapping to next, you agree the"; ObjectID = "kUb-vQ-hlk"; */
+"kUb-vQ-hlk.text" = "By tapping to next, you agree the";

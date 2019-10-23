@@ -1,0 +1,21 @@
+
+/* Class = "UIButton"; normalTitle = "View All"; ObjectID = "1Ol-rY-Maf"; */
+"1Ol-rY-Maf.normalTitle" = "Xem Tất Cả";
+
+/* Class = "UIButton"; normalTitle = "change"; ObjectID = "7sw-OD-JyF"; */
+"7sw-OD-JyF.normalTitle" = "Thay đổi";
+
+/* Class = "UIButton"; normalTitle = "Males Only"; ObjectID = "IhD-BT-ySN"; */
+"IhD-BT-ySN.normalTitle" = "Chỉ Hiển Thị Nam";
+
+/* Class = "UILabel"; text = "Ho Chi Minh City"; ObjectID = "eh1-3s-78m"; */
+"eh1-3s-78m.text" = "Ho Chi Minh City";
+
+/* Class = "UIButton"; normalTitle = "Done"; ObjectID = "mlj-9a-fWb"; */
+"mlj-9a-fWb.normalTitle" = "Xong";
+
+/* Class = "UIButton"; normalTitle = "Females Only"; ObjectID = "n2T-Mi-2bu"; */
+"n2T-Mi-2bu.normalTitle" = "Chỉ Hiển Thị Nữ";
+
+/* Class = "UILabel"; text = "City"; ObjectID = "tEO-ZF-lBL"; */
+"tEO-ZF-lBL.text" = "Tỉnh Thành";

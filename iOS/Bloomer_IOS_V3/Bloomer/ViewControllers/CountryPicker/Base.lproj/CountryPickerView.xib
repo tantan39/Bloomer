@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_0" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CountryPickerView">
+            <connections>
+                <outlet property="btnDone" destination="NHP-gx-urd" id="XXq-Yx-84r"/>
+                <outlet property="view" destination="iN0-l3-epB" id="ehc-It-Axx"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="A3P-sf-J8M">
+                    <rect key="frame" x="0.0" y="378.5" width="320" height="44"/>
+                    <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="44" id="Ult-Va-Qj0"/>
+                    </constraints>
+                    <items>
+                        <navigationItem title="Choose a country" id="jsn-hM-uvp">
+                            <barButtonItem key="rightBarButtonItem" title="Done" id="NHP-gx-urd">
+                                <color key="tintColor" red="0.26486554740000001" green="0.46656394000000001" blue="0.99893504379999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <connections>
+                                    <action selector="doneButton_OnClick:" destination="-1" id="vQF-Ap-PTa"/>
+                                </connections>
+                            </barButtonItem>
+                        </navigationItem>
+                    </items>
+                </navigationBar>
+                <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9ev-SK-alg">
+                    <rect key="frame" x="0.0" y="422.5" width="320" height="145.5"/>
+                    <color key="backgroundColor" white="0.96142223051616127" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="A1u-E3-FYy"/>
+                        <outlet property="delegate" destination="-1" id="Qp9-1V-lWI"/>
+                    </connections>
+                </pickerView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZTX-i4-wjG">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="378.5"/>
+                    <connections>
+                        <action selector="touchOutsidePicker:" destination="-1" eventType="touchUpInside" id="hub-Hp-exp"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.20000000000000001" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstItem="A3P-sf-J8M" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="bottom" multiplier="2:3" id="6EN-Fe-Wfc"/>
+                <constraint firstAttribute="bottom" secondItem="9ev-SK-alg" secondAttribute="bottom" id="7SE-sp-4zg"/>
+                <constraint firstAttribute="trailing" secondItem="ZTX-i4-wjG" secondAttribute="trailing" id="8Od-38-pec"/>
+                <constraint firstItem="A3P-sf-J8M" firstAttribute="top" secondItem="ZTX-i4-wjG" secondAttribute="bottom" id="DTj-WB-qx6"/>
+                <constraint firstItem="9ev-SK-alg" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="HAt-6w-qWQ"/>
+                <constraint firstItem="ZTX-i4-wjG" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="HOw-Xj-0yr"/>
+                <constraint firstAttribute="trailing" secondItem="A3P-sf-J8M" secondAttribute="trailing" id="Ns2-Cw-ilF"/>
+                <constraint firstItem="A3P-sf-J8M" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="OaK-sC-4ge"/>
+                <constraint firstItem="9ev-SK-alg" firstAttribute="top" secondItem="A3P-sf-J8M" secondAttribute="bottom" id="hH7-Pg-EPd"/>
+                <constraint firstItem="ZTX-i4-wjG" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="njo-mb-vBo"/>
+                <constraint firstAttribute="trailing" secondItem="9ev-SK-alg" secondAttribute="trailing" id="zU6-ia-b0a"/>
+            </constraints>
+        </view>
+    </objects>
+</document>

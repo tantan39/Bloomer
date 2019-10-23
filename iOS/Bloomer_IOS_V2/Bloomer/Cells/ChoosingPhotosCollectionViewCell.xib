@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="SF-UI-Display-Bold.otf">
+            <string>SFUIDisplay-Bold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="Photo" id="gTV-IL-0wX" customClass="ChoosingPhotosCollectionViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="104" height="104"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="104" height="104"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="adD-Gb-Oxu">
+                        <rect key="frame" x="0.0" y="0.0" width="104" height="104"/>
+                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                    </imageView>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="IsW-aI-994" userLabel="RedPanel">
+                        <rect key="frame" x="0.0" y="84" width="25" height="20"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2zO-kJ-fAB" userLabel="NumberPanel">
+                                <rect key="frame" x="0.0" y="0.0" width="25" height="20"/>
+                                <fontDescription key="fontDescription" name="SFUIDisplay-Bold" family="SF UI Display" pointSize="13"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.69803921570000005" green="0.1333333333" blue="0.1450980392" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="2zO-kJ-fAB" secondAttribute="bottom" id="1o9-eA-HW3"/>
+                            <constraint firstAttribute="height" constant="20" id="6fm-d2-kgy"/>
+                            <constraint firstAttribute="width" constant="25" id="jTl-ns-mGd"/>
+                            <constraint firstItem="2zO-kJ-fAB" firstAttribute="top" secondItem="IsW-aI-994" secondAttribute="top" id="p0H-KS-Kix"/>
+                            <constraint firstItem="2zO-kJ-fAB" firstAttribute="leading" secondItem="IsW-aI-994" secondAttribute="leading" id="vVt-qX-EFI"/>
+                            <constraint firstAttribute="trailing" secondItem="2zO-kJ-fAB" secondAttribute="trailing" id="zTD-4l-7wh"/>
+                        </constraints>
+                    </view>
+                    <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon_slide_unactive.png" translatesAutoresizingMaskIntoConstraints="NO" id="wou-b8-7qh">
+                        <rect key="frame" x="90" y="90" width="10" height="10"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="10" id="53L-Ql-Dsq"/>
+                            <constraint firstAttribute="height" constant="10" id="gRv-FV-Okf"/>
+                        </constraints>
+                    </imageView>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="wou-b8-7qh" secondAttribute="bottom" constant="4" id="1Is-p2-ldc"/>
+                <constraint firstAttribute="bottom" secondItem="IsW-aI-994" secondAttribute="bottom" id="59p-Nh-Vie"/>
+                <constraint firstItem="adD-Gb-Oxu" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="D8v-f9-scY"/>
+                <constraint firstAttribute="trailing" secondItem="wou-b8-7qh" secondAttribute="trailing" constant="4" id="DiK-s2-cdV"/>
+                <constraint firstItem="adD-Gb-Oxu" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="Kzc-LG-d94"/>
+                <constraint firstAttribute="bottom" secondItem="adD-Gb-Oxu" secondAttribute="bottom" id="NmF-Nc-PaT"/>
+                <constraint firstItem="IsW-aI-994" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="UxU-UK-pbb"/>
+                <constraint firstAttribute="trailing" secondItem="adD-Gb-Oxu" secondAttribute="trailing" id="nuj-Ps-gh0"/>
+            </constraints>
+            <connections>
+                <outlet property="Number" destination="2zO-kJ-fAB" id="uxc-6G-gpK"/>
+                <outlet property="RedPanel" destination="IsW-aI-994" id="u18-JK-dxq"/>
+                <outlet property="image" destination="adD-Gb-Oxu" id="7QE-H3-wGD"/>
+                <outlet property="tickPhoto" destination="wou-b8-7qh" id="szQ-39-jyf"/>
+            </connections>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="icon_slide_unactive.png" width="10" height="10"/>
+    </resources>
+</document>

@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="SourceSansPro-Regular.ttf">
+            <string>SourceSansPro-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ChoosingBannersViewController">
+            <connections>
+                <outlet property="collectionView" destination="Twn-fh-OQN" id="C9P-rR-WpW"/>
+                <outlet property="slideshow" destination="wFa-3E-kWb" id="hlP-l5-0my"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+                <outlet property="warningLabel" destination="HRH-Au-jHu" id="hRC-Tl-7he"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wFa-3E-kWb" userLabel="SlideShow" customClass="iCarousel">
+                    <rect key="frame" x="0.0" y="20" width="320" height="200"/>
+                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="200" id="iAY-lL-UCN"/>
+                    </constraints>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="sMh-ld-Uv7"/>
+                        <outlet property="delegate" destination="-1" id="bgT-fe-9kl"/>
+                    </connections>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ws0-Mv-vYl" userLabel="White Space">
+                    <rect key="frame" x="0.0" y="220" width="320" height="20"/>
+                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="20" id="lxK-uy-lWz"/>
+                    </constraints>
+                </view>
+                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="Twn-fh-OQN">
+                    <rect key="frame" x="0.0" y="240" width="320" height="328"/>
+                    <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                    <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="4" minimumInteritemSpacing="4" id="dYK-db-sIm">
+                        <size key="itemSize" width="50" height="50"/>
+                        <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                        <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                        <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    </collectionViewFlowLayout>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="7o8-zo-hlx"/>
+                        <outlet property="delegate" destination="-1" id="YXI-rG-crw"/>
+                    </connections>
+                </collectionView>
+                <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Upload your picture first if you want to choose banner!" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HRH-Au-jHu">
+                    <rect key="frame" x="0.0" y="379" width="320" height="50.5"/>
+                    <fontDescription key="fontDescription" name="SourceSansPro-Regular" family="Source Sans Pro" pointSize="20"/>
+                    <color key="textColor" red="1" green="0.40000000600000002" blue="0.40000000600000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="HRH-Au-jHu" firstAttribute="centerX" secondItem="Twn-fh-OQN" secondAttribute="centerX" id="08Y-I1-VNp"/>
+                <constraint firstItem="Ws0-Mv-vYl" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="3Zi-D3-LF0"/>
+                <constraint firstItem="wFa-3E-kWb" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="20" id="Bl2-HI-56V"/>
+                <constraint firstAttribute="bottom" secondItem="Twn-fh-OQN" secondAttribute="bottom" id="CIF-i1-1TK"/>
+                <constraint firstAttribute="trailing" secondItem="Ws0-Mv-vYl" secondAttribute="trailing" id="LTe-bK-8VW"/>
+                <constraint firstAttribute="trailing" secondItem="wFa-3E-kWb" secondAttribute="trailing" id="MJQ-pP-uXe"/>
+                <constraint firstItem="HRH-Au-jHu" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="NVS-VN-WBq"/>
+                <constraint firstItem="HRH-Au-jHu" firstAttribute="centerY" secondItem="Twn-fh-OQN" secondAttribute="centerY" id="SBL-x9-bhP"/>
+                <constraint firstAttribute="trailing" secondItem="HRH-Au-jHu" secondAttribute="trailing" id="Uni-FV-Ufd"/>
+                <constraint firstAttribute="trailing" secondItem="Twn-fh-OQN" secondAttribute="trailing" id="c7d-Ss-zWf"/>
+                <constraint firstItem="Twn-fh-OQN" firstAttribute="top" secondItem="Ws0-Mv-vYl" secondAttribute="bottom" id="dSg-l1-XRb"/>
+                <constraint firstItem="Ws0-Mv-vYl" firstAttribute="top" secondItem="wFa-3E-kWb" secondAttribute="bottom" id="p3K-Kt-Y5S"/>
+                <constraint firstItem="Twn-fh-OQN" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="puv-v1-euY"/>
+                <constraint firstItem="wFa-3E-kWb" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="ye4-x4-cUc"/>
+            </constraints>
+            <point key="canvasLocation" x="-17" y="254"/>
+        </view>
+    </objects>
+</document>

@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="SF-UI-Display-Regular.otf">
+            <string>SFUIDisplay-Regular</string>
+        </array>
+        <array key="SFUIDisplay-Semibold.ttf">
+            <string>SFUIDisplay-Semibold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CommentViewController">
+            <connections>
+                <outlet property="commentTextView" destination="jCf-9z-DI7" id="aO2-hy-cUf"/>
+                <outlet property="commentView" destination="LDx-jD-sdp" id="3m3-TE-AMv"/>
+                <outlet property="commentViewBottomMargin" destination="DSb-w0-b0S" id="PAN-uV-8ah"/>
+                <outlet property="doneButton" destination="SYt-wd-5Q2" id="icn-Ta-Vzz"/>
+                <outlet property="loadMoreLabel" destination="nY0-ny-lC2" id="APG-4K-XYI"/>
+                <outlet property="loadMoreView" destination="Eq2-uH-1ro" id="mj3-gt-9YF"/>
+                <outlet property="tableView" destination="vWi-TZ-oFM" id="1Aj-aq-nhi"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clipsSubviews="YES" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <tableView autoresizesSubviews="NO" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="none" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="vWi-TZ-oFM">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="617"/>
+                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <gestureRecognizers/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="AJd-mA-1El"/>
+                        <outlet property="delegate" destination="-1" id="xtf-ZI-5F3"/>
+                        <outletCollection property="gestureRecognizers" destination="4T2-92-mbN" appends="YES" id="dua-Ty-CAJ"/>
+                    </connections>
+                </tableView>
+                <view autoresizesSubviews="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LDx-jD-sdp" userLabel="Comment View">
+                    <rect key="frame" x="0.0" y="617" width="375" height="50"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SYt-wd-5Q2">
+                            <rect key="frame" x="285" y="10" width="80" height="30"/>
+                            <color key="backgroundColor" red="0.81568627449999997" green="0.0078431372550000003" blue="0.1058823529" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="80" id="Ofg-DG-zw6"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="SFUIDisplay-Regular" family="SF UI Display" pointSize="14"/>
+                            <state key="normal" title="Send">
+                                <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </state>
+                            <connections>
+                                <action selector="touchDoneButton:" destination="-1" eventType="touchUpInside" id="MOR-Xa-YPG"/>
+                            </connections>
+                        </button>
+                        <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="jCf-9z-DI7">
+                            <rect key="frame" x="10" y="10" width="265" height="30"/>
+                            <nil key="textColor"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <textInputTraits key="textInputTraits"/>
+                            <connections>
+                                <outlet property="delegate" destination="-1" id="FdG-FR-bBi"/>
+                            </connections>
+                        </textField>
+                    </subviews>
+                    <color key="backgroundColor" red="0.90212953090667725" green="0.90210258960723877" blue="0.90211784839630127" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstItem="jCf-9z-DI7" firstAttribute="top" secondItem="LDx-jD-sdp" secondAttribute="top" constant="10" id="1h3-MO-80V"/>
+                        <constraint firstAttribute="height" constant="50" id="Csg-IF-cai"/>
+                        <constraint firstItem="jCf-9z-DI7" firstAttribute="leading" secondItem="LDx-jD-sdp" secondAttribute="leading" constant="10" id="EY7-bh-JTd"/>
+                        <constraint firstAttribute="bottom" secondItem="SYt-wd-5Q2" secondAttribute="bottom" constant="10" id="Jn2-D9-bmh"/>
+                        <constraint firstAttribute="trailing" secondItem="SYt-wd-5Q2" secondAttribute="trailing" constant="10" id="Kfr-9g-m8n"/>
+                        <constraint firstItem="SYt-wd-5Q2" firstAttribute="leading" secondItem="jCf-9z-DI7" secondAttribute="trailing" constant="10" id="LII-ad-oB1"/>
+                        <constraint firstItem="SYt-wd-5Q2" firstAttribute="top" secondItem="LDx-jD-sdp" secondAttribute="top" constant="10" id="YkP-0W-vEb"/>
+                        <constraint firstAttribute="bottom" secondItem="jCf-9z-DI7" secondAttribute="bottom" constant="10" id="bRC-xX-4TV"/>
+                    </constraints>
+                </view>
+                <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Eq2-uH-1ro">
+                    <rect key="frame" x="88" y="28" width="200" height="37"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Load previous comments" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nY0-ny-lC2">
+                            <rect key="frame" x="20" y="10" width="160" height="17"/>
+                            <fontDescription key="fontDescription" name="SFUIDisplay-Semibold" family="SF UI Display" pointSize="14"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="nY0-ny-lC2" firstAttribute="leading" secondItem="Eq2-uH-1ro" secondAttribute="leading" constant="20" id="IY6-Te-sBa"/>
+                        <constraint firstItem="nY0-ny-lC2" firstAttribute="top" secondItem="Eq2-uH-1ro" secondAttribute="top" constant="10" id="aUt-eG-bxL"/>
+                        <constraint firstAttribute="trailing" secondItem="nY0-ny-lC2" secondAttribute="trailing" constant="20" id="lx5-Gn-Nxt"/>
+                        <constraint firstAttribute="bottom" secondItem="nY0-ny-lC2" secondAttribute="bottom" constant="10" id="mb8-tC-x0B"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="LDx-jD-sdp" firstAttribute="top" secondItem="vWi-TZ-oFM" secondAttribute="bottom" id="0o0-Lr-sAP"/>
+                <constraint firstItem="LDx-jD-sdp" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="1Z7-8j-c38"/>
+                <constraint firstItem="vWi-TZ-oFM" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="AfD-mu-DqQ"/>
+                <constraint firstItem="Zm4-o4-Pek" firstAttribute="bottom" secondItem="LDx-jD-sdp" secondAttribute="bottom" id="DSb-w0-b0S"/>
+                <constraint firstAttribute="trailing" secondItem="LDx-jD-sdp" secondAttribute="trailing" id="Os9-Mq-aZz"/>
+                <constraint firstAttribute="trailing" secondItem="vWi-TZ-oFM" secondAttribute="trailing" id="PqV-kF-KwF"/>
+                <constraint firstItem="vWi-TZ-oFM" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="apG-6A-rTG"/>
+                <constraint firstItem="Eq2-uH-1ro" firstAttribute="centerX" secondItem="Zm4-o4-Pek" secondAttribute="centerX" id="cW0-QG-Gdf"/>
+                <constraint firstItem="Eq2-uH-1ro" firstAttribute="top" secondItem="Zm4-o4-Pek" secondAttribute="top" constant="8" id="qOW-lz-oWb"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="Zm4-o4-Pek"/>
+            <point key="canvasLocation" x="76.5" y="146.5"/>
+        </view>
+        <tapGestureRecognizer id="4T2-92-mbN">
+            <connections>
+                <action selector="handleTapOnTableView:" destination="-1" id="26n-ho-5Gm"/>
+            </connections>
+        </tapGestureRecognizer>
+    </objects>
+</document>

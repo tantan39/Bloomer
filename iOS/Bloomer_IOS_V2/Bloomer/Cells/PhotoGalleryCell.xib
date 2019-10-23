@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12120" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="SF-UI-Display-Regular.otf">
+            <string>SFUIDisplay-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="PhotoGalleryCell" id="KGk-i7-Jjw" customClass="PhotoGalleryCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="80"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="79.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="BbZ-kE-sms" userLabel="Album Thumb">
+                        <rect key="frame" x="15" y="0.0" width="70" height="70"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="70" id="6Eg-qr-edj"/>
+                            <constraint firstAttribute="width" constant="70" id="ePL-wy-ne9"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zdg-i2-n5w" userLabel="Label Album Name">
+                        <rect key="frame" x="95" y="16.5" width="202" height="17"/>
+                        <constraints>
+                            <constraint firstAttribute="height" relation="greaterThanOrEqual" id="wNC-aj-0CZ"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="SFUIDisplay-Regular" family="SF UI Display" pointSize="14"/>
+                        <color key="textColor" red="0.12549019607843137" green="0.12549019607843137" blue="0.12941176470588234" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="123456" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tXu-sM-Qe7" userLabel="Label Album Photo Number">
+                        <rect key="frame" x="95" y="38.5" width="202" height="14"/>
+                        <constraints>
+                            <constraint firstAttribute="height" relation="greaterThanOrEqual" id="hnx-Df-s1T"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="SFUIDisplay-Regular" family="SF UI Display" pointSize="12"/>
+                        <color key="textColor" red="0.52549019607843139" green="0.52549019607843139" blue="0.52549019607843139" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="BbZ-kE-sms" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="15" id="3nn-iY-9KF"/>
+                    <constraint firstItem="zdg-i2-n5w" firstAttribute="centerY" secondItem="BbZ-kE-sms" secondAttribute="centerY" constant="-10" id="ELq-u4-MXA"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="tXu-sM-Qe7" secondAttribute="trailing" constant="15" id="NeJ-gw-S59"/>
+                    <constraint firstItem="BbZ-kE-sms" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="PvI-KS-DX1"/>
+                    <constraint firstItem="tXu-sM-Qe7" firstAttribute="leading" secondItem="BbZ-kE-sms" secondAttribute="trailing" constant="10" id="XRX-MZ-LIy"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="zdg-i2-n5w" secondAttribute="trailing" constant="15" id="hPr-eo-gUa"/>
+                    <constraint firstItem="zdg-i2-n5w" firstAttribute="leading" secondItem="BbZ-kE-sms" secondAttribute="trailing" constant="10" id="lP4-aG-tcW"/>
+                    <constraint firstItem="tXu-sM-Qe7" firstAttribute="centerY" secondItem="BbZ-kE-sms" secondAttribute="centerY" constant="10" id="pa1-wh-tXd"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="albumThumbnail" destination="BbZ-kE-sms" id="RVS-Vf-vnI"/>
+                <outlet property="labelAlbumName" destination="zdg-i2-n5w" id="bRV-uk-iUD"/>
+                <outlet property="labelAlbumPhotoNumber" destination="tXu-sM-Qe7" id="xAt-mS-mA8"/>
+            </connections>
+            <point key="canvasLocation" x="-111" y="-88"/>
+        </tableViewCell>
+    </objects>
+</document>

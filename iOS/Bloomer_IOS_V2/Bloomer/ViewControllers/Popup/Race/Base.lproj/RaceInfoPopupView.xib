@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="RaceInfoPopupViewController"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT" customClass="RaceInfoPopupView">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="l8s-C2-Ido" userLabel="PopupView">
+                    <rect key="frame" x="32" y="94.5" width="256" height="379"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jF9-wY-TWi" userLabel="Content View">
+                            <rect key="frame" x="0.0" y="0.0" width="256" height="331"/>
+                            <subviews>
+                                <webView contentMode="scaleAspectFill" translatesAutoresizingMaskIntoConstraints="NO" id="Q3f-p0-FUh">
+                                    <rect key="frame" x="0.0" y="0.0" width="256" height="331"/>
+                                    <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                                </webView>
+                            </subviews>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstAttribute="trailing" secondItem="Q3f-p0-FUh" secondAttribute="trailing" id="F3B-cp-gh9"/>
+                                <constraint firstAttribute="bottom" secondItem="Q3f-p0-FUh" secondAttribute="bottom" id="g7T-dC-AUg"/>
+                                <constraint firstItem="Q3f-p0-FUh" firstAttribute="top" secondItem="jF9-wY-TWi" secondAttribute="top" id="j8X-Nx-jLU"/>
+                                <constraint firstItem="Q3f-p0-FUh" firstAttribute="leading" secondItem="jF9-wY-TWi" secondAttribute="leading" id="kVM-aI-bgP"/>
+                            </constraints>
+                        </view>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SQc-XS-V1V">
+                            <rect key="frame" x="0.0" y="339" width="256" height="40"/>
+                            <color key="backgroundColor" red="0.2901960784" green="0.54901960780000003" blue="0.8862745098" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="40" id="NFL-aU-14t"/>
+                            </constraints>
+                            <state key="normal" title="OK">
+                                <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </state>
+                            <connections>
+                                <action selector="touchOKButton:" destination="i5M-Pr-FkT" eventType="touchUpInside" id="S1u-Nh-tsa"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="jF9-wY-TWi" secondAttribute="trailing" id="Pjx-bx-3TI"/>
+                        <constraint firstAttribute="trailing" secondItem="SQc-XS-V1V" secondAttribute="trailing" id="V2s-Bg-3JY"/>
+                        <constraint firstItem="jF9-wY-TWi" firstAttribute="leading" secondItem="l8s-C2-Ido" secondAttribute="leading" id="aNq-x8-7XL"/>
+                        <constraint firstAttribute="bottom" secondItem="SQc-XS-V1V" secondAttribute="bottom" id="qyy-f0-tTJ"/>
+                        <constraint firstItem="SQc-XS-V1V" firstAttribute="top" secondItem="jF9-wY-TWi" secondAttribute="bottom" constant="8" id="ty6-bv-QvM"/>
+                        <constraint firstItem="jF9-wY-TWi" firstAttribute="top" secondItem="l8s-C2-Ido" secondAttribute="top" id="uq6-Np-0hx"/>
+                        <constraint firstItem="SQc-XS-V1V" firstAttribute="leading" secondItem="l8s-C2-Ido" secondAttribute="leading" id="wmU-0s-fHY"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="0.12549019610000001" green="0.12549019610000001" blue="0.12941176469999999" alpha="0.29999999999999999" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="l8s-C2-Ido" firstAttribute="height" secondItem="i5M-Pr-FkT" secondAttribute="height" multiplier="2/3" id="Kta-CN-ugB"/>
+                <constraint firstItem="l8s-C2-Ido" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="Sjf-Jq-oMQ"/>
+                <constraint firstItem="l8s-C2-Ido" firstAttribute="width" secondItem="i5M-Pr-FkT" secondAttribute="width" multiplier="0.8" id="aAI-ud-rac"/>
+                <constraint firstItem="l8s-C2-Ido" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="ekz-3W-vpV"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="contentView" destination="jF9-wY-TWi" id="qD6-g3-xrL"/>
+                <outlet property="leaderboardContent" destination="Q3f-p0-FUh" id="7hd-YN-0sZ"/>
+                <outlet property="okButton" destination="SQc-XS-V1V" id="JZf-ee-bfb"/>
+                <outlet property="popupView" destination="l8s-C2-Ido" id="agT-yg-qcN"/>
+                <outlet property="popupViewEqualHeightConstraint" destination="Kta-CN-ugB" id="qcG-B5-XAi"/>
+                <outletCollection property="gestureRecognizers" destination="oQr-lj-w3W" appends="YES" id="1Z2-R4-yuc"/>
+            </connections>
+            <point key="canvasLocation" x="255" y="344"/>
+        </view>
+        <tapGestureRecognizer numberOfTouchesRequired="0" id="oQr-lj-w3W" userLabel="View Tap Gesture Recognizer"/>
+    </objects>
+</document>

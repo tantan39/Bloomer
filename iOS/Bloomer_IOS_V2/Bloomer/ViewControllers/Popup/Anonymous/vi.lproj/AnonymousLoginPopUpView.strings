@@ -1,0 +1,9 @@
+
+/* Class = "UILabel"; text = "Join Bloomer and continue exploring\nour cool features now."; ObjectID = "SL5-8P-KF4"; */
+"SL5-8P-KF4.text" = "Tham gia Bloomer và cùng khám phá những điều thú vị ngay.";
+
+/* Class = "UIButton"; normalTitle = "Sign Up"; ObjectID = "hjc-RS-Aj5"; */
+"hjc-RS-Aj5.normalTitle" = "Đăng ký";
+
+/* Class = "UIButton"; normalTitle = "Sign In"; ObjectID = "udx-2L-92s"; */
+"udx-2L-92s.normalTitle" = "Đăng nhập";

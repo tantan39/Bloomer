@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="SF-Pro-Text-Regular.otf">
+            <string>SFProText-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="UpdateInfoFBViewController">
+            <connections>
+                <outlet property="doneBtn" destination="KKG-xk-G78" id="ACz-et-Nel"/>
+                <outlet property="gender" destination="VyP-0L-3Py" id="cQ4-lC-61f"/>
+                <outlet property="heightBottomConstrainBtnDone" destination="Gcz-Eo-Df4" id="ffi-LS-eeq"/>
+                <outlet property="labelTitle" destination="vJD-Md-p3o" id="jS8-3B-Cjg"/>
+                <outlet property="nameTF" destination="8qO-64-NB3" id="lEn-zk-pCY"/>
+                <outlet property="policyLable" destination="Ie0-p9-X81" id="wTm-70-oM9"/>
+                <outlet property="policyTV" destination="wBl-UQ-7VP" id="zu0-nm-gMn"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT" customClass="UIControl">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vJD-Md-p3o">
+                    <rect key="frame" x="169.5" y="28" width="36" height="17"/>
+                    <fontDescription key="fontDescription" name="SFProText-Regular" family="SF Pro Text" pointSize="14"/>
+                    <color key="textColor" red="0.26666666666666666" green="0.26666666666666666" blue="0.26666666666666666" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VyP-0L-3Py" customClass="BLSwitchControl">
+                    <rect key="frame" x="67.5" y="60" width="240" height="35"/>
+                    <color key="backgroundColor" red="0.69803921568627447" green="0.13333333333333333" blue="0.14509803921568626" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="35" id="J62-Rm-Dwe"/>
+                        <constraint firstAttribute="width" constant="240" id="t0b-E7-kIK"/>
+                    </constraints>
+                    <connections>
+                        <action selector="changeGender:" destination="-1" eventType="valueChanged" id="YA4-1k-nhs"/>
+                    </connections>
+                </view>
+                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="8qO-64-NB3" customClass="MFTextField">
+                    <rect key="frame" x="48" y="136" width="279" height="30"/>
+                    <color key="textColor" red="0.26666666666666666" green="0.26666666666666666" blue="0.26666666666666666" alpha="1" colorSpace="calibratedRGB"/>
+                    <fontDescription key="fontDescription" name="SFProText-Regular" family="SF Pro Text" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                    <connections>
+                        <action selector="textdidchangeTf:" destination="-1" eventType="editingChanged" id="AtQ-Xa-598"/>
+                        <outlet property="delegate" destination="-1" id="EkC-v8-ek9"/>
+                    </connections>
+                </textField>
+                <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ie0-p9-X81">
+                    <rect key="frame" x="24" y="618" width="327" height="17"/>
+                    <fontDescription key="fontDescription" name="SFProText-Regular" family="SF Pro Text" pointSize="14"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="wBl-UQ-7VP" customClass="ActiveSubstringTextView">
+                    <rect key="frame" x="24" y="618" width="327" height="17"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                    <fontDescription key="fontDescription" name="SFProText-Regular" family="SF Pro Text" pointSize="14"/>
+                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                </textView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KKG-xk-G78">
+                    <rect key="frame" x="87.5" y="507" width="200" height="44"/>
+                    <color key="backgroundColor" red="0.69803921568627447" green="0.13333333333333333" blue="0.14509803921568626" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="200" id="U4q-qa-DlC"/>
+                        <constraint firstAttribute="height" constant="44" id="g3x-6c-rPg"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="14"/>
+                    <state key="normal" title="Button">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                    <connections>
+                        <action selector="touchDoneBtn:" destination="-1" eventType="touchUpInside" id="cma-jS-Fcc"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="wBl-UQ-7VP" firstAttribute="centerX" secondItem="Ie0-p9-X81" secondAttribute="centerX" id="4fb-2b-fUp"/>
+                <constraint firstItem="vJD-Md-p3o" firstAttribute="centerX" secondItem="Q5M-cg-NOt" secondAttribute="centerX" id="87U-Sp-Jt7"/>
+                <constraint firstItem="VyP-0L-3Py" firstAttribute="top" secondItem="vJD-Md-p3o" secondAttribute="bottom" constant="15" id="8XC-ov-RmT"/>
+                <constraint firstItem="wBl-UQ-7VP" firstAttribute="centerY" secondItem="Ie0-p9-X81" secondAttribute="centerY" id="8uC-XX-0UL"/>
+                <constraint firstItem="Q5M-cg-NOt" firstAttribute="trailing" secondItem="8qO-64-NB3" secondAttribute="trailing" constant="48" id="9mP-8N-iYA"/>
+                <constraint firstItem="wBl-UQ-7VP" firstAttribute="top" secondItem="KKG-xk-G78" secondAttribute="bottom" constant="67" id="Gcz-Eo-Df4"/>
+                <constraint firstItem="Q5M-cg-NOt" firstAttribute="bottom" secondItem="Ie0-p9-X81" secondAttribute="bottom" constant="32" id="Ouu-Z6-h0t"/>
+                <constraint firstItem="wBl-UQ-7VP" firstAttribute="width" secondItem="Ie0-p9-X81" secondAttribute="width" id="QXq-8N-gS4"/>
+                <constraint firstItem="vJD-Md-p3o" firstAttribute="top" secondItem="Q5M-cg-NOt" secondAttribute="top" constant="8" id="Qw1-Pr-NNI"/>
+                <constraint firstItem="VyP-0L-3Py" firstAttribute="centerX" secondItem="vJD-Md-p3o" secondAttribute="centerX" id="VeH-y7-w6X"/>
+                <constraint firstItem="Ie0-p9-X81" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" constant="24" id="XI5-zn-yUV"/>
+                <constraint firstItem="KKG-xk-G78" firstAttribute="centerX" secondItem="Q5M-cg-NOt" secondAttribute="centerX" id="b6S-b0-5tK"/>
+                <constraint firstItem="8qO-64-NB3" firstAttribute="top" secondItem="VyP-0L-3Py" secondAttribute="bottom" constant="41" id="hTP-IC-kmQ"/>
+                <constraint firstItem="wBl-UQ-7VP" firstAttribute="height" secondItem="Ie0-p9-X81" secondAttribute="height" id="kSg-Kz-aSX"/>
+                <constraint firstItem="Q5M-cg-NOt" firstAttribute="trailing" secondItem="Ie0-p9-X81" secondAttribute="trailing" constant="24" id="kkE-2e-xBL"/>
+                <constraint firstItem="8qO-64-NB3" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" constant="48" id="pmv-B9-GpI"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="Q5M-cg-NOt"/>
+            <connections>
+                <action selector="touchBackground:" destination="-1" eventType="touchDown" id="qNw-UK-rNC"/>
+            </connections>
+        </view>
+    </objects>
+</document>

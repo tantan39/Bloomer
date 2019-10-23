@@ -1,0 +1,22 @@
+
+/* Class = "UITextField"; placeholder = "Your email (optional)"; ObjectID = "8nQ-xV-Opq"; */
+"Pgj-FM-F2l.placeholder" = "Sinh nhật của bạn";
+
+/* Class = "UITextField"; placeholder = "What’s your name?"; ObjectID = "Dls-8E-bl9"; */
+"KvL-hJ-syj.placeholder" = "Bạn đến từ";
+
+/* Class = "UILabel"; text = "Finish with your information"; ObjectID = "c28-B1-RvF"; */
+"c28-B1-RvF.text" = "Cập nhật ảnh đại diện";
+
+/* Class = "UIButton"; normalTitle = "Next"; ObjectID = "fvL-WG-v4d"; */
+"fvL-WG-v4d.normalTitle" = "Hoàn tất";
+
+"IKL-8b-LSM.normalTitle" = "Bỏ qua";
+
+"UVo-HC-fdi.text" = "Giới tính:";
+"vqQ-Bw-wTX.text" = "Nữ";
+"LKA-u2-c7f.text" = "Nam";
+"MT0-AR-gs4.text" = "Bạn đã đồng ý với";
+"tdE-ll-zCy.text" = "và";
+"Mkd-cp-4pj.normalTitle" = "Chính sách bảo mật";
+"jbg-hy-eor.normalTitle" = "Điều khoản sử dụng";

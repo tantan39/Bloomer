@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="SF-Pro-Text-Semibold.otf">
+            <string>SFProText-Semibold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="PageContentViewController">
+            <connections>
+                <outlet property="ivScreenImage" destination="XA0-i3-34I" id="LDq-Gg-bZT"/>
+                <outlet property="lblScreenLabel" destination="UYy-hK-n40" id="qtz-my-MLJ"/>
+                <outlet property="view" destination="jza-Ld-pXb" id="RrN-kS-aUP"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="jza-Ld-pXb">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" tag="222" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="welcome2" translatesAutoresizingMaskIntoConstraints="NO" id="XA0-i3-34I">
+                    <rect key="frame" x="43.5" y="57" width="288" height="610"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" tag="111" contentMode="left" horizontalHuggingPriority="270" verticalHuggingPriority="270" horizontalCompressionResistancePriority="800" verticalCompressionResistancePriority="800" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UYy-hK-n40">
+                    <rect key="frame" x="30" y="24" width="315" height="17"/>
+                    <fontDescription key="fontDescription" name="SFProText-Semibold" family="SF Pro Text" pointSize="14"/>
+                    <color key="textColor" red="0.2666666667" green="0.2666666667" blue="0.2666666667" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="UYy-hK-n40" firstAttribute="leading" secondItem="oYs-rM-whA" secondAttribute="leading" constant="30" id="3MS-LV-Y7d"/>
+                <constraint firstItem="XA0-i3-34I" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="oYs-rM-whA" secondAttribute="leading" constant="39" id="4Ib-HJ-oJc"/>
+                <constraint firstItem="oYs-rM-whA" firstAttribute="bottom" secondItem="XA0-i3-34I" secondAttribute="bottom" id="76n-y3-BIf"/>
+                <constraint firstItem="oYs-rM-whA" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="XA0-i3-34I" secondAttribute="trailing" constant="39" id="CSC-M9-MyU"/>
+                <constraint firstItem="UYy-hK-n40" firstAttribute="top" secondItem="jza-Ld-pXb" secondAttribute="top" constant="24" id="UcT-Jv-biZ"/>
+                <constraint firstItem="XA0-i3-34I" firstAttribute="top" secondItem="UYy-hK-n40" secondAttribute="bottom" constant="16" id="h3j-IE-5iF"/>
+                <constraint firstItem="oYs-rM-whA" firstAttribute="trailing" secondItem="UYy-hK-n40" secondAttribute="trailing" constant="30" id="sAu-rZ-F0g"/>
+                <constraint firstItem="XA0-i3-34I" firstAttribute="centerX" secondItem="oYs-rM-whA" secondAttribute="centerX" id="t7h-2V-SSW"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="oYs-rM-whA"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="welcome2" width="288" height="321"/>
+    </resources>
+</document>

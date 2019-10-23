@@ -1,0 +1,20 @@
+
+/* Class = "UIButton"; normalTitle = "Gửi lại"; ObjectID = "Dtj-b4-t7T"; */
+"Dtj-b4-t7T.normalTitle" = "Gửi lại";
+
+/* Class = "UIButton"; normalTitle = "Xác nhận ngay"; ObjectID = "ISK-Y8-o1K"; */
+"ISK-Y8-o1K.normalTitle" = "Tiếp tục";
+
+/* Class = "UIButton"; normalTitle = "Quay lại"; ObjectID = "QbE-kr-v7i"; */
+"QbE-kr-v7i.normalTitle" = "Quay lại";
+
+/* Class = "UILabel"; text = "Mã xác nhận đã được gửi đến"; ObjectID = "adx-3G-Xtj"; */
+"adx-3G-Xtj.text" = "Mã xác nhận đã được gửi đến";
+
+/* Class = "UILabel"; text = "+84 934 258 963"; ObjectID = "kWe-Qa-dS4"; */
+"kWe-Qa-dS4.text" = "+84 934 258 963";
+
+"kQq-mS-R7U.normalTitle" = "Gửi lại qua tin nhắn";
+"M3w-KX-5a4.normalTitle" = "Nghe mã xác nhận";
+"qXB-hH-8wg.text" = "Chưa nhận được mã xác nhận sau 30 giây?";
+"1AS-PY-h0T.text" = "Nhập mã xác nhận được gửi đến điện thoại của bạn";

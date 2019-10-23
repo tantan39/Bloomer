@@ -1,0 +1,15 @@
+
+/* Class = "UILabel"; text = "2000 Flowers"; ObjectID = "CjF-5h-kOL"; */
+"CjF-5h-kOL.text" = "2000 Flowers";
+
+/* Class = "UIButton"; normalTitle = "Buy Now"; ObjectID = "T68-bt-9Lc"; */
+"T68-bt-9Lc.normalTitle" = "MUA NGAY";
+
+/* Class = "UIButton"; normalTitle = "Pay via ATM/Visa/MasterCard/Cards"; ObjectID = "V7r-f7-DFh"; */
+"V7r-f7-DFh.normalTitle" = "Pay via ATM/Visa/MasterCard/Cards";
+
+/* Class = "UILabel"; text = "You have"; ObjectID = "frC-mo-ejk"; */
+"frC-mo-ejk.text" = "Hiện tại bạn đang có";
+
+/* Class = "UILabel"; text = "More flowers, more fun!"; ObjectID = "hZU-56-rEj"; */
+"For-d3-gqE.text" = "Tặng thêm cho lần đầu tiên mua hoa!";

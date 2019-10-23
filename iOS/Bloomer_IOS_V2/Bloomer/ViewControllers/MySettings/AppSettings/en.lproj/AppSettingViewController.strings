@@ -1,0 +1,21 @@
+
+/* Class = "UILabel"; text = "Followers/ Followings notifications"; ObjectID = "5jf-0X-2iQ"; */
+"5jf-0X-2iQ.text" = "Followers/ Followings notifications";
+
+/* Class = "UILabel"; text = "Followers notifications"; ObjectID = "CmY-M8-jfI"; */
+"CmY-M8-jfI.text" = "Followers notifications";
+
+/* Class = "UILabel"; text = "App notifications"; ObjectID = "M82-6P-fdp"; */
+"M82-6P-fdp.text" = "App notifications";
+
+/* Class = "UILabel"; text = "Leaderboard notifications"; ObjectID = "NtA-Jx-gvx"; */
+"NtA-Jx-gvx.text" = "Contest notifications";
+
+/* Class = "UILabel"; text = "All notifications"; ObjectID = "OLI-Z5-eWW"; */
+"OLI-Z5-eWW.text" = "All notifications";
+
+/* Class = "UILabel"; text = "DETAILS"; ObjectID = "cGj-ZC-nuI"; */
+"cGj-ZC-nuI.text" = "DETAILS";
+
+/* Class = "UILabel"; text = "Chat notifications"; ObjectID = "sIH-PH-jwP"; */
+"sIH-PH-jwP.text" = "Chat notifications";

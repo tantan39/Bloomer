@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="SF-UI-Text-Semibold.otf">
+            <string>SFUIText-Semibold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="PushNotificationPopUpView">
+            <rect key="frame" x="0.0" y="0.0" width="364" height="88"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Mbw-od-IYi" userLabel="Main View">
+                    <rect key="frame" x="8" y="8" width="348" height="60"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Icon_Other_Users_Avatar" translatesAutoresizingMaskIntoConstraints="NO" id="dwo-Pk-rMq" userLabel="Avatar">
+                            <rect key="frame" x="12" y="12.5" width="35" height="35"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="35" id="Dqh-cG-bsK"/>
+                                <constraint firstAttribute="width" constant="35" id="nnP-EL-hNE"/>
+                            </constraints>
+                        </imageView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yGi-jf-YkN" userLabel="Label Name">
+                            <rect key="frame" x="59" y="12" width="277" height="36"/>
+                            <fontDescription key="fontDescription" name="SFUIText-Semibold" family="SF UI Text" pointSize="12"/>
+                            <color key="textColor" red="0.10196078431372549" green="0.10196078431372549" blue="0.10196078431372549" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <gestureRecognizers/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="60" id="JZf-Ne-t76"/>
+                        <constraint firstAttribute="trailing" secondItem="yGi-jf-YkN" secondAttribute="trailing" constant="12" id="RJA-8K-Hiq"/>
+                        <constraint firstItem="dwo-Pk-rMq" firstAttribute="centerY" secondItem="Mbw-od-IYi" secondAttribute="centerY" id="UQC-Qm-mGI"/>
+                        <constraint firstItem="yGi-jf-YkN" firstAttribute="top" secondItem="Mbw-od-IYi" secondAttribute="top" constant="12" id="bq9-qY-AxQ"/>
+                        <constraint firstItem="yGi-jf-YkN" firstAttribute="leading" secondItem="dwo-Pk-rMq" secondAttribute="trailing" constant="12" id="eSQ-aX-MKB"/>
+                        <constraint firstItem="dwo-Pk-rMq" firstAttribute="leading" secondItem="Mbw-od-IYi" secondAttribute="leading" constant="12" id="u0g-BN-osd"/>
+                        <constraint firstAttribute="bottom" secondItem="yGi-jf-YkN" secondAttribute="bottom" constant="12" id="zRP-Tw-j4Q"/>
+                    </constraints>
+                    <connections>
+                        <outletCollection property="gestureRecognizers" destination="uJy-tg-Tkv" appends="YES" id="ysm-OO-srl"/>
+                        <outletCollection property="gestureRecognizers" destination="VZY-yV-qj4" appends="YES" id="bCk-XP-Ism"/>
+                    </connections>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="Mbw-od-IYi" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="8" id="5Tx-Nu-ybx"/>
+                <constraint firstItem="Mbw-od-IYi" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="8" id="Kc7-BH-fAa"/>
+                <constraint firstAttribute="trailing" secondItem="Mbw-od-IYi" secondAttribute="trailing" constant="8" id="LZ1-B0-Qvw"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="avatar" destination="dwo-Pk-rMq" id="4O7-Zy-qP2"/>
+                <outlet property="mainView" destination="Mbw-od-IYi" id="qrD-AM-lWg"/>
+                <outlet property="mainViewHeight" destination="JZf-Ne-t76" id="0oY-xq-Heu"/>
+                <outlet property="nameLabel" destination="yGi-jf-YkN" id="Jew-pZ-hJd"/>
+            </connections>
+            <point key="canvasLocation" x="8" y="-195.20239880059972"/>
+        </view>
+        <panGestureRecognizer minimumNumberOfTouches="1" id="uJy-tg-Tkv">
+            <connections>
+                <action selector="handlePanGesture:" destination="iN0-l3-epB" id="Xxz-Jw-a5R"/>
+            </connections>
+        </panGestureRecognizer>
+        <tapGestureRecognizer cancelsTouchesInView="NO" id="VZY-yV-qj4">
+            <connections>
+                <action selector="touchMainView:" destination="iN0-l3-epB" id="2u4-lc-Vdc"/>
+            </connections>
+        </tapGestureRecognizer>
+    </objects>
+    <resources>
+        <image name="Icon_Other_Users_Avatar" width="50" height="50"/>
+    </resources>
+</document>

@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="SFUIDisplay-Regular.ttf">
+            <string>SFUIDisplay-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="TutorialViewController"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="Tgv-Bq-k7f">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="tutorial_bg.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="fuc-Li-jkz">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                </imageView>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" pagingEnabled="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="E6g-4L-7ag">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rMs-el-XJh" userLabel="Content View">
+                            <rect key="frame" x="0.0" y="0.0" width="1125" height="667"/>
+                            <subviews>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="g7p-f8-8Dl" userLabel="View 1">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="607"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Join the leaderboards with the themes you love Create picture albums for each theme" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xEn-wm-ydn" userLabel="Label Title">
+                                            <rect key="frame" x="0.0" y="20" width="375" height="26.5"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" relation="greaterThanOrEqual" id="MSw-kI-2WD"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" name="SFUIDisplay-Regular" family="SF UI Display" pointSize="11"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="6KO-Gy-hIH" customClass="FLAnimatedImageView">
+                                            <rect key="frame" x="0.0" y="56.5" width="375" height="550.5"/>
+                                            <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </imageView>
+                                    </subviews>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                    <constraints>
+                                        <constraint firstItem="6KO-Gy-hIH" firstAttribute="top" secondItem="xEn-wm-ydn" secondAttribute="bottom" constant="10" id="1dc-es-Lc4"/>
+                                        <constraint firstAttribute="bottom" secondItem="6KO-Gy-hIH" secondAttribute="bottom" id="GTm-4I-9nn"/>
+                                        <constraint firstAttribute="trailing" secondItem="xEn-wm-ydn" secondAttribute="trailing" id="JXX-Ov-ut7"/>
+                                        <constraint firstAttribute="trailing" secondItem="6KO-Gy-hIH" secondAttribute="trailing" id="NDd-9q-z5v"/>
+                                        <constraint firstItem="xEn-wm-ydn" firstAttribute="leading" secondItem="g7p-f8-8Dl" secondAttribute="leading" id="Sc2-qS-eiK"/>
+                                        <constraint firstItem="xEn-wm-ydn" firstAttribute="top" secondItem="g7p-f8-8Dl" secondAttribute="top" constant="20" id="pCo-Pk-bER"/>
+                                        <constraint firstItem="6KO-Gy-hIH" firstAttribute="leading" secondItem="g7p-f8-8Dl" secondAttribute="leading" id="qLh-nS-MzQ"/>
+                                    </constraints>
+                                </view>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dwz-u7-xBa" userLabel="View 2">
+                                    <rect key="frame" x="375" y="0.0" width="375" height="607"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Join the leaderboards with the themes you love Create picture albums for each theme" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RHl-K2-6Qk" userLabel="Label Title">
+                                            <rect key="frame" x="0.0" y="20" width="375" height="26.5"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" relation="greaterThanOrEqual" id="veV-7Q-v9y"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" name="SFUIDisplay-Regular" family="SF UI Display" pointSize="11"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="r5i-SP-Id0" customClass="FLAnimatedImageView">
+                                            <rect key="frame" x="0.0" y="56.5" width="375" height="550.5"/>
+                                            <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </imageView>
+                                    </subviews>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                    <constraints>
+                                        <constraint firstAttribute="trailing" secondItem="r5i-SP-Id0" secondAttribute="trailing" id="JZO-v9-R7P"/>
+                                        <constraint firstAttribute="bottom" secondItem="r5i-SP-Id0" secondAttribute="bottom" id="VLM-v7-ojg"/>
+                                        <constraint firstAttribute="trailing" secondItem="RHl-K2-6Qk" secondAttribute="trailing" id="aKP-TH-WQX"/>
+                                        <constraint firstItem="r5i-SP-Id0" firstAttribute="top" secondItem="RHl-K2-6Qk" secondAttribute="bottom" constant="10" id="jKD-C2-w3Z"/>
+                                        <constraint firstItem="RHl-K2-6Qk" firstAttribute="leading" secondItem="dwz-u7-xBa" secondAttribute="leading" id="qjM-Il-4xs"/>
+                                        <constraint firstItem="r5i-SP-Id0" firstAttribute="leading" secondItem="dwz-u7-xBa" secondAttribute="leading" id="sXl-Sr-vhV"/>
+                                        <constraint firstItem="RHl-K2-6Qk" firstAttribute="top" secondItem="dwz-u7-xBa" secondAttribute="top" constant="20" id="vxL-lQ-QHS"/>
+                                    </constraints>
+                                </view>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="IqO-89-HLR" userLabel="View 3">
+                                    <rect key="frame" x="750" y="0.0" width="375" height="607"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Join the leaderboards with the themes you love Create picture albums for each theme" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4kv-tm-3De" userLabel="Label Title">
+                                            <rect key="frame" x="0.0" y="20" width="375" height="26.5"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" relation="greaterThanOrEqual" id="81o-EY-SAq"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" name="SFUIDisplay-Regular" family="SF UI Display" pointSize="11"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="fPf-RV-jVo" customClass="FLAnimatedImageView">
+                                            <rect key="frame" x="0.0" y="56.5" width="375" height="550.5"/>
+                                            <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </imageView>
+                                    </subviews>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                    <constraints>
+                                        <constraint firstAttribute="trailing" secondItem="fPf-RV-jVo" secondAttribute="trailing" id="BYX-Jh-g9V"/>
+                                        <constraint firstItem="fPf-RV-jVo" firstAttribute="leading" secondItem="IqO-89-HLR" secondAttribute="leading" id="GI7-hV-Qgl"/>
+                                        <constraint firstItem="4kv-tm-3De" firstAttribute="leading" secondItem="IqO-89-HLR" secondAttribute="leading" id="Wf2-dq-Cjo"/>
+                                        <constraint firstItem="fPf-RV-jVo" firstAttribute="top" secondItem="4kv-tm-3De" secondAttribute="bottom" constant="10" id="iTj-WC-dvJ"/>
+                                        <constraint firstAttribute="bottom" secondItem="fPf-RV-jVo" secondAttribute="bottom" id="jO2-vP-CC4"/>
+                                        <constraint firstAttribute="trailing" secondItem="4kv-tm-3De" secondAttribute="trailing" id="krB-pO-BdD"/>
+                                        <constraint firstItem="4kv-tm-3De" firstAttribute="top" secondItem="IqO-89-HLR" secondAttribute="top" constant="20" id="uAr-zp-Eu6"/>
+                                    </constraints>
+                                </view>
+                            </subviews>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            <constraints>
+                                <constraint firstItem="IqO-89-HLR" firstAttribute="bottom" secondItem="dwz-u7-xBa" secondAttribute="bottom" id="2MG-5H-cSc"/>
+                                <constraint firstItem="IqO-89-HLR" firstAttribute="top" secondItem="dwz-u7-xBa" secondAttribute="top" id="8wj-ez-1DM"/>
+                                <constraint firstItem="g7p-f8-8Dl" firstAttribute="leading" secondItem="rMs-el-XJh" secondAttribute="leading" id="8xo-vl-BcR"/>
+                                <constraint firstItem="dwz-u7-xBa" firstAttribute="leading" secondItem="g7p-f8-8Dl" secondAttribute="trailing" id="DjM-8z-nKz"/>
+                                <constraint firstItem="dwz-u7-xBa" firstAttribute="width" secondItem="g7p-f8-8Dl" secondAttribute="width" id="FTM-Lk-2ce"/>
+                                <constraint firstItem="g7p-f8-8Dl" firstAttribute="top" secondItem="rMs-el-XJh" secondAttribute="top" id="MlQ-eb-oYe"/>
+                                <constraint firstItem="IqO-89-HLR" firstAttribute="leading" secondItem="dwz-u7-xBa" secondAttribute="trailing" id="ayr-Zm-FLu"/>
+                                <constraint firstItem="dwz-u7-xBa" firstAttribute="top" secondItem="g7p-f8-8Dl" secondAttribute="top" id="fz8-Sd-I3I"/>
+                                <constraint firstAttribute="bottom" secondItem="g7p-f8-8Dl" secondAttribute="bottom" constant="60" id="gai-j0-3rh"/>
+                                <constraint firstItem="dwz-u7-xBa" firstAttribute="bottom" secondItem="g7p-f8-8Dl" secondAttribute="bottom" id="lXx-xS-wEv"/>
+                                <constraint firstItem="IqO-89-HLR" firstAttribute="width" secondItem="dwz-u7-xBa" secondAttribute="width" id="wWF-My-pfS"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                    <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstItem="rMs-el-XJh" firstAttribute="height" secondItem="E6g-4L-7ag" secondAttribute="height" id="Jvz-Hh-gbl"/>
+                        <constraint firstItem="rMs-el-XJh" firstAttribute="leading" secondItem="E6g-4L-7ag" secondAttribute="leading" id="MG3-qc-YOt"/>
+                        <constraint firstAttribute="bottom" secondItem="rMs-el-XJh" secondAttribute="bottom" constant="60" id="YN1-Xn-ns3"/>
+                        <constraint firstAttribute="trailing" secondItem="rMs-el-XJh" secondAttribute="trailing" id="dfy-Qe-xs1"/>
+                        <constraint firstItem="rMs-el-XJh" firstAttribute="top" secondItem="E6g-4L-7ag" secondAttribute="top" id="ynH-p4-Qke"/>
+                    </constraints>
+                </scrollView>
+                <pageControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="HGs-s6-dn8">
+                    <rect key="frame" x="161" y="536" width="39" height="37"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES"/>
+                    <color key="tintColor" red="0.69803921570000005" green="0.1333333333" blue="0.1450980392" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <color key="pageIndicatorTintColor" red="0.92156862750000001" green="0.92156862750000001" blue="0.92156862750000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <color key="currentPageIndicatorTintColor" red="0.69803921570000005" green="0.1333333333" blue="0.1450980392" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                </pageControl>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="fuc-Li-jkz" firstAttribute="top" secondItem="Tgv-Bq-k7f" secondAttribute="top" id="1jf-js-aVw"/>
+                <constraint firstAttribute="bottom" secondItem="E6g-4L-7ag" secondAttribute="bottom" id="2qM-FQ-TMf"/>
+                <constraint firstItem="rMs-el-XJh" firstAttribute="width" secondItem="Tgv-Bq-k7f" secondAttribute="width" multiplier="3" id="6ez-vx-Bfn"/>
+                <constraint firstItem="E6g-4L-7ag" firstAttribute="leading" secondItem="Tgv-Bq-k7f" secondAttribute="leading" id="J6V-fv-306"/>
+                <constraint firstItem="g7p-f8-8Dl" firstAttribute="width" secondItem="Tgv-Bq-k7f" secondAttribute="width" id="JqD-sG-Wrp"/>
+                <constraint firstAttribute="trailing" secondItem="fuc-Li-jkz" secondAttribute="trailing" id="UCm-oz-kTm"/>
+                <constraint firstAttribute="trailing" secondItem="E6g-4L-7ag" secondAttribute="trailing" id="Zg5-Xy-Rh2"/>
+                <constraint firstItem="fuc-Li-jkz" firstAttribute="leading" secondItem="Tgv-Bq-k7f" secondAttribute="leading" id="lWq-Qk-IHN"/>
+                <constraint firstAttribute="bottom" secondItem="fuc-Li-jkz" secondAttribute="bottom" id="mSU-oi-n5n"/>
+                <constraint firstItem="E6g-4L-7ag" firstAttribute="top" secondItem="Tgv-Bq-k7f" secondAttribute="top" id="oOU-TB-TvZ"/>
+            </constraints>
+            <point key="canvasLocation" x="321" y="451"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="tutorial_bg.jpg" width="640" height="1136"/>
+    </resources>
+</document>

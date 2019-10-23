@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="MatchingFlowerPopUpView">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view alpha="0.0" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9MY-c8-GF2" userLabel="Main View">
+                    <rect key="frame" x="187.5" y="333.5" width="0.0" height="0.0"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Icon_Double" translatesAutoresizingMaskIntoConstraints="NO" id="kOV-78-PiX">
+                            <rect key="frame" x="-40.5" y="-25.5" width="81" height="51"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="51" id="ViJ-UY-yry"/>
+                                <constraint firstAttribute="width" constant="81" id="oMv-4s-UzQ"/>
+                            </constraints>
+                        </imageView>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MzT-r8-dSV">
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstAttribute="width" secondItem="MzT-r8-dSV" secondAttribute="height" multiplier="50:19" id="TgX-Vm-ETm"/>
+                            </constraints>
+                        </view>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Bloomer Matching" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ljL-Mc-QVt">
+                            <rect key="frame" x="-75" y="-50.5" width="149.5" height="20"/>
+                            <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" red="0.52941176470588236" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstItem="MzT-r8-dSV" firstAttribute="centerY" secondItem="9MY-c8-GF2" secondAttribute="centerY" id="3CT-ko-xl9"/>
+                        <constraint firstAttribute="trailing" secondItem="MzT-r8-dSV" secondAttribute="trailing" id="4Vt-Dm-86A"/>
+                        <constraint firstItem="kOV-78-PiX" firstAttribute="centerY" secondItem="9MY-c8-GF2" secondAttribute="centerY" multiplier="1.15" id="9ch-Uz-l2O"/>
+                        <constraint firstItem="kOV-78-PiX" firstAttribute="top" secondItem="ljL-Mc-QVt" secondAttribute="bottom" constant="5" id="NCQ-c6-nEy"/>
+                        <constraint firstAttribute="width" secondItem="9MY-c8-GF2" secondAttribute="height" multiplier="1:1" id="aLM-xE-MXx"/>
+                        <constraint firstItem="ljL-Mc-QVt" firstAttribute="centerX" secondItem="9MY-c8-GF2" secondAttribute="centerX" id="gFd-W9-mtc"/>
+                        <constraint firstAttribute="width" id="j5n-Zt-T2W"/>
+                        <constraint firstItem="MzT-r8-dSV" firstAttribute="leading" secondItem="9MY-c8-GF2" secondAttribute="leading" id="k8o-8e-XQe"/>
+                        <constraint firstItem="kOV-78-PiX" firstAttribute="centerX" secondItem="9MY-c8-GF2" secondAttribute="centerX" id="kt1-iL-dMD"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.69940693430656931" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="9MY-c8-GF2" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="NrL-wN-rcs"/>
+                <constraint firstItem="9MY-c8-GF2" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="U1u-mG-mbA"/>
+            </constraints>
+            <connections>
+                <outlet property="iconBonusMultiplier" destination="kOV-78-PiX" id="pKn-me-l24"/>
+                <outlet property="mainView" destination="9MY-c8-GF2" id="1nC-Ix-VfJ"/>
+                <outlet property="mainViewWidth" destination="j5n-Zt-T2W" id="PgE-E2-Jxi"/>
+            </connections>
+        </view>
+    </objects>
+    <resources>
+        <image name="Icon_Double" width="81" height="51"/>
+    </resources>
+</document>

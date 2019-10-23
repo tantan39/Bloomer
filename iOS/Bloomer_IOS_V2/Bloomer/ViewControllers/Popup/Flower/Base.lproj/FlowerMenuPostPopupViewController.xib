@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="SF-UI-Display-Regular.otf">
+            <string>SFUIDisplay-Regular</string>
+        </array>
+        <array key="SourceSansPro-Light.ttf">
+            <string>SourceSansPro-Light</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="FlowerMenuPostPopupViewController">
+            <connections>
+                <outlet property="buttonCancel" destination="zEu-e8-cy4" id="LRA-B7-Nzu"/>
+                <outlet property="buttonSend" destination="1qX-qd-uVb" id="uB7-pA-JdT"/>
+                <outlet property="editorField" destination="DOK-4p-pad" id="hVZ-1L-MPW"/>
+                <outlet property="label" destination="NhZ-gE-pbN" id="LSk-94-it4"/>
+                <outlet property="popupView" destination="hhs-lD-WSZ" id="wcC-qi-kfB"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+                <outlet property="warningLabel" destination="d5H-tq-wqi" id="oF8-gG-jm4"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view autoresizesSubviews="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT" customClass="UIControl">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hhs-lD-WSZ" userLabel="Popup View">
+                    <rect key="frame" x="0.0" y="20" width="375" height="647"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Insert your customised flower" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NhZ-gE-pbN" userLabel="Label">
+                            <rect key="frame" x="109" y="208.5" width="158" height="48"/>
+                            <fontDescription key="fontDescription" name="SFUIDisplay-Regular" family="SF UI Display" pointSize="20"/>
+                            <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="This exceeds the number of flowers you have!" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="d5H-tq-wqi" userLabel="Warning">
+                            <rect key="frame" x="59.5" y="276.5" width="256" height="18"/>
+                            <fontDescription key="fontDescription" name="SourceSansPro-Light" family="Source Sans Pro" pointSize="14"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="DOK-4p-pad" userLabel="Flower Editor Field">
+                            <rect key="frame" x="78" y="304.5" width="219" height="38"/>
+                            <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="219" id="Ej7-kF-Fxn"/>
+                                <constraint firstAttribute="height" constant="38" id="gz6-Ko-VJz"/>
+                            </constraints>
+                            <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <fontDescription key="fontDescription" name="SFUIDisplay-Regular" family="SF UI Display" pointSize="18"/>
+                            <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                        </textField>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zEu-e8-cy4" userLabel="Button Cancel">
+                            <rect key="frame" x="78" y="357.5" width="107" height="38"/>
+                            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="38" id="H9r-pH-1BT"/>
+                                <constraint firstAttribute="width" constant="107" id="yuo-xp-znx"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="SFUIDisplay-Regular" family="SF UI Display" pointSize="13"/>
+                            <state key="normal" title="Cancel">
+                                <color key="titleColor" red="0.094967685639858246" green="0.09487520158290863" blue="0.097724869847297668" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </state>
+                            <connections>
+                                <action selector="closePopup:" destination="-1" eventType="touchUpInside" id="Nlm-aQ-sbc"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1qX-qd-uVb" userLabel="Button Send">
+                            <rect key="frame" x="190" y="357.5" width="107" height="38"/>
+                            <color key="backgroundColor" red="0.62925738096237183" green="0.065103001892566681" blue="0.11129199713468552" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <state key="normal" title="Send">
+                                <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </state>
+                            <connections>
+                                <action selector="touchSendButton:" destination="-1" eventType="touchUpInside" id="XH6-rE-Nl0"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                    <gestureRecognizers/>
+                    <constraints>
+                        <constraint firstItem="zEu-e8-cy4" firstAttribute="leading" secondItem="DOK-4p-pad" secondAttribute="leading" id="9LQ-pV-WGV"/>
+                        <constraint firstItem="d5H-tq-wqi" firstAttribute="centerX" secondItem="hhs-lD-WSZ" secondAttribute="centerX" id="BQP-uR-mDf"/>
+                        <constraint firstItem="1qX-qd-uVb" firstAttribute="trailing" secondItem="DOK-4p-pad" secondAttribute="trailing" id="D36-am-L94"/>
+                        <constraint firstItem="1qX-qd-uVb" firstAttribute="height" secondItem="zEu-e8-cy4" secondAttribute="height" id="Go3-Si-E70"/>
+                        <constraint firstItem="DOK-4p-pad" firstAttribute="centerX" secondItem="hhs-lD-WSZ" secondAttribute="centerX" id="QPu-ho-XtR"/>
+                        <constraint firstItem="d5H-tq-wqi" firstAttribute="top" secondItem="NhZ-gE-pbN" secondAttribute="bottom" constant="20" id="UcL-nQ-MBU"/>
+                        <constraint firstItem="1qX-qd-uVb" firstAttribute="width" secondItem="zEu-e8-cy4" secondAttribute="width" id="Xg5-6G-YhE"/>
+                        <constraint firstItem="zEu-e8-cy4" firstAttribute="top" secondItem="DOK-4p-pad" secondAttribute="bottom" constant="15" id="ZRS-Pq-iOA"/>
+                        <constraint firstItem="1qX-qd-uVb" firstAttribute="centerY" secondItem="zEu-e8-cy4" secondAttribute="centerY" id="b2p-t2-kf6"/>
+                        <constraint firstItem="DOK-4p-pad" firstAttribute="centerY" secondItem="hhs-lD-WSZ" secondAttribute="centerY" id="gFr-Bu-twS"/>
+                        <constraint firstItem="DOK-4p-pad" firstAttribute="top" secondItem="d5H-tq-wqi" secondAttribute="bottom" constant="10" id="lf8-BH-QFb"/>
+                        <constraint firstItem="NhZ-gE-pbN" firstAttribute="centerX" secondItem="hhs-lD-WSZ" secondAttribute="centerX" id="xRK-oV-kzS"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="1OB-cd-qbu" firstAttribute="trailing" secondItem="hhs-lD-WSZ" secondAttribute="trailing" id="9D9-T2-nGS"/>
+                <constraint firstItem="hhs-lD-WSZ" firstAttribute="top" secondItem="1OB-cd-qbu" secondAttribute="top" id="9gu-wb-TrT"/>
+                <constraint firstItem="hhs-lD-WSZ" firstAttribute="leading" secondItem="1OB-cd-qbu" secondAttribute="leading" id="gZa-Qc-PVV"/>
+                <constraint firstItem="1OB-cd-qbu" firstAttribute="bottom" secondItem="hhs-lD-WSZ" secondAttribute="bottom" id="qVl-rz-dM6"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="1OB-cd-qbu"/>
+            <connections>
+                <action selector="touchBackground:" destination="-1" eventType="touchDown" id="cAj-oX-SaK"/>
+            </connections>
+            <point key="canvasLocation" x="412" y="340"/>
+        </view>
+    </objects>
+</document>
